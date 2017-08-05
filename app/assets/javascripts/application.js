@@ -12,12 +12,11 @@
 //
 //= require jquery.js
 //= require jquery_ujs.js
-//= require_tree .
-//= video_js
-//= counter
-//= particles
-//= slider
-//= graphic
+//= require video_js
+//= require counter
+//= require particles
+//= require slider
+//= require graphic
 //= require visitors.js
 
 jQuery(document).ready(function($) {
