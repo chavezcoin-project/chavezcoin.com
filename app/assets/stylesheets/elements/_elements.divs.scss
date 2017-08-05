@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: lighten($ripelemon, 25%);
+  padding: 1rem 2.5%;
+  position: relative;
+  @include lg {
+    padding: 1rem 7.5%;
+  }
+}
+
+h1 {
+  position: relative;
+}
+
+div,
+header,
+figure,
+section,
+li,
+ul,
+ol,
+article,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+q,
+p,
+video,
+nav,
+aside,
+form {
+  margin: 0;
+  padding: 0;
+}

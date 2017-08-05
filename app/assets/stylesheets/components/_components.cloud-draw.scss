@@ -1,0 +1,72 @@
+.cloud-draw {
+  background: $white;
+  border-radius: 50%;
+  position: absolute;
+  &:before,
+  &:after {
+    background: linear-gradient(to top, $wildsand 5%, $white 100%);
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 50%;
+  }
+  &:before {
+    width: 75%;
+    left: -20%;
+  }
+  &:after {
+    width: 100%;
+    right: -20%;
+  }
+  &.-big {
+    animation: wind_horizontal 17.5s linear infinite;
+    height: 6rem;
+    top: 5%;
+    width: 15rem;
+  }
+  &.-mid {
+    animation: wind_horizontal 10s linear infinite;
+    height: 4.5rem;
+    top: 70%;
+    width: 11rem;
+  }
+  &.-small {
+    animation: wind_horizontal 15s linear infinite;
+    height: 3rem;
+    top: 45%;
+    width: 5rem;
+  }
+  &.-round {
+    animation: wind_horizontal 10s linear infinite;
+    height: 6rem;
+    top: 70%;
+    width: 10rem;
+  }
+  &.-mindelay {
+    animation-delay: -1s;
+  }
+  &.-middelay {
+    animation-delay: -3s;
+  }
+  &.-lgdelay {
+    animation-delay: -5s;
+  }
+  &.-maxdelay {
+    animation-delay: -10s;
+  }
+}
+
+@keyframes wind_horizontal {
+  0% {
+    left: 100%;
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -100%;
+  }
+}

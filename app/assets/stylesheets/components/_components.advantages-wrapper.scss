@@ -1,0 +1,5 @@
+.advantages-wrapper {
+  @include lg {
+    @include flex_center();
+  }
+}

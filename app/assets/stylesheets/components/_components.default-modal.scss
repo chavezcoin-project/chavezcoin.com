@@ -1,0 +1,4 @@
+.default-modal {
+  @include flex_centered();
+  max-height: 40rem;
+}

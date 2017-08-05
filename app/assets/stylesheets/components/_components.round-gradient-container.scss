@@ -1,0 +1,23 @@
+.round-gradient-container {
+  box-shadow: 0 1rem .75rem -.75rem $black;
+  bottom: -15%;
+  display: none;
+  left: 0;
+  height: 80%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateZ(1px) skewY(-2.5deg);
+  z-index: 2;
+  @include lg {
+    display: block;
+  }
+  &:before {
+    background: linear-gradient(230deg, $persianred 30%, $persianred 60%, darken($persianred, 30%) 100%);
+    bottom: 0;
+    content: '';
+    height: 99.8%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

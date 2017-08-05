@@ -1,0 +1,15 @@
+.two-column-list {
+  @include flex_between();
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  > .item {
+    @include flex_between();
+    padding: .5rem;
+    > .currency {
+      display: inline-block;
+      margin: 0;
+      width: auto;
+    }
+  }
+}

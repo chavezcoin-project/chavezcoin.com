@@ -1,0 +1,20 @@
+.main-button {
+  border-radius: .5rem;
+  font-family: $primary-font-family;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  &.-blue {
+    background-color: darken($danube, 15%);
+  }
+  &.-red {
+    background-color: lighten($persianred, 20%);
+  }
+  &:hover {
+    background-color: $ripelemon;
+    color: $white;
+  }
+}

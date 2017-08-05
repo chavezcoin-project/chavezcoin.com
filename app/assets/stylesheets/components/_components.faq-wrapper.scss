@@ -1,0 +1,34 @@
+.faq-wrapper {
+  margin-bottom: 1rem;
+  &:nth-child(odd) {
+    background-color: rgba($danube, .1);
+  }
+  > .faq {
+    cursor: pointer;
+    font-size: 1.35rem;
+    padding: .5rem;
+    transition: all .5s;
+    &:hover,
+    &.active {
+      color: $ripelemon;
+      > .cross {
+        color: $ripelemon;
+      }
+    }
+    &.active > .cross {
+      transform: rotate(135deg);
+    }
+    > .cross {
+      color: $scorpion;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-style: normal;
+      transition: all .5s;
+      vertical-align: center;
+    }
+  }
+  > .answer {
+    display: none;
+    padding: 1rem;
+  }
+}

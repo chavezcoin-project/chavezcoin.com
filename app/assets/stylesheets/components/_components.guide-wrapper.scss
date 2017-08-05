@@ -1,0 +1,63 @@
+.guide-wrapper {
+  > .guide {
+    box-shadow: 0 1rem .75rem -.75rem $black;
+    padding: 4rem 1rem;
+    position: relative;
+    transform: translateZ(1px) skewY(-2.5deg);
+    > .limited-wrapper {
+      transform: translateZ(1px) skewY(2.5deg);
+      > .main-title > .cross {
+        align-self: flex-start;
+        display: inline-block;
+        font-size: 1.75rem;
+        font-style: normal;
+        transition: all 1s;
+      }
+      > .tag-text,
+      .video-container {
+        display: none;
+      }
+    }
+    &.-active {
+      > .limited-wrapper .main-title > .cross {
+        transform: rotate(135deg);
+      }
+    }
+    &.-yellow {
+      background: linear-gradient(230deg, lighten($ripelemon, 15%) 30%, lighten($ripelemon, 15%) 20%, darken($ripelemon, 30%) 100%);
+      margin-top: -2rem;
+      padding: 5rem 1rem 2rem;
+      z-index: 5;
+      @include lg {
+        margin-top: -6rem;
+        padding: 18rem 1rem 3rem;
+      }
+    }
+    &.-blue {
+      background: linear-gradient(-230deg, lighten($danube, 5%) 30%, lighten($danube, 5%) 20%, darken($danube, 30%) 100%);
+      margin-top: -6rem;
+      padding: 8.5rem 1rem 2rem;
+      z-index: 4;
+      @include lg {
+        margin-top: -12rem;
+        padding: 14rem 1rem 2rem;
+      }
+    }
+    &.-red {
+      background: linear-gradient(230deg, lighten($persianred, 15%) 30%, lighten($persianred, 15%) 20%, darken($persianred, 30%) 100%);
+      margin-top: -6rem;
+      padding: 8.5rem 1rem 2rem;
+      z-index: 3;
+      @include lg {
+        margin-top: -12rem;
+        padding: 18rem 1rem 4rem;
+      }
+    }
+    &.-inverted {
+      transform: translateZ(1px) skewY(2.5deg);
+      > .limited-wrapper {
+        transform: skewY(-2.5deg);
+      }
+    }
+  }
+}

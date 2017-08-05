@@ -1,0 +1,8 @@
+.graphic-bar {
+  @include flex_centered;
+  > .bar {
+    background-color: $green_haze;
+    height: 1.5rem;
+    width: 30%;
+  }
+}

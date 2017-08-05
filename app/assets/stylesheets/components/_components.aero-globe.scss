@@ -1,0 +1,220 @@
+$bag_color: #EAC672;
+
+.aero-globe {
+  animation: globo_move 35s linear infinite;
+  background: lighten($ripelemon, 25%);
+  background-size: 160%;
+  background-position: center center;
+  border-radius: 40%;
+  border-top: .15rem solid darken($persianred, 7.5%);
+  height: 4rem;
+  position: absolute;
+  width: 8rem;
+  &:after,
+  &:before {
+    position: absolute;
+  }
+  &:before {
+    background-color: darken($persianred, 7.5%);
+    border-radius: 2rem;
+    bottom: -4.25rem;
+    content: '';
+    height: .5rem;
+    left: 24.5%;
+    width: 4rem;
+    z-index: 3;
+  }
+  > .background {
+    background-color: darken($persianred, 7.5%);
+    border: .2rem solid $ripelemon;
+    border-radius: 50%;
+    left: 2.5rem;
+    padding: .9rem;
+    position: absolute;
+    top: 1.75rem;
+    width: 3rem;
+    z-index: 5;
+  }
+  > .left,
+  > .right,
+  > .bottom {
+    background: lighten($ripelemon, 25%);
+    position: absolute;
+  }
+  > .left,
+  > .right {
+    border-radius: 40%;
+    height: 8rem;
+    top: 0;
+    width: 5rem;
+    z-index: 2;
+  }
+  > .left {
+    border-left: .15rem solid darken($persianred, 7.5%);
+    left: 5%;
+    transform: rotate(-30deg);
+  }
+  > .right {
+    border-right: .15rem solid darken($persianred, 7.5%);
+    right: 5%;
+    transform: rotate(30deg);
+  }
+  > .bottom {
+    border-bottom: .15rem solid darken($persianred, 7.5%);
+    border-radius: 50%;
+    bottom: -5rem;
+    height: 2rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 1;
+    &:before,
+    &:after {
+      background-color: lighten($ripelemon, 25%);
+      border-bottom: .15rem solid darken($persianred, 7.5%);
+      border-radius: 10rem;
+      content: '';
+      height: 2.85rem;
+      position: absolute;
+      top: -.75rem;
+      width: 1rem;
+      z-index: 1;
+    }
+    &:before {
+      border-left: .15rem solid darken($persianred, 7.5%);
+      left: -.25rem;
+      transform: rotate(30deg);
+    }
+    &:after {
+      border-right: .15rem solid darken($persianred, 7.5%);
+      right: -.25rem;
+      transform: rotate(-30deg);
+    }
+  }
+  > .stripright,
+  > .stripleft,
+  > .basket {
+    position: absolute;
+  }
+  > .stripright,
+  > .stripleft {
+    background: $black;
+    height: 9rem;
+    top: 6rem;
+    width: .05rem;
+  }
+  > .stripright {
+    right: 35%;
+    transform: rotate(-15deg);
+  }
+  > .stripleft {
+    left: 35%;
+    transform: rotate(15deg)
+  }
+  > .basket {
+    background: darken($bag_color, 15%);
+    border: .1rem solid darken(brown, 25%);
+    border-right: none;
+    height: 3rem;
+    left: 1.75rem;
+    top: 14rem;
+    transform: skewX(25deg);
+    width: 3rem;
+    &:before {
+      background: darken($bag_color, 15%);
+      border: .1rem solid darken(brown, 25%);
+      border-left: none;
+      content: '';
+      height: 100%;
+      right: -50%;
+      position: absolute;
+      top: 0;
+      transform: skewX(-45deg);
+      width: 100%;
+    }
+  }
+  > .chavez {
+    left: 25%;
+    position: absolute;
+    top: 10.25rem;
+    width: 45%;
+  }
+}
+
+@keyframes globo_move {
+  0% {
+    right: 40%;
+    top: -37.5%;
+  }
+  10% {
+    right: 5%;
+    top: 5%;
+  }
+  15% {
+    right: 5%;
+    top: 2.5%;
+
+  }
+  20% {
+    right: 5%;
+    top: 7.5%;
+
+  }
+  25% {
+    right: 5%;
+    top: 2.5%;
+
+  }
+  30% {
+    right: 5%;
+    top: 7.5%;
+
+  }
+  33% {
+    right: 5%;
+    top: 5%;
+  }
+  40% {
+    right: 75%;
+    top: 15%;
+  }
+  45% {
+    right: 75%;
+    top: 17.5%;
+  }
+  50% {
+    right: 75%;
+    top: 12.5%;
+  }
+  55% {
+    right: 75%;
+    top: 17.5%;
+  }
+  60% {
+    right: 75%;
+    top: 12.5%;
+  }
+  65% {
+    right: 75%;
+    top: 15%;
+  }
+  75% {
+    right: 35%;
+    top: 50%;
+  }
+  80% {
+    right: 35%;
+    top: 47.5%;
+  }
+  85% {
+    right: 35%;
+    top: 52.5%;
+  }
+  90% {
+    right: 35%;
+    top: 47.5%;
+  }
+  100% {
+    right: 85%;
+    top: 100%;
+  }
+}

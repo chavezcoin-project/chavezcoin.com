@@ -1,0 +1,26 @@
+.graphic-wrapper {
+  @include flex_between;
+  align-items: flex-end;
+  border-bottom: .1rem solid $ripelemon;
+  border-right: .1rem solid $ripelemon;
+  height: 9rem;
+  padding: 0 .5rem;
+  @include lg {
+    height: 12.5rem;
+  }
+  @include xl {
+    height: 15rem;
+  }
+  > .bar {
+    background: $danube;
+    height: 50%;
+    margin: 0 .25rem;
+    width: 2rem;
+    &:last-of-type {
+      display: none;
+      @include xs {
+        display: block;
+      }
+    }
+  }
+}

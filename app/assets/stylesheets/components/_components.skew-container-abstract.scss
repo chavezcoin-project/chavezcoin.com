@@ -1,0 +1,104 @@
+$gradient:  linear-gradient(230deg, $persianred 0%, $danube 50%, darken($ripelemon, 10%) 90%);
+$gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianred, 10%) 90%);
+
+.skew-container-abstract {
+  @include flex_centered();
+  box-shadow: 0 1rem .75rem -.75rem $black;
+  height: 100%;
+  left: 0;
+  outline: .1rem solid transparent;
+  position: absolute;
+  top: 0;
+  transform: translateZ(1px) skewY(-12deg);
+  transform-origin: left;
+  z-index: 3;
+  @include lg {
+    height: 90%;
+  }
+  &.-flag-color{
+    animation: gradient 10s infinite alternate;
+    background: $gradient2;
+    background-attachment: fixed;
+    &:before {
+      animation: opacity 10s infinite alternate;
+      background: $gradient;
+      background-attachment: fixed;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &.-inverted {
+    height: 100%;
+    left: initial;
+    right: 0;
+    transform: translateZ(1px) skewY(25deg);
+    transform-origin: right;
+  }
+  &.-inverted.-less-angle {
+    bottom: 0;
+    top: initial;
+    transform: translateZ(1px) skewY(7.5deg);
+  }
+  &.-inverted.-blue {
+    background: linear-gradient(to right, $danube, $white);
+  }
+  &.-back {
+    z-index: -1;
+  }
+  > .limited-wrapper {
+    @include flex_centered();
+    height: 100%;
+  }
+  > .limited-wrapper .buttons-container,
+  > .limited-wrapper .animation,
+  > .limited-wrapper .tag-text {
+    position: relative;
+    text-align: center;
+    transform: translateZ(1px) skewY(12deg);
+    z-index: 9;
+    @include md {
+      text-align: left;
+    }
+    @include lg {
+      @include flex_centered;
+      left: 0;
+      position: absolute;
+      width: 27.5rem
+    }
+    @include xl {
+      width: 33rem;
+    }
+  }
+  > .limited-wrapper .animation {
+    margin: 15% 0 0;
+    @include lg {
+      margin: initial;
+      top: 52.5%;
+    }
+  }
+  > .limited-wrapper .buttons-container {
+    @include lg {
+      bottom: -5%;
+    }
+    @include xl {
+      bottom: 0;
+    }
+  }
+  > .limited-wrapper .tag-text {
+    margin: 2rem 0;
+    padding: 0 5%;
+    @include lg {
+      margin: initial;
+      top: 72.5%;
+    }
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}

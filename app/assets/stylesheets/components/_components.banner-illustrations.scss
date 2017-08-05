@@ -1,0 +1,13 @@
+.banner-illustrations {
+  display: none;
+  @include lg {
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    padding: .5rem 2.5%;
+    z-index: 4;
+    @include xl {
+      padding: 0;
+    }
+  }
+}

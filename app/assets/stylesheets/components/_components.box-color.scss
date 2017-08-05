@@ -1,0 +1,54 @@
+
+
+.box-color {
+  border-radius: 5rem;
+  box-shadow: 0 1rem .75rem -.75rem $black;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  width:95%;
+  @include sm {
+    max-width: 70%;
+  }
+  @include lg {
+    margin-left: -20rem;
+    margin-right: 0;
+    max-width: 30%;
+    opacity: 0;
+    transition: all 1s;
+    &.-yellow,
+    &.-blue {
+      box-shadow: 0 1rem .75rem -.75rem $black, 1rem 0 .75rem -.75rem $black;
+    }
+    &.-yellow {
+      border-radius: 5rem 0 0 5rem;
+      z-index: 2;
+    }
+    &.-blue {
+      border-radius: 0;
+      z-index: 1;
+    }
+    &.-red {
+      border-radius: 0 5rem 5rem 0;
+    }
+    &.-scrolled {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+  &.-yellow {
+    background-color: $ripelemon;
+  }
+  &.-blue {
+    background-color: $danube;
+  }
+  &.-red {
+    background-color: $persianred;
+  }
+  > .content {
+    text-align: center;
+  }
+}
+
+

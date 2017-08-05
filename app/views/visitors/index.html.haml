@@ -1,0 +1,638 @@
+.pure-g.homepage
+  %header.pure-u-1
+    %section.abstract-banner.pure-u-1#inicio
+      .count-container
+        .planet-rotate
+        %figure.chavezcoin
+          1
+          = image_tag('coin.png', class: 'coin')
+        .equal
+          = '='
+        .usd
+          $1.00
+      .pure-u-1.skew-container-abstract.-flag-color
+        .limited-wrapper
+          %h1.animation
+            .content-animated
+              .container
+                %p.text
+                  Chavez
+              %ul.list
+                %li.item coin
+                %li.item coin
+                %li.item coin
+                %li.item coin
+          %h2.tag-text.-banner.-lightgrey.-midsize
+            Dispara tus niveles de patria hasta las nubes.
+          .pure-u-1.buttons-container
+            = link_to 'Gana Chavezcoin', '#', class: 'main-button -blue'
+            = link_to 'Descargar Wallet', '#', class: 'main-button -red'
+      %section.pure-u-1.banner-illustrations.limited-wrapper
+        .device-illustration.tablet-horizontal
+          %figure.device-image-container
+        .perspective-device.-leftrotation
+          .device-illustration.mobile-normal.-banner
+            .speaker
+            .button
+            %ul.app-example
+              %li.header.item
+                %p.tag-text.-small.-white.-center.wallet
+                  Chavezcoin Wallet
+                %h4.main-title.-smallsize.-fullwidth.-bold
+                  $37,000.00
+                  %p.tag-text.-uppercase.-yellow.-midsmall
+                    37,000.00 CHC
+              %li.box.-small.item
+                %p.tag-text.-midsmall
+                  Detalles de Mercado
+              %li.box.item
+                %p.tag-text.pure-u-14-24
+                  ChavezCoin
+                %p.tag-text.-midsmall
+                  $1.00
+                %p.tag-text.-small.pure-u-14-24
+                  CHC
+                %p.tag-text.-small.-green
+                  %i.fa.fa-caret-up
+                  230%
+              %li.box.item
+                %p.tag-text.pure-u-14-24
+                  BitCoin
+                %p.tag-text.-midsmall
+                  $2700.023
+                %p.tag-text.-small.pure-u-14-24
+                  BTC
+                %p.tag-text.-small.-green
+                  %i.fa.fa-caret-up
+                  17%
+              %li.box.item
+                %p.tag-text.pure-u-14-24
+                  Ethereum
+                %p.tag-text.-midsmall
+                  $183
+                %p.tag-text.-small.pure-u-14-24
+                  ETH
+                %p.tag-text.-small.-red
+                  %i.fa.fa-caret-down
+                  23%
+
+              %li.slider-image.-device.-hidden.-receive
+  %section.pure-u-1.transaction-container.section-container.-maxi-padding
+    .pure-u-1.round-gradient-container
+      .round-gradient-background
+    .pure-u-1.pure-u-lg-13-24.transaction-counter-container
+      %header.header.pure-u-1
+        %h4.main-title.-smallsize.-fullwidth.-bold.-lightblack.-uppercase
+          Chavezcoin Totales
+      %input{:type => 'hidden', :value => '31000000', :class => 'total_transactions'}
+      .pure-u-1.transaction-counter
+        %p.pure-u-1.tag-text.-lightblack.-center
+          Chavezcoin disponibles.
+        %h4.main-title.-smallsize.-fullwidth.-bold.-lightblack.-uppercase
+          = link_to 'Detalles', '#', class: 'main-button -blue graphic-details'
+    .pure-u-1.pure-u-lg-11-24.graphic-container
+      %header.header.pure-u-1
+        %h4.main-title.-smallsize.-fullwidth.-bold.-lightblack.-uppercase
+          1 CHC = $1.00
+      .pure-u-1.dinamic-graphic
+        .pure-u-4-5.graphic-wrapper
+          .bar.-current#Jun
+            2600
+          .bar#May
+            1420
+          .bar#Apr
+            740
+          .bar#Mar
+            1290
+          .bar#Feb
+            304
+          .bar#Jan
+            89
+        .graphic-price
+          %span.price.-max
+            $2000
+          %span.price
+            $1500
+          %span.price
+            $1000
+          %span.price
+            $500
+          %span.price
+            $300
+          %span.price
+            $100
+        .pure-u-4-5.graphic-days
+          %span.day#Jun
+            Jun '15
+          %span.day#May
+            May '15
+          %span.day#Apr
+            Apr '15
+          %span.day#Mar
+            Mar '15
+          %span.day#Feb
+            Feb '15
+          %span.day#Jan
+            Jan '15
+        .graphic-price.-hidden
+          %span.price
+            2000
+  %section.pure-u-1.guide-container.section-container._nopadding#guide.-flex-center
+    .pure-u-1.guide-wrapper
+      .pure-u-1.guide.-inverted.-yellow#guide
+        .limited-wrapper.-flex-center.-guide
+          %h3.main-title.-midsize.-left.guide-expand
+            %i.cross
+              +
+            %span.title
+              ¿Qué es Chavezcoin?
+          %p.tag-text.-white
+            ChavezCoin es una nueva y revolucionaria cryptomoneda, cambiará tu forma de ver el dinero y te abrirá las puertas a un futuro brillante, donde los problemas de las divisas tradicionales no existen.
+          .video-container.pure-u-1
+            = video_tag("comment.mp4", :controls => false, :autobuffer => true, :autoplay => false, :class => 'main-video')
+            .video-controls
+              %button.play-btn
+                %i.fa.fa-pause
+                %i.fa.fa-play
+              %span.curtimetext 00:00
+              .time-slider
+                %input{:type => 'range', :min => '0', :max => '100', :value => '0', :step => '1', :class => 'seekslider range-slider -time-slider'}
+                .fill
+              %span.durtimetext
+                00:00
+              %button.mutebtn
+                %i.fa.fa-volume-down
+                %i.fa.fa-volume-up
+                %i.fa.fa-volume-off
+              %input{:type => 'range', :min => '0', :max => '100', :value => '80', :step => '1', :class => 'volumeslider range-slider'}
+              %button.fullscreenbtn
+                %i.fa.fa-arrows-alt
+      .pure-u-1.guide.-blue.-after-inverted
+        .limited-wrapper.-flex-center.-guide
+          %h3.main-title.-midsize.-left.guide-expand
+            %i.cross
+              +
+            %span.title
+              Obtener y usar Chavezcoin es más fácil que ganar las elecciones con Tibisay
+          %p.tag-text.-white
+            Al descargar la aplicación y realizar el registro en nuestra página, el sistema automáticamente generará un monedero encriptado en el cual podrás guardar tus CC y también usarlos. Si deseas realizar alguna transferencia o cambio, se genera un ID único asociado a tu monedero que funciona como un número de cuenta bancario y el cual es imposible de rastrear, es totalmente anónimo, enteramente seguro y cambia automáticamente cada día.
+          %p.tag-text.-white
+            Para obtener CC, existirán diversas formas, la primera vendrá directamente desde nosotros, ya que al ser una criptomoneda única de Venezuela y que solo podrás obtener dentro del territorio nacional, cuando realices los pasos necesarios para obtener tu monedero, te será otorgado cierta cantidad de CC.
+          %p.tag-text.-white
+            Otras maneras de obtener CC serían comprando directamente a algún otro usuario, con el sistema de referidos o realizando algún tipo de trueque con los venezolanos. ChavezCoin (CC) no podrá ser minada, CC será pre-minada por nuestro equipo y entregada a los usuarios por nosotros, queremos que todos los usuarios participen por igual en el futuro que está por llegar, no queremos que el poder sea para un grupo selecto, queremos que el poder de ChavezCoin esté en las manos de todos.
+      .pure-u-1.guide.-inverted.-red#wallet
+        .limited-wrapper.-flex-center.-guide
+          %h3.main-title.-midsize.-left.guide-expand
+            %i.cross
+              +
+            %span.title
+              Chavezcoin es más seguro que el palacio de Miraflores
+          %p.tag-text.-white
+            La forma en la que se usa el dinero hoy en día es bastante arcaica, además de ser inseguro, puede venir acompañada de muchos impuestos y deudas. Con ChavezCoin, una criptomoneda exclusiva en Venezuela, vamos a entrar en un territorio completamente nuevo para los venezolanos de como apreciar el dinero.
+          %p.tag-text.-white
+            Al ser una moneda digital y encriptada, posee una de las tecnologías más seguras del mundo, a nivel de realizar transacciones, compras, ventas e intercambios. El dinero como lo conocemos requiere de intermediarios para realizar movimientos, ChavezCoin al ser una criptomoneda no necesita intermediarios y como es una moneda descentralizada, no se ve controlada por ninguna entidad gubernamental o bancaria.
+          %p.tag-text.-white
+            Todos los movimientos de esta criptomoneda son hechos por los mismos usuarios con tasas casi despreciables. El nivel de seguridad es con certeza, uno de los más altos del mundo gracias a la cadena de bloques, la cual no permite que sea alterada por los usuarios y ni siquiera por nosotros. Una vez la moneda esté en el internet, nada podrá detenerla.
+    .pure-u-5-12.draw-container.-fixed
+  %section.pure-u-1.advantages-container.section-container.-flex-center.-skew-container#advantages
+    %h3.pure-u-1.main-title.-bold.-black._marginbottom-md
+      Nuestro comandante tiene más sorpresas
+    %p.tag-text.-center.-black._marginbottom-md
+      Existen muchas ventajas por las cuales comprar y usar Chavezcoin.
+      Su seguridad, rapidez y eficiencia superará tus expectativas.
+    .pure-u-1.limited-wrapper.advantages-wrapper
+      %article.box-color.-yellow.-upleft
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Descentralizada
+          %p.tag-text.-white
+            Chavezcoin no está controlada por ningún Estado, banco o institución financiera.
+      %article.box-color.-blue
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Sin Intermediarios
+          %p.tag-text.-white
+            Las transacciones se realizan directamente de persona a persona.
+      %article.box-color.-red.-upRight
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Es tuyo
+          %p.tag-text.-white
+            Con Chavezcoin tu eres dueño del la id privada y pública que conforman tu cartera. NADIE puede quitártelo.
+      .pure-u-1
+      %article.box-color.-yellow.-downLeft
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Anónima
+          %p.tag-text.-white
+            Chavezcoin te permiten preservar tu privacidad al realizar transacciones.
+      %article.box-color.-blue
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Internacional
+          %p.tag-text.-white
+            Puedes cambiar tus Chavezcoin en cualquier país del mundo por igual.
+      %article.box-color.-red.-downRight
+        .content
+          %h3.main-title.-midsize.-bold._marginbottom-md Rápida
+          %p.tag-text.-white
+            Las transacciones son mucho más rápidas que las realizadas a través de entidades financieras.
+  %section.-flex-center.pure-u-1.market-container.section-container#market
+    %h3.pure-u-1.main-title.-bold._marginbottom-md
+      ¡Exprópiese esas divisas!
+    %p.tag-text.-center.-white._marginbottom-md
+      Puedes cambiar tus Chavezcoin a la moneda que quieras; aquí podrás ver una guía de precios y una lista de cryptomercados.
+    .limited-wrapper.price-container.-flex-center
+      %ul.pure-u-22-24.pure-u-md-1-2.pure-u-xl-1-3.two-column-list.-currency-container
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#bitcoin
+            BTC
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#status
+            SNT
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#ethereum
+            ETH
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#ripple
+            XRP
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#littlecoin
+            LTC
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#dogecoin
+            DOGE
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#nem
+            XEM
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#dash
+            DASH
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#iota
+            IOTA
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#Monero
+            XMR
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#Zcash
+            ZEC
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.currency#Gnosis
+            GNO
+          .pure-u-13-24.slide-interruptor.-off
+            .button
+      %ul.pure-u-22-24.pure-u-md-1-2.pure-u-xl-7-24.two-column-list.-currency-data
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-bold.-fullwidth
+            Moneda:
+          %p.tag-text.-white.coin-name.-capitalize
+            Bitcoin
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-fullwidth.-bold
+            Último precio:
+          %p.tag-text.-white
+            0.00000387468 BTC/CHC
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-fullwidth.-bold
+            Volumen:
+          %p.tag-text.-white
+            55659.64
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-fullwidth.-bold
+            24h Alza:
+          %p.tag-text.-white
+            0.00349871
+        %li.pure-u-4-5.pure-u-sm-1-2.item
+          %h4.main-title.-smallsize.-left.-fullwidth.-bold
+            = '%Cambio:'
+          %p.tag-text.-yellow
+            0.8%
+      %ul.pure-u-22-24.pure-u-md-1-2.pure-u-lg-10-24.pure-u-xl-9-24.two-column-list.-currency-price
+        %li.pure-u-1.item.reward
+          %h4.main-title.-smallsize.-left.-fullwidth.-bold
+            Vas a obtener
+            %span
+              4.56
+            %span.red
+              Chavez
+            %span.yellow
+              coin
+        %li.pure-u-1.item.current-price
+          %h4.main-title.-bold.-left.-fullwidth
+            CHC =
+            %span.yellow
+              $1.27
+      %h4.main-title.-midsize.message
+        Guía de precios por divisa.
+    %h3.pure-u-1.main-title.-bold._marginbottom-md
+      Webs de Intercambio
+    .limited-wrapper.market-list.-flex-center
+      %table.pure-u-23-24.pure-u-md-4-5.table-list.-market
+        %thead.head
+          %tr.data-wrapper
+            %th.data.-mid
+              Nombre de Mercado
+            %th.data.-hide.pure-u-1-5
+              Ultima Actualización
+            %th.data.-mid
+              24h Volumen $USD
+            %th.data.-small-big
+              24h Volumen BTC
+            %th.data.-hide.-small
+              Gráfico
+        %tbody.body
+          %tr.info-wrapper
+            %td.data.-mid
+              = link_to '#', class: 'link' do
+                Chavechange
+            %td.data.-hide.pure-u-1-5
+              2 min, 09 sec
+            %td.data.-mid
+              $144,049
+            %td.data.-green.-small-big
+              23,190
+            %td.data.-hide.-small.graphic-bar
+              .bar
+          %tr.info-wrapper
+            %td.data.-mid
+              = link_to 'https://www.cryptocoincharts.info/markets/show/poloniex', class: 'link' do
+                Poloniex
+            %td.data.-hide.pure-u-1-5
+              10 min, 27 sec
+            %td.data.-mid
+              $144,049,402
+            %td.data.-green.-small-big
+              53,190
+            %td.data.-hide.-small.graphic-bar
+              .bar
+          %tr.info-wrapper
+            %td.data.-mid
+              = link_to 'https://www.cryptocoincharts.info/markets/show/bitfinex', class: 'link' do
+                Bitfinex
+            %td.data.-hide.pure-u-1-5
+              4 min, 19 sec
+            %td.data.-mid
+              $4,049,402
+            %td.data.-green.-small-big
+              3,190
+            %td.data.-hide.-small.graphic-bar
+              .bar
+          %tr.info-wrapper
+            %td.data.-mid
+              = link_to 'https://www.cryptocoincharts.info/markets/show/gemini', class: 'link' do
+                Gemini
+            %td.data.-hide.pure-u-1-5
+              0 min, 53 sec
+            %td.data.-mid
+              $49,402
+            %td.data.-green.-small-big
+              190
+            %td.data.-hide.-small.graphic-bar
+              .bar
+  %section.-flex-center.pure-u-1.app-container.section-container.-skew-container-inverted#app
+    .slider-container.-default
+      = image_tag('slider/slider1', class: 'slider-image -default')
+      = image_tag('slider/slider2', class: 'slider-image -default')
+      = image_tag('slider/slider3', class: 'slider-image -default')
+      = image_tag('slider/slider4', class: 'slider-image -default')
+      = image_tag('slider/slider5', class: 'slider-image -default')
+      = image_tag('slider/slider6', class: 'slider-image -default')
+      = image_tag('slider/slider7', class: 'slider-image -default')
+      = image_tag('slider/slider8', class: 'slider-image -default')
+      = image_tag('slider/slider9', class: 'slider-image -default')
+    .limited-wrapper.-app.-center-around
+      .device-illustration.mobile-normal.-app-section
+        .speaker
+        .button.-devise
+          %span.tool-tip
+            Clickeame, soy genial!
+        .device-image-container.-backgrounda.slider-container.-devise
+          = image_tag('slider/slider1', class: 'slider-image -devise')
+          = image_tag('slider/slider2', class: 'slider-image -devise')
+          = image_tag('slider/slider3', class: 'slider-image -devise')
+          = image_tag('slider/slider4', class: 'slider-image -devise')
+      .pure-u-1.pure-u-lg-1-2.content
+        %h3.pure-u-1.main-title.-left.-bold._marginbottom-md.-left-center.-fullwidth
+          Una aplicación suprema e intergaláctica
+        %p.tag-text.-white._marginbottom-md.-midsize.-left-center
+          Con nuestra app podrás usar Chavezcoin para realizar compras de manera rápida, segura y económica.
+        %p.tag-text.-white._marginbottom-md.-midsize.-left-center
+          Bienvenido al futuro, bienvenido a Chavezcoin.
+  %section.-flex-center.pure-u-1.blog-container.section-container#blog
+    %h3.pure-u-1.main-title.-black.-bold._marginbottom-md
+      Aló Presidente
+    %p.tag-text.-center._marginbottom-md
+      Entérate de todo lo nuevo referente a Chavezcoin y el mundo de las cryptodivisas.
+    .limited-wrapper.blog.-flex-around
+      %article.pure-u-1.pure-u-md-11-24.pure-u-lg-7-24.blog-box
+        %figure.photo
+          = image_tag('tablet-content.jpg', class: 'image')
+        %header.content
+          %h4.main-title.-smallsize.-black.-left
+            El efecto Bitcoin en la cultura moderna
+          %i.fa.fa-ellipsis-v.share-options
+          %i.fa.fa-angle-right.blog-button.-go
+        .hover-hidden-panel
+          %h4.main-title.-smallsize.-left
+            Comparte esto con tus amigos
+          .rounded-links
+            = link_to 'facebook', class: 'link' do
+              %i.fa.fa-facebook.icon
+            = link_to 'twitter', class: 'link' do
+              %i.fa.fa-twitter.icon
+            = link_to 'Google Plus', class: 'link' do
+              %i.fa.fa-google-plus.icon
+          %i.close
+            x
+        .info
+          .pure-u-5-12.autor
+            %figure.photo.pure-u-7-24
+              = image_tag('alex.jpg', class: 'avatar')
+            %span.tag-text.name.pure-u-2-3
+              Alexander Pulido
+          %p.tag-text.pure-u-13-24.date-category
+            %span.tag-text.date
+              1 de Julio
+            %span.tag-text.-green
+              en
+            %span.tag-text.category
+              Cryptodivisas
+      %article.pure-u-1.pure-u-md-11-24.pure-u-lg-7-24.blog-box
+        %figure.photo
+          = image_tag('tablet-content.jpg', class: 'image')
+        %header.content
+          %h4.main-title.-smallsize.-black.-left
+            El efecto Bitcoin en la cultura moderna
+          %i.fa.fa-ellipsis-v.share-options
+          %i.fa.fa-angle-right.blog-button.-go
+        .hover-hidden-panel
+          %h4.main-title.-smallsize.-left
+            Comparte esto con tus amigos
+          .rounded-links
+            = link_to 'facebook', class: 'link' do
+              %i.fa.fa-facebook.icon
+            = link_to 'twitter', class: 'link' do
+              %i.fa.fa-twitter.icon
+            = link_to 'Google Plus', class: 'link' do
+              %i.fa.fa-google-plus.icon
+          %i.close
+            x
+        .info
+          .pure-u-5-12.autor
+            %figure.photo.pure-u-7-24
+              = image_tag('alex.jpg', class: 'avatar')
+            %span.tag-text.name.pure-u-2-3
+              Alexander Pulido
+          %p.tag-text.pure-u-13-24.date-category
+            %span.tag-text.date
+              1 de Julio
+            %span.tag-text.-green
+              en
+            %span.tag-text.category
+              Cryptodivisas
+      %article.pure-u-1.pure-u-md-11-24.pure-u-lg-7-24.blog-box
+        %figure.photo
+          = image_tag('tablet-content.jpg', class: 'image')
+        %header.content
+          %h4.main-title.-smallsize.-black.-left
+            El efecto Bitcoin en la cultura moderna
+          %i.fa.fa-ellipsis-v.share-options
+          %i.fa.fa-angle-right.blog-button.-go
+        .hover-hidden-panel
+          %h4.main-title.-smallsize.-left
+            Comparte esto con tus amigos
+          .rounded-links
+            = link_to 'facebook', class: 'link' do
+              %i.fa.fa-facebook.icon
+            = link_to 'twitter', class: 'link' do
+              %i.fa.fa-twitter.icon
+            = link_to 'Google Plus', class: 'link' do
+              %i.fa.fa-google-plus.icon
+          %i.close
+            x
+        .info
+          .pure-u-5-12.autor
+            %figure.photo.pure-u-7-24
+              = image_tag('alex.jpg', class: 'avatar')
+            %span.tag-text.name.pure-u-2-3
+              Alexander Pulido
+          %p.tag-text.pure-u-13-24.date-category
+            %span.tag-text.date
+              1 de Julio
+            %span.tag-text.-green
+              en
+            %span.tag-text.category
+              Cryptodivisas
+  %section.-flex-center.pure-u-1.faq-container.section-container#faq
+    %h3.pure-u-1.main-title.-bold.-black._marginbottom-md
+      Misión Robinson al rescate
+    %p.tag-text.-center.-black._marginbottom-md
+      ¿Eres nuevo en el mundo de las cryptomonedas?
+      No te preocupes, misión Robinson tiene las respuestas que necesitas.
+    .limited-wrapper.faqs-list
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Qué es una cryptomoneda?
+        .answer
+          %p.tag-text.-black
+            Una criptomoneda es una moneda virtual que sirve para intercambiar bienes y servicios a través de un sistema de transacciones electrónicas sin la necesidad de un intermediario. A diferencia de otros intentos de dinero electrónico, las criptomonedas incorporan los principios de la criptografía para implementar una economía segura, anónima y descentralizada.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Qué es una cartera (wallet)?
+        .answer
+          %p.tag-text.-black
+            Es un monedero electrónico que tienes que usar para enviar y recibir cryptomonedas en todo el mundo de manera anónima y gratuita, tienes distintas versiones, para tu ordenador, móvil, tablet, e incluso online.
+          %p.tag-text.-black
+            No existe otro sistema aparte de éste, en el que tu cuenta no pertenezca a alguien más. Por ejemplo, si Paypal decide por alguna razón que tu cuenta ha sido mal usada, ellos tienen el poder de congelar todo el dinero pertenecientes a esa cuenta, sin consultarte. Entonces, depende de ti hacer todo lo que sea necesario para aclarar el problema y poder acceder a tus fondos.
+          %p.tag-text.-white
+            Con Chavezcoin tu eres dueño del la id privada y pública que conforman tu cartera. NADIE puede quitártelo.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Qué podré hacer con mis Chavezcoin?
+        .answer
+          %p.tag-text.-black
+            Chavezcoin es simailar a la moneda oficial de cualquier país. Es una moneda descentralizada con la cual podrás comprar productos, pagar servicios o invertir. Podrśa comprar o transferir tus Chavezcoin a tus contactos donde quieran que estén, de una manera totalmente privada. También podrás cambiar tus Chavezcoin por dinero tradicional, si así lo deseas.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Por qué no hay Chavezcoin disponibles actualmente?
+        .answer
+          %p.tag-text.-black
+            Chavezcoin está basado en un nuevo y revolucionario sistema tecnológico que va a facilitar el acceso a las cryptodivisas para todas aquellas personas que tienen poca o ninguna experiencia con este tipo de sistema.
+          %p.tag-text.-black
+            Uno de los objetivos de Chavezcoin es la de proveer una alternativa monetaria que ayude a solventar la crisis económica de Venezuela, por eso nuestro equipo se esfuerza por desarrollar nuevas características y ventajas que no podrás encontrar en ninguna cryptomoneda, esto leva tiempo. Por nuestra página web podrás ver un anuncio que indique la fecha de salida, cuando la fase de desarrollo esté terminada.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Cuántas Chavezcoin hay en existencia?
+        .answer
+          %p.tag-text.-black
+            El suministro de las chavezcoin sera igual al de la poblacion actual venezolana mas de 30 millones. Ni una sola moneda mas puede existir.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Cómo puedo obtener Chavezcoin?
+        .answer
+          %p.tag-text.-black
+            A diferencias de otras criptomonedas, Chavezcoin no sera minada. No dejaremos que las monedas caigan en manos de los pocos que tienen los recursos para sacar ventaja y minarlas mucho mas que una persona normal en cambio vamos a distribuir las monedas en nuestra página web. Por supuesto, también podrás comprar comprar y vender Chavezcoin en sitios web de cambio.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Cuál es el valor estimado de Chavezcoin?
+        .answer
+          %p.tag-text.-black
+            El valor de salida de un Chavezcoin será de $1, a partir de éste punto, el valor de la moneda irá en aumento.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Cómo puedo crear una cuenta?
+        .answer
+          %p.tag-text.-black
+            Debes hacer click en "Ingresar" en el menu de Chavezcoin.com. Serás redireccionado a una página para ingresar al sistema; ahí sólo debes hacer click en "crea una cuenta", luego debes ingresar tu email en el cuadro de texto y hacer click en aceptar.
+          %p.tag-text.-black
+            Un correo será enviado para verificar que tu email sea real y de tu propiedad, debes ingresar a tu correo y hacer click en el link de verificación; una vez hecho esto, el sistema te solicitará que ingreses una contraseña para completar tu registro, tu cuenta será creada y estará completamente operacional.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Es seguro?
+        .answer
+          %p.tag-text.-black
+            Las cryptomonedas, son actualmente las divisas mas seguras que existen. A diferencia del dinero impreso, tus chavezcoin no serán robadas ni tampoco podrás perderlas. Ningún banco validará las transacciones ni te cobrará comisiones por ello, es TU dinero y nadie podrá investigar o espiar qué haces con él.
+      %article.faq-wrapper
+        %h3.faq.main-title.-black.-left.-fullwidth
+          %i.cross
+            +
+          ¿Qué es un referido?
+        .answer
+          %p.tag-text.-black
+            Los Referidos (del inglés referrer) son personas a quien tú recomiendas una empresa o servicio, y éstos prueban o se registran en dichos servicios. Estos serían tus referidos.

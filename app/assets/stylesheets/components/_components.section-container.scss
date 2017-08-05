@@ -1,0 +1,96 @@
+.section-container {
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 1rem .75rem -.75rem $black;
+  &.-normal-padding {
+    @include lg {
+      padding:  1.8525rem 7.5%;
+    }
+  }
+  &.-maxi-padding {
+    @include lg {
+      padding: 10rem 7.5%;
+    }
+  }
+  &.-lightgrey {
+    background-color: $black_squeeze;
+  }
+  &.-flex-center {
+    @include flex_center();
+  }
+  &.-flex-around {
+    @include flex_around();
+  }
+  &.-skew-container {
+    transform: translateZ(1px) skewY(-3.5deg);
+    > .main-title,
+    > .tag-text,
+    > .limited-wrapper {
+      transform: skewY(3.5deg);
+    }
+  }
+  &.-skew-container-inverted {
+    transform: translateZ(1px) skewY(3.5deg);
+    > .main-title,
+    > .tag-text,
+    > .limited-wrapper {
+      transform: skewY(-3.5deg);
+    }
+  }
+  &.guide-container {
+    @include flex_between();
+    box-shadow: none;
+    z-index: 2;
+  }
+  &.advantages-container {
+    background-color: $white;
+    z-index: 1;
+    @include lg {
+      padding: 5rem 1rem 6rem;
+    }
+  }
+  &.faq-container {
+    background-color: $white;
+    padding: 3rem 1rem;
+  }
+  &.market-container {
+    background-color: $green_haze;
+    box-shadow: none;
+    margin-top: -4rem;
+    padding: 8rem 1rem 10rem;
+  }
+  &.team-container,
+  &.app-container {
+    background-color: darken($black_squeeze, 5%);
+    box-shadow: 0 1rem .75rem -.75rem $black, 0 -1rem .75rem -.75rem $black;
+    margin-top: -4rem;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    z-index: 2;
+  }
+  &.app-container {
+    background-color: $white;
+    &:after {
+      background-color: rgba($black, .75);
+      content: '';
+      left: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+  &.blog-container {
+    background-color: $black_squeeze;
+    margin-top: -4rem;
+    padding: 8rem 1rem 2rem;
+  }
+  > .tag-text {
+    width: 95%;
+    z-index: 5;
+    @include lg {
+      width: 80%;
+    }
+  }
+}

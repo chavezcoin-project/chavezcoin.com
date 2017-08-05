@@ -1,0 +1,83 @@
+.table-list {
+  border: .1rem solid $black_squeeze;
+  text-align: left;
+  > .head,
+  > .body {
+    flex-wrap: wrap;
+  }
+  > .head,
+  > .body,
+  > .head > .data-wrapper,
+  > .body > .info-wrapper {
+    align-items: flex-end;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  > .head > .data-wrapper > .data,
+  > .body > .info-wrapper > .data {
+    display: inline-block;
+    color: $scorpion;
+    font-weight: bold;
+    padding: .5rem;
+    &.-hide {
+      display:  none;
+      @include lg {
+        display: inline-block;
+      }
+    }
+    &.-big {
+      width: 60%;
+      @include lg {
+        width: 40%;
+      }
+    }
+    &.-mid {
+      width: 40%;
+      @include lg {
+        width: 20%;
+      }
+    }
+    &.-small-big {
+      width: 20%;
+    }
+    &.-small {
+      width: 20%;
+      @include lg {
+        width: 10%;
+      }
+    }
+    &.-smaller {
+      width: 10%;
+      @include lg {
+        width: 5%;
+      }
+    }
+    &.-green {
+      color: $green_haze;
+    }
+  }
+  > .head > .data-wrapper > .data {
+    font-family: $secondary-font-family;
+  }
+  > .body > .info-wrapper {
+    border-top: .15rem solid rgba($scorpion, .3);
+  }
+  > .body > .info-wrapper:nth-child(odd) {
+    background-color: rgba($scorpion, .05);
+  }
+  > .body > .info-wrapper > .data {
+    font-family: $primary-font-family;
+    font-size: .85rem;
+    @include sm {
+      font-size: 1rem;
+    }
+    @include lg {
+      font-size: 1.25rem;
+    }
+    > .link {
+      color: $danube;
+    }
+  }
+}

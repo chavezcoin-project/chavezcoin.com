@@ -1,0 +1,19 @@
+.blog-button {
+  border-radius: 50%;
+  bottom: -1.5rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5%;
+  transition: all .5s;
+  &:hover,
+  &.-go:hover {
+    background: $ripelemon;
+    box-shadow: 0 0 2.5rem 0 $black;
+  }
+  &.-go {
+    background: $persianred;
+  }
+}

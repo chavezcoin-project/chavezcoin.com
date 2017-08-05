@@ -1,0 +1,40 @@
+.tablet-horizontal {
+  bottom: -5%;
+  height: 20rem;
+  padding: 1.5rem 5rem;
+  position: absolute;
+  right: -5%;
+  transform: rotate(15deg);
+  width: 30rem;
+  @include lg {
+    height: 60%;
+    width: 65%;
+    right: -15%;
+    z-index: 1;
+  }
+  &:before, &:after {
+    background-color: darken(lightgrey, 7.5%);
+    content: '';
+    position: absolute;
+  }
+  &:before {
+    border-radius: 1rem;
+    left: 2rem;
+    height: 5rem;
+    top: calc(50% - 2.5rem);
+    width: .3rem;
+  }
+  &:after {
+    border: .05rem solid darken(lightgrey, 7.5%);
+    border-radius: 50%;
+    height: 3rem;
+    right: 1em;
+    top: calc(50% - 1.5rem);
+    bottom: 50%;
+    width: 3rem;
+  }
+  > .device-image-container {
+    background: asset_url('chavez.png') center center no-repeat;
+    background-size: cover;
+  }
+}

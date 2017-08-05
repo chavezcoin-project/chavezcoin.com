@@ -1,0 +1,50 @@
+.transaction-counter {
+  @include flex_center();
+  text-align: center;
+  z-index: 1;
+  > .numberwrap {
+    background: $ripelemon;
+    border-radius: 50%;
+    color: $white;
+    height: 3rem;
+    overflow: hidden;
+    padding: .35rem;
+    text-align: center;
+    width: 3rem;
+    @include sm {
+      height: 4.5rem;
+      padding: 1rem;
+      width: 4.5rem;
+    }
+    @include lg {
+      height: 3rem;
+      padding: .35rem;
+      width: 3rem;
+    }
+    @include xl {
+      height: 4.5rem;
+      padding: 1rem;
+      width: 4.5rem;
+    }
+    &.counted > .number{
+      margin-top: -10rem;
+      opacity: 0;
+    }
+    > .number {
+      display: inline-block;
+      font-family: $secondary-font-family;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all 1s;
+    }
+  }
+  > .tag-text {
+    font-family: $primary-font-family;
+    font-size: .85rem;
+    margin: 1rem auto;
+    order: 2;
+  }
+  > .main-title {
+    order: 3;
+  }
+}

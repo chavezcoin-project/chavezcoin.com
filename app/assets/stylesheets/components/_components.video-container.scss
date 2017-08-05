@@ -1,0 +1,74 @@
+.video-container {
+  border: .2rem solid $black;
+  box-shadow: 0 1rem .75rem -.75rem $black, 1rem 0 .75rem -.75rem $black;
+  margin-bottom: 2rem;
+  position: relative;
+  @include lg {
+    max-width: 80%;
+  }
+  &:hover > .video-controls.-hidden {
+    opacity: 1;
+  }
+  > .main-video {
+    width: 100%;
+  }
+  > .video-controls {
+    @include flex_around();
+    align-content: center;
+    align-items: center;
+    background: $black;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+    position: absolute;
+    transition: opacity 1s;
+    width: 100%;
+    &.-hidden {
+      opacity: 0;
+    }
+    > .play-btn,
+    > .mutebtn,
+    > .fullscreenbtn {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 0;
+      width: 7.5%;
+    }
+    > .play-btn > .fa,
+    > .mutebtn > .fa,
+    > .fullscreenbtn > .fa {
+      color: $black_squeeze;
+      &.fa-pause,
+      &.fa-volume-down,
+      &.fa-volume-off {
+        display: none;
+      }
+    }
+    > .curtimetext,
+    > .durtimetext {
+      color: $ripelemon;
+      text-align: center;
+      width: 15%;
+      @include md {
+        width: 10%;
+      }
+    }
+    > .time-slider,
+    > .-time-slider {
+      left: 0;
+      position: absolute;
+      top: -.5rem;
+      width: 100%;
+    }
+    > .-time-slider {
+      top: 0;
+    }
+    > .volumeslider {
+      width: 20%;
+      @include lg {
+        width: 15%;
+      }
+    }
+  }
+}

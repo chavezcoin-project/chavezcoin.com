@@ -1,0 +1,15 @@
+.transaction-counter-container {
+  @include display_flex();
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 1s;
+  z-index: 3;
+  @include lg {
+    margin-right: -100%;
+    margin-top: -7.5rem;
+  }
+  > .header {
+    margin: 1rem auto;
+  }
+}

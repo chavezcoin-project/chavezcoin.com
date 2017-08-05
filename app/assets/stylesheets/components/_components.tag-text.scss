@@ -1,0 +1,73 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.tag-text {
+  color: $scorpion;
+  font-family: $primary-font-family;
+  font-size: 1.25rem;
+  font-weight: 400;
+  &.-banner {
+    font-size: 2.5rem;
+  }
+  &.-midsmall {
+    font-size: $medium-font-size;
+  }
+  &.-small {
+    font-size: $small-font-size;
+  }
+  &.-midsize {
+    font-size: 1.75rem;
+  }
+  &.-white {
+    color: $white;
+  }
+  &.-lightblack {
+    color: rgba($black, .75);
+  }
+  &.-lightgrey {
+    color: $wildsand;
+    text-shadow: 0 .1rem .4rem black;
+  }
+  &.-black {
+    color: $black;
+  }
+  &.-green {
+    color: $green_haze;
+    > .fa {
+      color: $green_haze;
+    }
+  }
+  &.-yellow {
+    color: $ripelemon;
+    font-weight: bold;
+  }
+  &.-red {
+    color: $persianred;
+    font-weight: bold;
+    > .fa {
+      color: $persianred;
+    }
+  }
+  &.-capitalize {
+    text-transform: capitalize;
+  }
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+  &.-center {
+    text-align: center;
+  }
+  &.-bold {
+    font-weight: bold;
+  }
+  &.-fullwidth {
+    width: 100%;
+  }
+  &.-left-center {
+    text-align: center;
+    @include lg {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.nav-menu {
+  left: 0;
+  padding: .5rem 2.5%;
+  position: absolute;
+  top: 0;
+  transition: all .5s;
+  z-index: 99999999;
+  @include xl {
+    padding: .5rem 10%;
+  }
+  &.-scrolled {
+    box-shadow: 0 1rem .75rem -.75rem $black;
+    @include lg {
+      background: $black;
+      position: fixed;
+      > .limited-wrapper {
+        justify-content: flex-end;
+      }
+      > .limited-wrapper .logo-container {
+        height: auto;
+      }
+      > .limited-wrapper .logo-container > a .logo {
+        max-width: 2rem;
+      }
+      > .limited-wrapper > .menu-links-container > .menu-links.pure-menu-list > .menu-item .link {
+        font-size: $medium-font-size;
+        > .bounceletter {
+          margin-right: -.2rem;
+        }
+      }
+    }
+  }
+  &.-red_background {
+    background-color: rgba($danube, .75);
+    transition: all .5s;
+  }
+  > .limited-wrapper {
+    @include flex_between();
+    align-items: center;
+    z-index: 999;
+  }
+  > .limited-wrapper > .slide-button {
+    background-color: rgba($persianred, .7);
+    border-radius: .3rem;
+    border: .1rem solid $ripelemon;
+    font-size: 2rem;
+    padding: .25rem;
+    position: fixed;
+    right: 2.5%;
+    top: 1rem;
+    z-index: 999999;
+    @include lg {
+      display: none;
+    }
+  }
+  > .limited-wrapper .logo-container {
+    margin: 0;
+  }
+  > .limited-wrapper > .menu-links-container {
+    background: $white;
+    height: 100%;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    transition: all 1s;
+    width: 50%;
+    z-index: 99999;
+    @include xs {
+      right: -30%;
+      width: 30%;
+    }
+    @include lg {
+      display: block;
+      background: transparent;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: auto;
+    }
+  }
+}

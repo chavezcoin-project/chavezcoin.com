@@ -1,0 +1,10 @@
+.device-image-container {
+  border: .1rem solid grey;
+  content: '';
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  > .deviceimage {
+    height: 100%;
+  }
+}

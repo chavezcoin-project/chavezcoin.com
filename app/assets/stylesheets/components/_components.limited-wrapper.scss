@@ -1,0 +1,59 @@
+.limited-wrapper {
+  margin: 0 auto;
+  max-width: $xl;
+  position: relative;
+  width: 100%;
+  &.-flex-center {
+    @include flex_centered();
+    align-items: flex-start;
+  }
+  &.-flex-around {
+    @include flex_around();
+  }
+  &.faqs-list {
+    @include sm {
+      width: 70%;
+    }
+  }
+  &.-center-around {
+    @include flex_centered();
+    @include lg {
+      @include flex_around();
+    }
+  }
+  &.-guide {
+    @include lg {
+      width: 60%;
+      margin-left: 0;
+    }
+    > .main-title {
+      @include flex_between();
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+    > .main-title > .title {
+      width: 90%;
+      @include xs {
+        width: 95%;
+      }
+    }
+    > .tag-text {
+      margin-bottom: 1rem;
+      @include lg {
+        width: 80%;
+      }
+    }
+    > .tag-text:last {
+      margin-bottom: 2rem;
+    }
+  }
+  &.-app {
+    z-index: 10;
+    > .content {
+      margin-top: 3rem;
+      @include lg {
+        margin-top: 0;
+      }
+    }
+  }
+}

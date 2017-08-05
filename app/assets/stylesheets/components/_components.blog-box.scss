@@ -1,0 +1,88 @@
+.blog-box {
+  box-shadow: 0 0 0.35rem 0 $black;
+  margin-bottom: 2rem;
+  position: relative;
+  transition: all .5s;
+  &:hover {
+    box-shadow: 0 0 2.5rem 0 $scorpion;
+    > .photo > .image {
+      transform: scale(1.05);
+    }
+  }
+  > .photo {
+    overflow: hidden;
+    > .image {
+      transition: all .5s;
+    }
+  }
+  > .content {
+    @include flex_between();
+    align-items: flex-start;
+    background-color: $black_squeeze;
+    border-bottom: .1rem solid lighten($scorpion, 40%);
+    border-top: .1rem solid lighten($scorpion, 40%);
+    padding: 2rem;
+    position: relative;
+    > .share-options {
+      color: $danube;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+  > .hover-hidden-panel {
+    @include flex_center();
+    align-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: all .5s;
+    z-index: -1;
+    &.-active {
+      height: 100%;
+      opacity: 1;
+      z-index: 15;
+    }
+    > .rounded-links > .link > .icon {
+      background: blue;
+      border-radius: 50%;
+      margin-left: 1rem;
+      padding: .5rem .75rem;
+      text-align: center;
+      &.fa-facebook {
+        background: #3b5998;
+      }
+      &.fa-twitter {
+        background: #1dcaff;
+      }
+      &.fa-google-plus {
+        background: #d34836;
+      }
+    }
+  }
+  > .info {
+    @include flex_between();
+    padding: 1rem;
+    z-index: -1;
+    .tag-text {
+      font-size: 1rem;
+    }
+    .date-category > .tag-text {
+      font-weight: bold;
+    }
+    .date-category > .-green {
+      font-weight: 400;
+    }
+    > .autor {
+      @include flex_between();
+    }
+    > .autor > .photo > .avatar {
+      border-radius: 50%;
+    }
+  }
+}

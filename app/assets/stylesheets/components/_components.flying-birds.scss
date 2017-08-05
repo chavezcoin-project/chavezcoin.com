@@ -1,0 +1,62 @@
+.flying-birds {
+  animation: birds_move linear infinite;
+  height: 20%;
+  position: absolute;
+  right: -100%;
+  width: 20%;
+  &.-top {
+    animation-delay: -10s;
+    animation-duration: 60s;
+    top: 15%;
+  }
+  &.-mid {
+    animation-delay: -5s;
+    animation-duration: 45s;
+    top: 45%;
+  }
+  &.-bottom {
+    animation-delay: -15s;
+    animation-duration: 35s;
+    top: 75%;
+  }
+}
+
+@keyframes birds_move {
+  0% {
+    right: -100%;
+  }
+  20% {
+    margin-top: -4rem;
+  }
+  30% {
+    margin-top: 4rem;
+  }
+  40% {
+    right: 60%;
+    margin-top: -4rem;
+  }
+  50% {
+    right: 60%;
+    margin-top: 4rem;
+  }
+  60% {
+    right: 60%;
+    margin-top: -4rem;
+  }
+  75% {
+    right: 60%;
+    margin-top: 4rem;
+  }
+  80% {
+    margin-top: -4rem;
+    opacity: 1;
+  }
+  90% {
+    margin-top: 4rem;
+  }
+  100% {
+    margin-top: 0;
+    right: 100%;
+    opacity: 0;
+  }
+}

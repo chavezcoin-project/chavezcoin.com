@@ -1,0 +1,15 @@
+.price-container {
+  padding: 1rem;
+  position: relative;
+  @include lg {
+    padding: 3rem;
+  }
+  @include xl {
+    > .message {
+      bottom: 20%;
+      right: 10%;
+      position: absolute;
+      width: auto;
+    }
+  }
+}

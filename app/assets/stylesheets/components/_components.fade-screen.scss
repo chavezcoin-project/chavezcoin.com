@@ -1,0 +1,21 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.fade-screen {
+  @include flex_centered();
+  background-color: rgba($black, .7);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  > .close {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+}

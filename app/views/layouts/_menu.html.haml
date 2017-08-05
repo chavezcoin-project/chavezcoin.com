@@ -1,0 +1,37 @@
+%nav.pure-g.nav-menu.pure-menu-horizontal
+  .limited-wrapper
+    %figure.logo-container
+      = link_to root_path do
+        = image_tag('logo.png', :class => 'logo')
+    %i.fa.fa-bars.slide-button
+    .fade-screen.pure-u-1
+    .menu-links-container
+      %ul.menu-links.pure-menu-list
+        %li.pure-menu-item.menu-item
+          = link_to '#inicio', :class => 'menu-link link' do
+            %span.bounceletter I
+            nicio
+        %li.pure-menu-item.menu-item
+          = link_to '#guide', :class => 'menu-link link' do
+            %span.bounceletter G
+            uía
+        %li.pure-menu-item.menu-item
+          = link_to '#wallet', :class => 'menu-link link' do
+            %span.bounceletter M
+            onedero
+        %li.pure-menu-item.menu-item
+          = link_to '#market', :class => 'menu-link link' do
+            %span.bounceletter C
+            ompra
+        %li.pure-menu-item.menu-item
+          = link_to '#app', :class => 'menu-link link' do
+            %span.bounceletter A
+            pp
+        %li.pure-menu-item.menu-item
+          = link_to '#blog', :class => 'menu-link link' do
+            %span.bounceletter B
+            log
+        %li.pure-menu-item.menu-item
+          = link_to '#', :class => 'menu-link link' do
+            %span.bounceletter S
+            oporte

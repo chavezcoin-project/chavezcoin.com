@@ -1,0 +1,10 @@
+.dinamic-graphic {
+  @include flex_around;
+  max-width: 25rem;
+  @include sm {
+    max-width: 35rem;
+  }
+  @include lg {
+    padding: 2rem 0;
+  }
+}

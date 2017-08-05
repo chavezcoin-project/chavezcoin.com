@@ -1,0 +1,99 @@
+.count-container {
+  @include flex_centered;
+  background: rgba($white, .35);
+  border-radius: 50%;
+  color: $white;
+  display: none;
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  height: 13rem;
+  position: absolute;
+  right: 7.5%;
+  top: 12.5%;
+  width: 13rem;
+  z-index: 9;
+  @include lg {
+    display: flex;
+  }
+  &:hover {
+    animation: radar 1s infinite alternate;
+   .planet-rotate {
+      animation: planet-rotate 4s linear infinite;
+    }
+    .planet-rotate:before,
+    .planet-rotate:after {
+      animation: planet-rotate-two 4s linear infinite;
+      opacity: 1;
+    }
+  }
+  > .planet-rotate {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  > .planet-rotate:before,
+  > .planet-rotate:after {
+    background-image: asset_url("c_coin.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 50%;
+    content: "";
+    height: 15%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: all 1s;
+    width: 10%;
+    z-index: 1;
+  }
+  > .planet-rotate:before {
+    left: -5%;
+  }
+  > .planet-rotate:after {
+    right: -5%;
+  }
+  > .chavezcoin {
+    @include flex_centered;
+    font-size: 3rem;
+    margin: 0;
+    width: 100%;
+    .coin {
+      margin: -.7rem;
+      width: 4rem;
+    }
+  }
+  > .equal {
+    @include flex_around();
+    font-size: 3rem;
+    width: 2rem;
+  }
+  .usd {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@keyframes radar {
+  0% {
+    background: rgba($white, .35);
+  }
+  100% {
+    background: rgba($white, .1);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes planet-rotate-two {
+  to {
+    transform: rotate(-1turn);
+  }
+}

@@ -1,0 +1,5 @@
+.transaction-container {
+  @include flex_around();
+  background: $white;
+  z-index: 3;
+}

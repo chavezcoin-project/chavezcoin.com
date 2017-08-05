@@ -1,0 +1,74 @@
+.content-animated {
+  animation: colorC 5.5s infinite alternate;
+  color: $persianred;
+  font-family: $primary-font-family;
+  font-size: 2.5rem;
+  height: 3rem;
+  overflow:hidden;
+  position: relative;
+  @include md {
+    font-size: 3.5rem;
+    height: 4rem;
+  }
+  > .container {
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0 6.5rem 0 1.25rem;
+    @include md {
+      padding: 0 8rem 0 1.25rem;
+    }
+    &:before {
+      content: '[';
+      left: 0;
+    }
+    &:after {
+      content: ']';
+      position: absolute;
+      right: 0;
+    }
+    &:after, &:before {
+      animation: opacity 3s infinite;
+      color: darken($danube, 15%);
+      font-size: 2.5rem;
+      position: absolute;
+      top: 0;
+      @include md {
+        font-size: 3.5rem;
+      }
+    }
+
+  }
+  > .list {
+    animation: change 20s infinite;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 10rem;
+    text-align: left;
+    @include md {
+      padding-left: 13rem;
+    }
+    >.item {
+      color: $ripelemon;
+      margin: 0;
+    }
+  }
+}
+
+@keyframes colorC {
+  0% {color: $persianred;}
+  100% {color: $ripelemon;}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}

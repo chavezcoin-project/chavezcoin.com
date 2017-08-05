@@ -1,0 +1,16 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.footer-container {
+  @include display_flex();
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: center;
+  @include lg {
+    @include flex_around();
+  }
+  > .tag-text {
+    align-self: center;
+  }
+}

@@ -1,0 +1,30 @@
+.app-example {
+  border: .2rem solid rgba($scorpion, .2);
+  height: 100%;
+  width: 100%;
+  > .item {
+    list-style: none;
+    &.header {
+      @include flex_centered();
+      background: linear-gradient(-230deg, lighten($danube, 5%) 30%, lighten($danube, 5%) 20%, darken($danube, 30%) 100%);
+      height: 40%;
+      position: relative;
+    }
+    &.box {
+      @include flex_between();
+      align-items: flex-start;
+      align-content: flex-start;
+      background-color: $black_squeeze;
+      padding: .5rem;
+    }
+    &.box.-small {
+      background-color: rgba($scorpion, .1);
+    }
+    > .wallet {
+      left: 0;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+    }
+  }
+}

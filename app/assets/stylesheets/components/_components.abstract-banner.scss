@@ -1,0 +1,14 @@
+.abstract-banner {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  @include xs {
+    max-height: 30rem;
+  }
+  @include sm {
+    max-height: 40rem;
+  }
+  @include lg {
+    max-height: 67.5rem;
+  }
+}

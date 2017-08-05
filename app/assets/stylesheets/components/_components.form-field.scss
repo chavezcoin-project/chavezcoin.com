@@ -1,0 +1,12 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.fieldgroup .pure-control-group > .form-field {
+  border-radius: 0;
+  color: $scorpion;
+  padding: .65rem 2rem;
+  &.-modal-field {
+    margin-bottom: 1rem;
+  }
+}

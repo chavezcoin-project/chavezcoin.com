@@ -1,0 +1,28 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.form-division {
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  &:before, &:after {
+    background: $persianred;
+    content: '';
+    height: .1rem;
+    position: absolute;
+    top: 50%;
+    width: 45%;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+  &.-short {
+    &:before, &:after {
+      width: 30%;
+    }
+  }
+}

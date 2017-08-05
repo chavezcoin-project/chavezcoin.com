@@ -1,0 +1,18 @@
+.draw-container {
+  @include display_flex();
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  @include lg {
+    display: flex;
+  }
+  &.-fixed {
+    bottom: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+  }
+}

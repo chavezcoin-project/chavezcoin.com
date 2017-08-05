@@ -1,0 +1,52 @@
+.slider-container {
+  right: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  &.-default {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  > .slider-image {
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: opacity 2s;
+    width: 100%;
+    &.-hidden {
+      opacity: 0;
+    }
+    &.-shown {
+      opacity: 1;
+    }
+    &.-devise {
+      animation: focus_devise 20s infinite alternate;
+    }
+    &.-default {
+      animation: focus 20s infinite alternate;
+    }
+  }
+}
+
+@keyframes focus {
+  0% {
+    background-size: 100%;
+    background-position: center center;
+  }
+  100% {
+    background-size: 110%;
+    background-position: top right;
+  }
+}
+
+@keyframes focus_devise {
+  0% {
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  100% {
+    background-size: 120% 120%;
+  }
+}

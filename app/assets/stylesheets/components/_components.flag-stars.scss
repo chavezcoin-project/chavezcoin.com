@@ -1,0 +1,47 @@
+.flag-stars {
+  @include flex_around();
+  display: none;
+  max-width: $xl;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  z-index: 9;
+  @include lg {
+    padding: 10%;
+  }
+  @include xl {
+    padding: 0 20%;
+  }
+  > .fa-star {
+    font-size: .6rem;
+  }
+  @for $i from 1 through 8 {
+    $scaleTime: '#{($i/2)}s';
+    > .fa-star:nth-child(#{$i}) {
+      animation: scale #{$scaleTime} infinite alternate;
+    }
+  }
+  > .fa-star:nth-child(1),
+  > .fa-star:nth-child(8) {
+    margin-top: 15%;
+  }
+  > .fa-star:nth-child(2),
+  > .fa-star:nth-child(7) {
+    margin-top: 7%;
+  }
+  > .fa-star:nth-child(3),
+  > .fa-star:nth-child(6) {
+    margin-top: 1.5%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: .3;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

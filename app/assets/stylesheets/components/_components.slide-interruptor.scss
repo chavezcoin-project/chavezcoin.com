@@ -1,0 +1,21 @@
+.slide-interruptor {
+  background-color: $black_squeeze;
+  border-radius: .5rem;
+  cursor: pointer;
+  height: 1.25rem;
+  position: relative;
+  &.-off > .button {
+    background: $persianred;
+  }
+  &.-on > .button {
+    background-color: $danube;
+  }
+  > .button {
+    border-radius: .4rem;
+    width: 1.5rem;
+    height: 120%;
+    left: 10%;
+    position: absolute;
+    top: -10%;
+  }
+}

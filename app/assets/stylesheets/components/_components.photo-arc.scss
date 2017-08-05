@@ -1,0 +1,66 @@
+.photo-marc {
+  background-color: lighten($ripelemon, 25%);
+  border-radius: .3rem;
+  box-shadow: 0 1rem .75rem -.75rem $black, 1rem 0 .75rem -.75rem $black;
+  margin-bottom: 1.5rem;
+  padding: .75rem;
+  position: relative;
+  width: 17.5rem;
+  &:before {
+    border-radius: .3rem;
+    box-shadow: inset .1rem .1rem 2rem -0.65rem $black;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  @include lg {
+    width: 20rem;
+  }
+  > .photo {
+    width: 50%;
+    @include lg {
+      width: 60%;
+    }
+    > .avatar {
+      width: 100%;
+    }
+  }
+  > .shadow-title {
+    @include display_flex();
+    align-items: center;
+    justify-content: flex-start;
+    left: 45%;
+    position: absolute;
+    top: 2.5rem;
+    width: 50%;
+    @include lg {
+      left: 50%;
+      top: 4.5rem;
+    }
+    > .text-container {
+      list-style: none;
+      > .text {
+        background-color: rgba($black, .7);
+        color: $ripelemon;
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: .25rem .5rem;
+        @include lg {
+          font-size: 1.75rem;
+        }
+      }
+      > .border-button {
+        margin-left: .25rem;
+      }
+      &.-white > .text {
+        color: $white;
+        font-family: $secondary-font-family;
+        font-size: $medium-font-size;
+        margin-top: .25rem;
+      }
+    }
+  }
+}

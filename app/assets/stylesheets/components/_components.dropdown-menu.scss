@@ -1,0 +1,17 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.dropdown-menu {
+  &:hover, > .dropdown-links {
+    background: $white;
+    @include lg {
+      background: rgba($black, .6);
+    }
+  }
+  > .dropdown-links {
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+  }
+}

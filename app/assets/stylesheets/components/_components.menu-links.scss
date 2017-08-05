@@ -1,0 +1,58 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.menu-links.pure-menu-list {
+  @include display_flex();
+  flex-direction: column;
+  @include lg {
+    display: inline-block;
+    position: initial;
+  }
+  > .menu-item  {
+    padding: .5rem .75rem;
+    height: auto;
+    display: block;
+    @include lg {
+      display: inline-block;
+    }
+    &.logout {
+      order: 1;
+    }
+    &.company {
+      order: 2;
+    }
+  }
+  > .menu-item .link {
+    color: $persianred;
+    font-family: $primary-font-family;
+    font-size: 1.5rem;
+    font-weight: bold;
+    @include lg {
+      color: $white;
+    }
+    &:hover {
+      color: $ripelemon;
+      .bounceletter {
+        animation: bounce 3s infinite;
+      }
+    }
+    &.-dropdown {
+      font-size: 1rem;
+    }
+    > .bounceletter {
+      display: inline-block;
+      margin-right: -.35rem;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0)}
+  30% {transform: translateY(-.6rem)}
+  40% {transform: translateY(0)}
+  50% {transform: translateY(-.4rem)}
+  60% {transform: translateY(0)}
+  70% {transform: translateY(-.2rem)}
+  80% {transform: translateY(0)}
+}

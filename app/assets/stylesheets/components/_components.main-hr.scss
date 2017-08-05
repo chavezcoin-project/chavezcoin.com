@@ -1,0 +1,14 @@
+.-main-hr {
+  height: .1rem;
+  margin: 1.5rem auto;
+  width: 5rem;
+  &.-red {
+    background: $persianred;
+  }
+  &.-yellow {
+    background: $ripelemon;
+  }
+  &.-blue {
+    background: $danube;
+  }
+}

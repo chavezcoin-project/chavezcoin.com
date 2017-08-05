@@ -1,0 +1,43 @@
+.skew-card {
+  height: 2.5rem;
+  position: absolute;
+  @include sm {
+    height: 9rem
+  }
+  @include lg {
+    height: 12rem;
+  }
+  &:nth-child(1) {
+    width: 33.33333%;
+    left: -16.66666%;
+    background: rgba($persianred, .7);
+  }
+
+  &:nth-child(2) {
+    width: 33.33333%;
+    top: 0;
+    left: 16.66666%;
+    right: auto;
+    background: rgba($persianred, .2);
+  }
+
+  &:nth-child(3) {
+    width: 33.33333%;
+    left: 49.99999%;
+    bottom: auto;
+    background: rgba($danube, .3);
+  }
+
+  &:nth-child(4) {
+    width: 33.33333%;
+    top: 380px;
+    right: -16.66666%;
+    background: rgba($ripelemon, .1);
+  }
+
+  &:nth-child(5) {
+    width: 33.33333%;
+    bottom: 0;
+    background: linear-gradient(150deg,rgba($persianred, .2) 5%,$danube 180%);
+  }
+}

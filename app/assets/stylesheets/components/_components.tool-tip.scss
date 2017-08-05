@@ -1,0 +1,13 @@
+.tool-tip {
+  background: black;
+  border-radius: 5rem;
+  color: $white;
+  display: block;
+  opacity: 0;
+  padding: .35rem;
+  position: absolute;
+  right: -12rem;
+  text-align: center;
+  transition: opacity 1s;
+  width: 10.5rem;
+}

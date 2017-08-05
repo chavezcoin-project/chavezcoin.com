@@ -1,0 +1,21 @@
+// FIXME: remove this import, currently needed as work around to this issue:
+// https://github.com/rails/sprockets/issues/474
+@import 'settings.global';
+
+.form-links {
+  text-align: center;
+  z-index: 1;
+  > .options .option {
+    list-style: none;
+    margin-bottom: 1rem;
+    > .link {
+      color: $persianred;
+      font-family: $primary-font-family;
+      font-weight: bold;
+    }
+    > .text {
+      display: inline;
+      margin-top: 1rem;
+    }
+  }
+}
