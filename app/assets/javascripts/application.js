@@ -12,6 +12,7 @@
 //
 //= require jquery.js
 //= require jquery_ujs.js
+//= require_tree .
 //= video_js
 //= counter
 //= particles

@@ -284,15 +284,14 @@ ChavezCoin['visitors'] = {
         });
       }
     });
-
-    // $('.skew-container-abstract').particleground({
-    //   dotColor: '#e2f2ff',
-    //   lineColor: '#e2f2ff',
-    //   particleRadius: 5,
-    //   lineWidth: .25,
-    //   proximity:450,
-    //   density: 32500
-    // });
+    $('.skew-container-abstract').particleground({
+      dotColor: '#e2f2ff',
+      lineColor: '#e2f2ff',
+      particleRadius: 5,
+      lineWidth: .25,
+      proximity:450,
+      density: 32500
+    });
     console.log('loaded csz');
 
   }
