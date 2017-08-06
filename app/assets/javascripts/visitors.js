@@ -284,6 +284,7 @@ ChavezCoin['visitors'] = {
         });
       }
     });
+
     $('.skew-container-abstract').particleground({
       dotColor: '#e2f2ff',
       lineColor: '#e2f2ff',
@@ -292,7 +293,5 @@ ChavezCoin['visitors'] = {
       proximity:450,
       density: 32500
     });
-    console.log('loaded csz');
-
   }
 }

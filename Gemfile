@@ -33,6 +33,12 @@ gem 'font-awesome-rails'
 gem 'purecss-sass', '~> 0.6.2'
 gem 'activeadmin_hstore_editor'
 
+# production deploy
+gem 'capistrano', '~> 3.7', '>= 3.7.1'
+gem 'capistrano-rails', '~> 1.2'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rvm'
+
 # Helpers for meta tags
 gem 'meta-tags'
 
