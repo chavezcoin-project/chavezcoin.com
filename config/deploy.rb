@@ -3,7 +3,7 @@ lock "3.9.0"
 
 set :application, "chavezcoin.com"
 set :repo_url, "git@github.com:chavezcoin-project/chavezcoin.com.git"
-set :deploy_to, '/home/deploy/chavezcoin.com'
+set :deploy_to, "/home/chavezcoin_web/chavezcoin.com"
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
