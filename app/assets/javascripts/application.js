@@ -20,5 +20,5 @@
 //= require visitors.js
 
 jQuery(document).ready(function($) {
-  ChavezCoin.visitors.index();
+  //ChavezCoin.visitors.index();
 });
