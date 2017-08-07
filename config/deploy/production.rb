@@ -1,0 +1,1 @@
+server '167.114.121.136', user: 'chavezcoin_web', roles: %w{app db web}
