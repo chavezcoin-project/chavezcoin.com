@@ -19,6 +19,8 @@ gem 'active_admin_theme' # Theme up activeadmin a bit, flatter
 gem 'devise'          # authentication
 gem 'pundit'          # authorization
 gem 'skywalker'
+gem "react-rails"
+gem "httparty"
 
 # heroku-like uniqueish ids
 gem 'haikunator'
@@ -32,12 +34,6 @@ gem 'gravtastic'
 gem 'font-awesome-rails'
 gem 'purecss-sass', '~> 0.6.2'
 gem 'activeadmin_hstore_editor'
-
-# production deploy
-gem 'capistrano', '~> 3.7', '>= 3.7.1'
-gem 'capistrano-rails', '~> 1.2'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rvm'
 
 # Helpers for meta tags
 gem 'meta-tags'

@@ -23,16 +23,14 @@
   }
   &.-skew-container {
     transform: translateZ(1px) skewY(-3.5deg);
-    > .main-title,
-    > .tag-text,
+    > .menssage-container,
     > .limited-wrapper {
       transform: skewY(3.5deg);
     }
   }
   &.-skew-container-inverted {
     transform: translateZ(1px) skewY(3.5deg);
-    > .main-title,
-    > .tag-text,
+    > .menssage-container,
     > .limited-wrapper {
       transform: skewY(-3.5deg);
     }
@@ -86,7 +84,7 @@
     margin-top: -4rem;
     padding: 8rem 1rem 2rem;
   }
-  > .tag-text {
+  > .tag-text, > .menssage-container > .tag-text {
     width: 95%;
     z-index: 5;
     @include lg {

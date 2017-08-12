@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
   var faq_head = $('.faq');
   var clicked_answer = null;
   var slide_interruptor = $('.slide-interruptor');
-  var general_button = $('.button');
+  var coin_button = $('.button.-coin');
   var advantages = $('.advantages-container');
   var boxColor = $('.box-color');
   var graphicDetailsButton = $('.graphic-details');
@@ -31,28 +31,28 @@ jQuery(document).ready(function($) {
       if (transactionCounter.hasClass('active')) {
         transactionCounter.animate({
           marginRight: '-100%'},
-          1000);
+          250);
         setTimeout(function() {
           graphicDetails.animate({
             opacity: 0,
             height: 0},
-          1000);
-        }, 1000);
+          500);
+        }, 250);
         setTimeout(function() {
           graphicDetails.css('z-index', '-1');
-        }, 1000);
+        }, 250);
         transactionCounter.removeClass('active');
       }else {
         transactionCounter.animate({
           marginRight: 0},
-          1000);
+          250);
         graphicDetails.css('z-index', '5');
         setTimeout(function() {
           graphicDetails.animate({
             opacity: 1,
             height: '15rem'},
-          1000);
-        }, 1000);
+          250);
+        }, 250);
         transactionCounter.addClass('active');
       }
     }
@@ -89,31 +89,42 @@ jQuery(document).ready(function($) {
     }else {
       parent.addClass('-active');
     }
-    video.slideToggle(1000);
-    text.slideToggle(1000);
+    video.slideToggle(500);
+    text.slideToggle(500);
   });
 
   slide_interruptor.click(function(e) {
-    button = $(this).children('.button');
-    coin = $(this).parent().children('.currency').attr('id');
+    var button = $(this).children('.button');
+    var coin = $(this).parent().children('.currency').attr('id');
+    var price = button.children('.price').attr('value');
+    var volume24 = button.children('.volumen').attr('value');
+    var update =  formatTime(button.children('.update').attr('value'));
+    var change = button.children('.change').attr('value');
+
+    console.log($(this).children('.change'));
+
     if ($(this).hasClass('-off')) {
       slide_interruptor.removeClass('-on');
       slide_interruptor.addClass('-off');
       $(this).removeClass('-off');
       $(this).addClass('-on');
-      general_button.animate({
+      coin_button.animate({
         left: '10%'},
-        500);
+      250);
       button.animate({
         left: '60%'},
-        500);
+        250);
       $('.coin-name').text(coin);
+      $('.coin-priceusd').text(price+' '+coin+'/CHC');
+      $('.coin-volume24').text('$'+volume24);
+      $('.coin-update').text(update);
+      $('.coin-change').text(change+'%');
     }else{
       slide_interruptor.removeClass('-on');
       slide_interruptor.addClass('-off');
-      general_button.animate({
+      coin_button.animate({
         left: '10%'},
-        500);
+      250);
     }
   });
 
@@ -220,22 +231,22 @@ jQuery(document).ready(function($) {
 
 
   var closeModal = function() {
-    fadeScreen.hide(1000);
+    fadeScreen.hide(500);
   }
 
   var showmodal = function() {
-    fadeScreen.fadeIn(1000).css('display', 'flex');
+    fadeScreen.fadeIn(500).css('display', 'flex');
   }
   var menuLinks =  $('.menu-links-container');
   var showMenu = function() {
     if (menuLinks.hasClass('on')) {
       menuLinks.css('right', '-50%');
       menuLinks.removeClass('on');
-      fadeScreen.hide(1000);
+      fadeScreen.hide(500);
     }else {
       menuLinks.css('right', '0');
       menuLinks.addClass('on');
-      fadeScreen.show(1000);
+      fadeScreen.show(500);
     }
   }
 

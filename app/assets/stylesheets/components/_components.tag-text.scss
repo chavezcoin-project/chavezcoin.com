@@ -70,4 +70,10 @@
       text-align: left;
     }
   }
+  &.coin-volume24 {
+    word-break: break-all;
+  }
+  &.coin-priceusd {
+    word-break: break-word;
+  }
 }

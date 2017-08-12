@@ -26,18 +26,18 @@
       width: 60%;
       margin-left: 0;
     }
-    > .main-title {
+    > .menssage-container > .main-title {
       @include flex_between();
       cursor: pointer;
       margin-bottom: 2rem;
     }
-    > .main-title > .title {
+    > .menssage-container > .main-title > .title {
       width: 90%;
       @include xs {
         width: 95%;
       }
     }
-    > .tag-text {
+    > .menssage-container > .tag-text {
       margin-bottom: 1rem;
       @include lg {
         width: 80%;

@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require react
+//= require react_ujs
+//= require components
 //= require jquery.js
 //= require jquery_ujs.js
 //= require video_js
@@ -18,7 +21,9 @@
 //= require slider
 //= require graphic
 //= require visitors.js
+//= require timer.js
 
 jQuery(document).ready(function($) {
   //ChavezCoin.visitors.index();
 });
+
