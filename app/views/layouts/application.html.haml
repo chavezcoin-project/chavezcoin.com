@@ -11,6 +11,6 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body
-    = render 'layouts/menu'
+    = react_component("NavMenu", {link_root: root_path}, class: "pure-u-1")
     = yield
-    = render 'layouts/footer'
+    = react_component("Footer")

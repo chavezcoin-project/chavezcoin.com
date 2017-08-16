@@ -21,6 +21,7 @@ gem 'pundit'          # authorization
 gem 'skywalker'
 gem "react-rails"
 gem "httparty"
+gem "whenever"
 
 # heroku-like uniqueish ids
 gem 'haikunator'

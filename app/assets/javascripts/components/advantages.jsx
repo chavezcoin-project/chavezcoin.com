@@ -10,7 +10,7 @@ window.AdvantageInfo = React.createClass({
 					<p className="tag-text -white">{advantageDescription}</p>
 				</div>
 			</article>
-    ) 
+    )
   }
 })
 
@@ -28,12 +28,12 @@ window.AdvantageContainer = React.createClass({
       }
     });
     return(
-    	<div className="pure-u-1 advantages-container section-container -flex-center -skew-container" id="advantages">
+    	<section className="pure-u-1 advantages-container section-container -flex-center -skew-container" id="advantages">
     		<SectionMessage title={'Nuestro comandante tiene más sorpresas'} message={'Existen muchas ventajas por las cuales comprar y usar Chavezcoin. Su seguridad, rapidez y eficiencia superará tus expectativas.'} />
 				<div className="pure-u-1 limited-wrapper advantages-wrapper">{articleTop}</div>
-				<div className="pure-u-1 limited-wrapper advantages-wrapper">{articleBottom}</div>    		
-    	</div>
-    ) 
+				<div className="pure-u-1 limited-wrapper advantages-wrapper">{articleBottom}</div>
+    	</section>
+    )
 
   }
 })
@@ -41,6 +41,7 @@ window.AdvantageContainer = React.createClass({
 window.AdvantagesList = React.createClass({
   render: function() {
   	var advantagesJson = $.parseJSON(this.props.advantages);
+    advantagesJson = $.parseJSON(advantagesJson);
     return(
     	<AdvantageContainer advantages={advantagesJson} />
     )

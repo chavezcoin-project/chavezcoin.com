@@ -2,7 +2,7 @@ a {
   color: white;
   cursor: pointer;
   text-decoration: none;
-  transition: all 1s;
+  transition: all .5s;
   &:hover {
     color: $persianred;
   }

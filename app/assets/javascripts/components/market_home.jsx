@@ -23,9 +23,6 @@ window.MarketExchange = React.createClass({
   },
   tick: function() {
     this.setState({secondsElapsed: this.state.secondsElapsed + 5});
-    var coinsJson = this.props.coins;
-    var markets = this.props.markets;
-    var time = window.formatTime(markets.timestamp + 5000);
   },
   componentDidMount: function() {
     this.interval = setInterval(this.tick, 5000);

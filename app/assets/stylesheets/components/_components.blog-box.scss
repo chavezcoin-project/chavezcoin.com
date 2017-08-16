@@ -10,6 +10,7 @@
     }
   }
   > .photo {
+    height: 12rem;
     overflow: hidden;
     > .image {
       transition: all .5s;
@@ -34,7 +35,7 @@
     align-content: flex-start;
     align-items: flex-start;
     background: white;
-    height: 0;
+    height: 12rem;
     left: 0;
     opacity: 0;
     padding: 2rem;
@@ -48,12 +49,20 @@
       opacity: 1;
       z-index: 15;
     }
+    > .rounded-links {
+      margin-top: 2rem;
+    }
+    > .rounded-links > .link {
+      display: inline-block;
+      margin-left: 1rem;
+    }
     > .rounded-links > .link > .icon {
+      @include flex_centered();
       background: blue;
       border-radius: 50%;
-      margin-left: 1rem;
-      padding: .5rem .75rem;
+      height: 3rem;
       text-align: center;
+      width: 3rem;
       &.fa-facebook {
         background: #3b5998;
       }
@@ -80,6 +89,7 @@
     }
     > .autor {
       @include flex_between();
+      align-items: center;
     }
     > .autor > .photo > .avatar {
       border-radius: 50%;

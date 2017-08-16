@@ -20,7 +20,26 @@ jQuery(document).ready(function($) {
   var graphicDetailsButton = $('.graphic-details');
   var graphicDetails = $('.graphic-container');
   var transactionCounter = $('.transaction-counter-container');
+  var share_button = $('.share-options');
 
+
+  share_button.click(function(e) {
+    var parent = $(this).parents('.blog-box');
+    var panel = parent.children('.hover-hidden-panel');
+    if (panel.hasClass('active')) {
+      panel.removeClass('active');
+      panel.css('opacity', '0');
+      setTimeout(function() {
+          panel.css('z-index', '-1');
+      }, 750);
+    }else {
+      panel.addClass('active');
+      panel.css({
+        'z-index': '1',
+        'opacity': '1'
+      });
+    }
+  });
 
   graphicDetailsButton.click(function(e) {
     e.preventDefault();
@@ -100,8 +119,6 @@ jQuery(document).ready(function($) {
     var volume24 = button.children('.volumen').attr('value');
     var update =  formatTime(button.children('.update').attr('value'));
     var change = button.children('.change').attr('value');
-
-    console.log($(this).children('.change'));
 
     if ($(this).hasClass('-off')) {
       slide_interruptor.removeClass('-on');

@@ -42,7 +42,7 @@ window.CoinDetails = React.createClass({
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
           <h4 className="main-title -smallsize -left -bold -fullwidth">Última Actualización:</h4>
-          <p className="tag-text -white coin-update">0.00349871</p>
+          <p className="tag-text -white coin-update">45 segundos</p>
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
           <h4 className="main-title -smallsize -left -bold -fullwidth">Cambio:</h4>
