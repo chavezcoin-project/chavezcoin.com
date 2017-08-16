@@ -3,7 +3,7 @@ window.Footer = React.createClass({
     return(
       <footer className="pure-g">
         <div className="pure-u-1 footer-container limited-wrapper">
-          <p className="tag-text.-midsmall.-bold">
+          <p className="tag-text -midsmall -bold">
             © 2017 Chavezcoin, All Rights Reserved.
           </p>
         </div>
