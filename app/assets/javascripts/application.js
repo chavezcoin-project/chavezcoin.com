@@ -22,6 +22,7 @@
 //= require graphic
 //= require visitors.js
 //= require timer.js
+//= require makelink.js
 
 jQuery(document).ready(function($) {
   //ChavezCoin.visitors.index();
