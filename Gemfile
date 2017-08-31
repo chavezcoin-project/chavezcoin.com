@@ -89,6 +89,10 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'shoulda-callback-matchers', '~> 1.1.1'
   gem 'spinach-rails'
+  gem 'wkhtmltopdf-binary-edge', '~> 0.12.4.0' # PDFkit works on env development & test
+
+  # Generate API documentation from request specs
+  gem 'rspec_api_documentation'
 end
 
 group :test do
@@ -104,6 +108,9 @@ group :test do
   gem 'simplecov', require: false
   gem 'simplecov-json', require: false
   gem 'simplecov-rcov', require: false
+  gem 'fake_braintree', require: false
+  gem 'timecop'
+  gem 'clockwork-test'
 end
 
 group :production do

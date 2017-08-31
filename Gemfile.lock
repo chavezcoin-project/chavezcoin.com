@@ -75,6 +75,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    braintree (2.78.0)
+      builder (>= 2.0.0)
     brakeman (3.7.0)
     builder (3.2.3)
     byebug (9.0.6)
@@ -111,6 +113,9 @@ GEM
     clockwork (2.0.2)
       activesupport
       tzinfo
+    clockwork-test (0.2.0)
+      clockwork
+      timecop
     coderay (1.1.1)
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
@@ -156,6 +161,11 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
+    fake_braintree (0.8.0)
+      activesupport
+      braintree (~> 2.32)
+      capybara (>= 2.2.0)
+      sinatra
     faker (1.7.3)
       i18n (~> 0.5)
     ffi (1.9.18)
@@ -257,6 +267,7 @@ GEM
     minitest (5.10.3)
     multi_json (1.12.1)
     multi_xml (0.6.0)
+    mustache (1.0.5)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -366,6 +377,10 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -383,6 +398,10 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+    rspec_api_documentation (5.0.0)
+      activesupport (>= 3.0.0)
+      mustache (~> 1.0, >= 0.99.4)
+      rspec (~> 3.0)
     rubocop (0.49.1)
       parallel (~> 1.10)
       parser (>= 2.3.3.1, < 3.0)
@@ -473,6 +492,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    timecop (0.9.1)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -499,6 +519,7 @@ GEM
     websocket-extensions (0.1.2)
     whenever (0.9.7)
       chronic (>= 0.6.3)
+    wkhtmltopdf-binary-edge (0.12.4.0)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -520,10 +541,12 @@ DEPENDENCIES
   capybara
   chromedriver-helper
   clockwork
+  clockwork-test
   database_cleaner
   decorators (~> 2.0.1)
   devise
   factory_girl_rails
+  fake_braintree
   faker (~> 1.7.1)
   font-awesome-rails
   foundation-icons-sass-rails
@@ -556,6 +579,7 @@ DEPENDENCIES
   react-rails
   redcarpet
   rspec-rails
+  rspec_api_documentation
   rubocop
   sass-rails (~> 5.0.6)
   selenium-webdriver
@@ -576,14 +600,16 @@ DEPENDENCIES
   textacular (~> 3.0)
   therubyracer
   thin
+  timecop
   uglifier (>= 1.3.0)
   urbanairship (~> 3.2.1)
   web-console (~> 2.0)
   webmock
   whenever
+  wkhtmltopdf-binary-edge (~> 0.12.4.0)
 
 RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
