@@ -173,9 +173,8 @@ jQuery(document).ready(function($) {
     }
     guideContainer.each(function(){
       if ($(window).width() > 993) {
-        if(($(this).position().top - ($(this).position().top/95) ) <= range.top && !((advantages.offset().top - advantages.offset().top * .10) <= range.top)) {
+        if(($(this).position().top - ($(this).position().top * .10) ) <= range.top && !((advantages.offset().top - advantages.offset().top * .10) <= range.top)) {
           var now = new Date().getTime();
-
           if (!scrollTimer) {
               if (now - lastScrollFireTime > (1 * minScrollTime)) {
                 fixedAnimation.show();

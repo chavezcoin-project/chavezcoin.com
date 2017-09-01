@@ -3,7 +3,7 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
 
 .skew-container-abstract {
   @include flex_centered();
-  box-shadow: 0 1rem .75rem -.75rem $black;
+  box-shadow: 0 .3rem .85rem -.1rem rgba($black, .85);
   height: 100%;
   left: 0;
   outline: .1rem solid transparent;

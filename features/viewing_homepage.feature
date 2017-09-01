@@ -2,7 +2,7 @@
 Feature: Viewing Homepage
   In order to learn about chavezcoin and use it
   I want to view the homepage
-
+  @javascript
   Scenario: Viewing homepage as guest
     And I should see a nav menu
     And I should see banner with counter

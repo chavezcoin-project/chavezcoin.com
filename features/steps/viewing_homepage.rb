@@ -1,5 +1,5 @@
+require "#{Rails.root}/features/test_helper"
 class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
-
   before do
     @advantages = File.read("#{Rails.root}/public/advantages.json").to_json
     @faqs = File.read("#{Rails.root}/public/faqs.json").to_json

@@ -104,6 +104,7 @@ group :test do
   gem 'launchy', require: false
   gem 'selenium-webdriver'
   gem 'poltergeist'
+  gem 'phantomjs'
   gem 'webmock'
   gem 'simplecov', require: false
   gem 'simplecov-json', require: false

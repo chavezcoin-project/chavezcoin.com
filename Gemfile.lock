@@ -283,6 +283,7 @@ GEM
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.20.0)
+    phantomjs (2.1.1.0)
     pluginator (1.5.0)
     poltergeist (1.15.0)
       capybara (~> 2.1)
@@ -564,6 +565,7 @@ DEPENDENCIES
   markerb
   meta-tags
   pg (~> 0.20.0)
+  phantomjs
   poltergeist
   pre-commit
   pry
