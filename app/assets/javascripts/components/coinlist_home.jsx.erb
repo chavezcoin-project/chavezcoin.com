@@ -1,6 +1,6 @@
 window.CoinInfo = React.createClass({
   render: function() {
-    var symbol = this.props.symbol;
+    var symbol = this.props.symbol.toUpperCase();
     var name = this.props.name;
     var update = this.props.update;
     var change = this.props.change;
@@ -82,8 +82,14 @@ window.CoinsList = React.createClass({
 
     var coinList = [];
     var chavezcoinprice = '1.00';
-    this.props.coins.markets.forEach(function(coin) {
-      coinList.push(<CoinInfo key={coin.symbol}  symbol={coin.symbol} name={coin.name} volumen={coin.volume24.usd} change={coin.change24h} price={coin.price.usd} update={coin.timestamp} chcprice={chavezcoinprice} />);
+    var coins = this.props.coins;
+    var control = 0;
+    $.each(coins, function(key, coin) {
+      coinList.push(<CoinInfo key={coin.symbol}  symbol={coin.symbol} name={coin.name} volumen={coin.volume.usd} change={coin.change} price={coin.price.usd} update={coin.timestamp} chcprice={chavezcoinprice} />);
+      if (control == 13) {
+        return false;
+      }
+      control++;
     });
     return(
       <div className="limited-wrapper price-container -flex-center">

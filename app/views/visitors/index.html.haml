@@ -1,4 +1,23 @@
 .pure-g.homepage
+  .blur-container
+    .background
+    %ul.coin-counter-container
+      %li.number
+        3
+      %li.number
+        0
+      %li.number
+        0
+      %li.number
+        0
+      %li.number
+        0
+      %li.number
+        0
+      %li.number
+        0
+      %li.number
+        0
   = react_component("HeaderHome", {chcprice: 1}, class: "pure-u-1")
   = react_component("TransactionContainer", {graphicData: @graphicData}, class: "pure-u-1")
   = react_component("GuideSection", {yellow: @text_yellow, blue: @text_blue, red: @text_red}, class: "pure-u-1")

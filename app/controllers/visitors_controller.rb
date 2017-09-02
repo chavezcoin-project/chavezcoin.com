@@ -9,7 +9,7 @@ class VisitorsController < ApplicationController
     @text_blue = File.read("#{Rails.root}/public/text_blue.json").to_json
     @text_red = File.read("#{Rails.root}/public/text_red.json").to_json
     @graphicData = File.read("#{Rails.root}/public/transaction.json").to_json
-  	@coins = HTTParty.get('http://coinmarketcap.northpole.ro/ticker.json?symbol=ETH%2CBTC%2CGBYTE%2CSNT%2CXRP%2CLTC%2CDOGE%2CXEM%2CDASH%2CIOTA%2CXMR%2CZEC%2CGNO&page=0')
+  	@coins = HTTParty.get('https://coinmarketcap-nexuist.rhcloud.com/api/all')
   	puts @coins.body, @coins.code, @coins.message, @coins.headers.inspect
     @markets = HTTParty.get('https://api.cryptonator.com/api/full/btc-usd')
     puts @markets.body, @markets.code, @markets.message, @markets.headers.inspect
