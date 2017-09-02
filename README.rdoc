@@ -28,7 +28,7 @@ rake spinach
 #### Configuration
 
 Two basic prerequisites for the site are the `bundler` gem and
-[Ruby](https://rvm.io/rvm/upgrading) `~> 2.3.0`. To install bundler:
+[Ruby](https://rvm.io/rvm/upgrading) `~> 2.3.3`. To install bundler:
 
 ```sh
 gem install bundler
