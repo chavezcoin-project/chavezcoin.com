@@ -66,3 +66,4 @@ Now you can lint the scss files:
 ```
 stylelint app/assets/**/*.scss --scss syntax
 ```
+© 2017 Chavezcoin
