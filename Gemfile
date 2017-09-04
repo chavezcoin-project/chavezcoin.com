@@ -99,6 +99,7 @@ group :test do
   gem 'puffing-billy'
   gem 'thin'
   gem 'capybara'
+  gem 'capybara-selenium'
   gem 'chromedriver-helper'
   gem 'database_cleaner'
   gem 'launchy', require: false
