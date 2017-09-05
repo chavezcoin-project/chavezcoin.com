@@ -12,9 +12,6 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
   transform: translateZ(1px) skewY(-12deg);
   transform-origin: left;
   z-index: 3;
-  @include lg {
-    height: 90%;
-  }
   &.-flag-color{
     animation: gradient 10s infinite alternate;
     background: $gradient2;
@@ -35,13 +32,11 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     height: 100%;
     left: initial;
     right: 0;
-    transform: translateZ(1px) skewY(25deg);
+    transform: translateZ(1px) skewY(12deg);
     transform-origin: right;
-  }
-  &.-inverted.-less-angle {
-    bottom: 0;
-    top: initial;
-    transform: translateZ(1px) skewY(7.5deg);
+    > .limited-wrapper {
+      transform: skewY(-12deg);
+    }
   }
   &.-inverted.-blue {
     background: linear-gradient(to right, $danube, $white);
@@ -50,50 +45,35 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     z-index: -1;
   }
   > .limited-wrapper {
-    @include flex_centered();
     height: 100%;
   }
-  > .limited-wrapper .buttons-container,
-  > .limited-wrapper .animation,
-  > .limited-wrapper .tag-text {
-    position: relative;
-    text-align: center;
-    transform: translateZ(1px) skewY(12deg);
-    z-index: 9;
+  > .limited-wrapper > .abstract-banner-content {
+    @include flex_centered();
+    align-self: center;
+    transform: skewY(12deg);
+    @include xs {
+      align-self: flex-end;
+    }
     @include md {
-      text-align: left;
+      align-self: center;
     }
     @include lg {
-      @include flex_centered;
-      left: 0;
-      position: absolute;
+      align-self: flex-end;
       width: 27.5rem
     }
     @include xl {
       width: 33rem;
     }
-  }
-  > .limited-wrapper .animation {
-    margin: 15% 0 0;
-    @include lg {
-      margin: initial;
-      top: 52.5%;
+    > .tag-text {
+      margin: 1rem auto;
+      padding: 0 1rem;
+      text-align: center;
     }
-  }
-  > .limited-wrapper .buttons-container {
-    @include lg {
-      bottom: -5%;
-    }
-    @include xl {
-      bottom: 0;
-    }
-  }
-  > .limited-wrapper .tag-text {
-    margin: 2rem 0;
-    padding: 0 5%;
-    @include lg {
-      margin: initial;
-      top: 72.5%;
+    > .blur-counter-container {
+      display: none;
+      @include lg {
+        display: block;
+      }
     }
   }
 }

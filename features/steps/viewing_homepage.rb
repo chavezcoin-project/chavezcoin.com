@@ -1,19 +1,7 @@
-require "#{Rails.root}/features/test_helper.rb"
 class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
 
   before do
-    @advantages = File.read("#{Rails.root}/public/advantages.json").to_json
-    @faqs = File.read("#{Rails.root}/public/faqs.json").to_json
-    @posts = File.read("#{Rails.root}/public/blog.json").to_json
-    @slider = File.read("#{Rails.root}/public/slider.json").to_json
-    @text_yellow = File.read("#{Rails.root}/public/text_yellow.json").to_json
-    @text_blue = File.read("#{Rails.root}/public/text_blue.json").to_json
-    @text_red = File.read("#{Rails.root}/public/text_red.json").to_json
-    @graphicData = File.read("#{Rails.root}/public/transaction.json").to_json
-    @coins = HTTParty.get('https://coinmarketcap-nexuist.rhcloud.com/api/all')
-    puts @coins.body, @coins.code, @coins.message, @coins.headers.inspect
-    @markets = HTTParty.get('https://api.cryptonator.com/api/full/btc-usd')
-    puts @markets.body, @markets.code, @markets.message, @markets.headers.inspect
+    visit root_path
   end
 
   step 'I should see a nav menu' do
@@ -21,62 +9,86 @@ class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
   end
 
   step 'I should see banner with counter' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.abstract-banner')
+    expect(page).to have_selector('.blur-container')
   end
 
   step 'I click details' do
-    pending 'step not implemented'
+    click_link('Detalles')
   end
 
   step 'I should see the graphic details' do
-    pending 'step not implemented'
+   expect(page).to have_css("section.transaction-counter-container.active")
+    expect(page).to have_selector('.graphic-container')
   end
 
   step 'I should see the guide section' do
-    pending 'step not implemented'
+   expect(page).to have_css('.draw-container', visible: false)
+    expect(page).to have_selector('.guide-container')
   end
 
   step 'I click in the title' do
-    pending 'step not implemented'
+    first("h3.guide-expand").click
+    sleep 1
   end
 
   step 'I should see the content' do
-    pending 'step not implemented'
+    expect(page).to have_css('.pure-u-1.guide.-inverted.-yellow.-active')
+    expect(page).to have_selector('.video-container', visible: true)
   end
 
   step 'I should see an animation' do
-    pending 'step not implemented'
+    first("a[href='#guide']").click
+    page.execute_script(%Q{$('html,body').animate({scrollTop: ($('#guide').offset().top + 15)}, 1000)})
+    expect(page).to have_selector('.draw-container')
   end
 
   step 'I should see the advantages boxes' do
-    pending 'step not implemented'
+    first("a[href='#advantages']").click
+    page.execute_script(%Q{$('html,body').animate({scrollTop: ($('#advantages').offset().top + 10)}, 1000)})
+    expect(page).to have_selector('.advantages-container')
+    sleep 5
+    expect(page).to have_selector('.box-color.-yellow.-upleft.-scrolled')
   end
 
   step 'I should see a list of cryptocurrencies' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.market-container')
   end
 
   step 'I click the coin interruptor' do
-    pending 'step not implemented'
+    first(".slide-interruptor").click
+    sleep 1
+    expect(page).to have_selector('.pure-u-13-24.slide-interruptor.-on')
   end
 
   step 'I should see the currency data' do
-    pending 'step not implemented'
+    expect(page).to have_css(".tag-text.-white.coin-name.-capitalize", text: "Bitcoin")
+    expect(page).not_to have_css(".tag-text.-white.coin-priceusd", text: :null)
+    expect(page).not_to have_css(".tag-text.-white.coin-update", text: :null)
+    expect(page).not_to have_css(".tag-text.-white.coin-volume24", text: :null)
+    expect(page).not_to have_css(".tag-text.-yellow.coin-change", text: :null)
   end
 
   step 'I should see a list of exchanges' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.limited-wrapper.market-list.-flex-center')
   end
 
   step 'I should see a gallery mobile draw' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.app-container')
   end
 
   step 'I should see the latest blog post' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.blog-container')
   end
 
   step 'I should see a list of faqs' do
-    pending 'step not implemented'
+    expect(page).to have_selector('.faq-container')
+  end
+  step 'I click a question' do
+    first("h3.faq.main-title.-black.-left.-fullwidth").click
+    sleep 1
+  end
+  step 'I should see an answer' do
+    expect(page).to have_selector('.answer.active')
   end
 end

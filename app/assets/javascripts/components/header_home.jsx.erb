@@ -19,14 +19,17 @@ window.SkewFlag = React.createClass({
   render: function() {
     return(
       <div className="pure-u-1 skew-container-abstract -flag-color">
-        <div className="limited-wrapper">
-          <HideCoinAnimation />
-          <h2 className="tag-text -banner -lightgrey -midsize">
-            Dispara tus niveles de patria hasta las nubes.
-          </h2>
-          <div className="pure-u-1 buttons-container">
-            <a className="main-button -blue" href="#">Gana Chavezcoin</a>
-            <a className="main-button -red" href="#">Descargar Wallet</a>
+        <div className="limited-wrapper -center-start-bottom">
+          <div className="abstract-banner-content">
+            <TransactionContainer type='blur' />
+            <HideCoinAnimation />
+            <h2 className="tag-text -banner -lightgrey -midsize">
+              Dispara tus niveles de patria hasta las nubes.
+            </h2>
+            <div className="pure-u-1 buttons-container">
+              <a className="main-button -blue" href="#">Gana Chavezcoin</a>
+              <a className="main-button -red" href="#">Descargar Wallet</a>
+            </div>
           </div>
         </div>
       </div>

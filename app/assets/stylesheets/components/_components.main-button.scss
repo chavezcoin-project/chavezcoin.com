@@ -1,12 +1,15 @@
 .main-button {
   border-radius: .5rem;
   font-family: $primary-font-family;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
   text-align: center;
   text-transform: uppercase;
+  @include sm {
+    font-size: 1.25rem;
+  }
   &.-blue {
     background-color: darken($danube, 15%);
   }

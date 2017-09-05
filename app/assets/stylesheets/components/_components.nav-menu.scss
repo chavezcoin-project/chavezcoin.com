@@ -5,7 +5,7 @@
 .nav-menu {
   left: 0;
   padding: .5rem 2.5%;
-  position: absolute;
+  position: fixed;
   top: 0;
   transition: all .5s;
   z-index: 99999999;
@@ -13,9 +13,9 @@
     padding: .5rem 10%;
   }
   &.-scrolled {
-    box-shadow: 0px 5px 10px -2px $black;
     @include lg {
       background: $black;
+      box-shadow: 0px 5px 10px -2px $black;
       position: fixed;
       > .limited-wrapper {
         justify-content: flex-end;
@@ -46,10 +46,6 @@
     border: .1rem solid $ripelemon;
     font-size: 2rem;
     padding: .25rem;
-    position: fixed;
-    right: 2.5%;
-    top: 1rem;
-    z-index: 999999;
     @include lg {
       display: none;
     }

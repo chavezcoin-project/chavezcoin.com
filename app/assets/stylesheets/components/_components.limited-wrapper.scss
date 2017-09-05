@@ -21,6 +21,21 @@
       @include flex_around();
     }
   }
+  &.-flex-start {
+    @include display_flex();
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  &.-center-start-bottom {
+    @include flex_centered();
+    @include lg {
+      @include display_flex();
+      align-content: flex-end;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+  }
   &.-guide {
     @include lg {
       width: 60%;

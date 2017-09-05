@@ -21,19 +21,19 @@ jQuery(document).ready(function($) {
   var graphicDetails = $('.graphic-container');
   var transactionCounter = $('.transaction-counter-container');
   var share_button = $('.share-options');
-
+  var activeClass = 'active'
 
   share_button.click(function(e) {
     var parent = $(this).parents('.blog-box');
     var panel = parent.children('.hover-hidden-panel');
-    if (panel.hasClass('active')) {
-      panel.removeClass('active');
+    if (panel.hasClass(activeClass)) {
+      panel.removeClass(activeClass);
       panel.css('opacity', '0');
       setTimeout(function() {
           panel.css('z-index', '-1');
       }, 750);
     }else {
-      panel.addClass('active');
+      panel.addClass(activeClass);
       panel.css({
         'z-index': '1',
         'opacity': '1'
@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
       graphicDetails.slideToggle('slow');
       graphicDetails.css('display', 'flex');
     }else {
-      if (transactionCounter.hasClass('active')) {
+      if (transactionCounter.hasClass(activeClass)) {
         transactionCounter.animate({
           marginRight: '-100%'},
           250);
@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
           graphicDetails.css('z-index', '-1');
         }, 250);
-        transactionCounter.removeClass('active');
+        transactionCounter.removeClass(activeClass);
       }else {
         transactionCounter.animate({
           marginRight: 0},
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
             height: '15rem'},
           250);
         }, 250);
-        transactionCounter.addClass('active');
+        transactionCounter.addClass(activeClass);
       }
     }
   });
@@ -149,13 +149,15 @@ jQuery(document).ready(function($) {
     parent = $(this).parent('.faq-wrapper');
     answer = parent.children('.answer');
     if (parent.index() == clicked_answer) {
-      $(this).removeClass('active');
+      $(this).removeClass(activeClass);
+      answer.removeClass(activeClass);
       answer.slideToggle(500);
       clicked_answer = null;
     }else {
-      $('.faq').removeClass('active');
+      $('.faq').removeClass(activeClass);
       $('.answer').hide(500);
-      $(this).addClass('active');
+      $(this).addClass(activeClass);
+      answer.addClass(activeClass);
       answer.slideToggle(500);
       clicked_answer = parent.index();
     }

@@ -20,3 +20,5 @@ Feature: Viewing Homepage
     And I should see a gallery mobile draw
     And I should see the latest blog post
     And I should see a list of faqs
+    When I click a question
+    Then I should see an answer
