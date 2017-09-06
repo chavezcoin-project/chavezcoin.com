@@ -10,7 +10,7 @@ class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
 
   step 'I should see banner with counter' do
     expect(page).to have_selector('.abstract-banner')
-    expect(page).to have_selector('.blur-container')
+    expect(page).to have_selector('.pure-u-1.transaction-counter.-blur')
   end
 
   step 'I click details' do

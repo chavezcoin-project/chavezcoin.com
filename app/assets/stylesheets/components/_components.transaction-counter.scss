@@ -96,11 +96,11 @@
     @extend .-blur;
     display: none;
     margin: 0;
-    @include xs {
+    @include sm {
       display: flex;
     }
     @include lg {
-
+      display: none;
       transform: scale(.7);
     }
     > .background {
