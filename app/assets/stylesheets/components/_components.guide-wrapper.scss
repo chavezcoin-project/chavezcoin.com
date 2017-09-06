@@ -6,20 +6,20 @@
     transform: translateZ(1px) skewY(-2.5deg);
     > .limited-wrapper {
       transform: translateZ(1px) skewY(2.5deg);
-      > .menssage-container > .main-title > .cross {
+      > .-guide > .menssage-container > .main-title > .cross {
         align-self: flex-start;
         display: inline-block;
         font-size: 1.75rem;
         font-style: normal;
         transition: all 1s;
       }
-      > .menssage-container > .tag-text,
-      .video-container {
+      > .-guide > .menssage-container > .tag-text,
+      > .-guide > .video-container {
         display: none;
       }
     }
     &.-active {
-      > .limited-wrapper > .menssage-container > .main-title > .cross {
+      > .limited-wrapper > .-guide > .menssage-container > .main-title > .cross {
         transform: rotate(135deg);
       }
     }

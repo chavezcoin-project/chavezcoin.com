@@ -64,8 +64,13 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     @include xl {
       width: 33rem;
     }
+    > .animation {
+      @include lg {
+        margin: 2rem auto;
+      }
+    }
     > .tag-text {
-      margin: 1rem auto;
+      margin: 2rem auto;
       padding: 0 1rem;
       text-align: center;
     }

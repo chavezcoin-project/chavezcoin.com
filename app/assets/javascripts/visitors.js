@@ -79,9 +79,9 @@ jQuery(document).ready(function($) {
 
   function checkInRange() {
     var st = $(this).scrollTop();
+    var height = navHeader.height();
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
-
     if (st > lastScrollTop){
         navHeader.addClass('-scrolled');
     } else {
