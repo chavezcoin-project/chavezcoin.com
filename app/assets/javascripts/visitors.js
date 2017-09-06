@@ -20,6 +20,8 @@ jQuery(document).ready(function($) {
   var graphicDetailsButton = $('.graphic-details');
   var graphicDetails = $('.graphic-container');
   var transactionCounter = $('.transaction-counter-container');
+  var counterBlur = $('.transaction-counter.-blur');
+  var counterNav = $('.transaction-counter.-blur-nav');
   var share_button = $('.share-options');
   var activeClass = 'active'
 
@@ -81,13 +83,31 @@ jQuery(document).ready(function($) {
     var st = $(this).scrollTop();
     var height = navHeader.height();
     if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+      return;
     if (st > lastScrollTop){
         navHeader.addClass('-scrolled');
-    } else {
-        if($(this).scrollTop() < 20) {
-            navHeader.removeClass('-scrolled');
-        }
+        counterBlur.animate({
+          top: -15 + 'rem',
+          opacity: 0
+        }, 500);
+        setTimeout(function() {
+          counterNav.css('display', 'flex');
+          counterNav.animate({
+            opacity: 1
+          }, 500);
+        }, 500);
+    } else if($(this).scrollTop() < 20) {
+        navHeader.removeClass('-scrolled');
+        counterBlur.animate({
+          top: 0,
+          opacity: 1
+        }, 500);
+        counterNav.animate({
+          opacity: 0
+        }, 500);
+        setTimeout(function() {
+          counterNav.css('display', 'none');
+        }, 500);
     }
     lastScrollTop = st;
   }
