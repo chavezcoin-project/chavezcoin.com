@@ -50,7 +50,8 @@ class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
 
   step 'I should see an animation' do
     first("a[href='#guide']").click
-    page.execute_script(%Q{$('html,body').animate({scrollTop: ($('#guide').offset().top + 15)}, 1000)})
+    page.execute_script(%Q{$('html,body').animate({scrollTop: ($('#guide').offset().top + 25)}, 5000)})
+    sleep 2
     expect(page).to have_selector('.draw-container')
   end
 
