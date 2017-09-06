@@ -13,6 +13,17 @@ class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
     expect(page).to have_selector('.pure-u-1.transaction-counter.-blur')
   end
 
+  step 'I scroll down' do
+    page.execute_script(%Q{$('html,body').animate({scrollTop: 100}, 1000)})
+    sleep 1
+  end
+
+  step 'I should see the nav with scrolled class' do
+    expect(page).to have_selector('.pure-g.nav-menu.pure-menu-horizontal.-scrolled')
+    expect(page).to have_selector('.pure-u-1.transaction-counter.-blur-nav')
+    expect(page).to have_selector('.pure-u-1.transaction-counter.-blur', visible: :hidden)
+  end
+
   step 'I click details' do
     click_link('Detalles')
   end

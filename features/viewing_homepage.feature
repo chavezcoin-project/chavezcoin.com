@@ -6,6 +6,8 @@ Feature: Viewing Homepage
   Scenario: Viewing homepage as guest
     And I should see a nav menu
     And I should see banner with counter
+    When I scroll down
+    Then I should see the nav with scrolled class
     When I click details
     Then I should see the graphic details
     And I should see the guide section

@@ -93,18 +93,20 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
           counterNav.css('display', 'flex');
           counterNav.animate({
+            bottom: 0,
             opacity: 1
           }, 500);
-        }, 500);
+        }, 250);
     } else if($(this).scrollTop() < 20) {
         navHeader.removeClass('-scrolled');
+        counterNav.animate({
+          bottom: -10 + 'rem',
+          opacity: 0
+        }, 500);
         counterBlur.animate({
           top: 0,
           opacity: 1
-        }, 500);
-        counterNav.animate({
-          opacity: 0
-        }, 500);
+        }, 250);
         setTimeout(function() {
           counterNav.css('display', 'none');
         }, 500);

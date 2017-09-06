@@ -30,7 +30,7 @@
       z-index: 5;
       @include lg {
         margin-top: -6rem;
-        padding: 15rem 1rem 2.5rem;
+        padding: 13.5rem 1rem 2.5rem;
       }
     }
     &.-blue {
@@ -40,7 +40,7 @@
       z-index: 4;
       @include lg {
         margin-top: -12rem;
-        padding: 15rem 1rem 2rem;
+        padding: 15rem 1rem 1.5rem;
       }
     }
     &.-red {
@@ -50,7 +50,7 @@
       z-index: 3;
       @include lg {
         margin-top: -12rem;
-        padding: 17.5rem 1rem 2.5rem;
+        padding: 15.5rem 1rem 1.5rem;
       }
     }
     &.-inverted {
