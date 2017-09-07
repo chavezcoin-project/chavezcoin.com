@@ -76,6 +76,7 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     }
     > .blur-counter-container {
       display: none;
+      width: 15rem;
       @include lg {
         display: block;
       }
