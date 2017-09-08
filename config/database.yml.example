@@ -25,12 +25,12 @@ staging:
 
 development:
   <<: *default
-  database: portfolio-alex-development
+  database: chavezcoincom-development
 
 test:
   <<: *default
-  database: portfolio-alex-test
+  database: chavezcoincom-test
 
 production:
   <<: *default
-  database: portfolio-alex-production
+  database: chavezcoincom-production
