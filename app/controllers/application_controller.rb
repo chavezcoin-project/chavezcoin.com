@@ -9,5 +9,8 @@ class ApplicationController < ActionController::Base
     else
       request.remote_ip
     end
+
+  def authenticate_admin_user!
+    redirect_to root_path , notice: 'Access Denied.' unless current_user.admin?
   end
 end
