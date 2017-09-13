@@ -43,6 +43,7 @@
     border: .1rem solid $ripelemon;
     font-size: 2rem;
     padding: .25rem;
+    z-index: 9999999999;
     @include lg {
       display: none;
     }

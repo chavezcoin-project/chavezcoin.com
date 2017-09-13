@@ -2,44 +2,22 @@ window.SkewFlagEnglish = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
-      <div className="pure-u-1 skew-container-abstract -flag-color">
-        <div className="limited-wrapper -flex-center">
-          <section className="inner-content">
-            <div className="abstract-banner-content">
-              <TransactionContainer type='blur' />
-              <HideCoinAnimation />
-              <h2 className="tag-text -banner -lightgrey -midsize">
-                Let your patria level get to the sky
-              </h2>
-              <div className="pure-u-1 buttons-container">
-                <a className="main-button -blue" href="#">Get Chavezcoin</a>
-                <a className="main-button -red" href="#">Download Wallet</a>
-              </div>
+      <div className="limited-wrapper -flex-around">
+        <section className="inner-content">
+          <div className="abstract-banner-content">
+            <TransactionContainer type='blur' />
+            <HideCoinAnimation />
+            <h2 className="tag-text -banner -lightgrey -midsize">
+              Let your patria level get to the sky
+            </h2>
+            <div className="pure-u-1 buttons-container">
+              <a className="main-button -blue" href="#">Get Chavezcoin</a>
+              <a className="main-button -red" href="#">Download Wallet</a>
             </div>
-            <ActionMobile images={images} />
-          </section>
-        </div>
-      </div>
-    )
-  }
-})
-
-
-window.HeaderCount = React.createClass({
-  render: function() {
-    var price = this.props.price;
-    return(
-      <div className="count-container">
-        <div className="planet-rotate"></div>
-        <figure className="chavezcoin">
-          <img src="<%= asset_path('coin.png') %>" className="coin"></img>
-        </figure>
-        <div className="equal">
-          =
-        </div>
-        <div className="usd">
-          ${price}.00
-        </div>
+          </div>
+          <ActionMobile images={images} />
+          <HeaderCount price={this.props.chcprice} />
+        </section>
       </div>
     )
   }
@@ -53,7 +31,8 @@ window.HeaderHomeEnglish = React.createClass({
     return(
       <header className="pure-u-1">
         <section className="abstract-banner pure-u-1" id="inicio">
-          <HeaderCount price={this.props.chcprice} />
+          <div className="pure-u-1 skew-container-abstract -flag-color">
+          </div>
           <SkewFlagEnglish images={images} />
         </section>
       </header>

@@ -1,4 +1,5 @@
 .abstract-banner {
+  @include flex_centered();
   height: 100vh;
   position: relative;
   width: 100%;
@@ -10,5 +11,54 @@
   }
   @include lg {
     max-height: 67.5rem;
+  }
+  > .limited-wrapper {
+    height: 100%;
+    transform: skewY(12deg);
+    > .inner-content {
+      align-self: center;
+      margin-bottom: -3rem;
+      @include xs {
+        align-self: flex-end;
+      }
+      @include md {
+        align-self: center;
+      }
+      @include lg {
+        align-self: flex-end;
+      }
+    }
+  }
+  > .limited-wrapper > .inner-content >.abstract-banner-content {
+    @include flex_centered();
+    @include lg {
+      width: 27.5rem
+    }
+    @include xl {
+      width: 33rem;
+    }
+    > .animation {
+      @include lg {
+        margin: 2rem auto 1rem;
+      }
+    }
+    > .tag-text {
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    > .blur-counter-container {
+      display: none;
+      width: 19rem;
+      @include lg {
+        display: block;
+      }
+    }
+  }
+  > .limited-wrapper > .inner-content > .device-illustration {
+    display: none;
+    @include lg {
+      display: flex;
+    }
   }
 }
