@@ -1,0 +1,34 @@
+window.TransactionContainerEnglish = React.createClass({
+  getInitialState: function() {
+    return {secondsElapsed: 0};
+  },
+  tick: function() {
+    this.setState({secondsElapsed: this.state.secondsElapsed + 5});
+  },
+  componentDidMount: function() {
+    this.interval = setInterval(this.tick, 5000);
+  },
+  componentWillUnmount: function() {
+    clearInterval(this.interval);
+  },
+  render: function() {
+    var type = this.props.type;
+    if (type == 'blur' || type == 'blur-nav') {
+      cantidad = 31000000;
+      return(
+        <CounterContainer type={type} totalchc={cantidad} />
+      )
+    }else {
+      var graphicData = $.parseJSON(this.props.graphicData);
+      graphicData = $.parseJSON(graphicData);
+      return(
+        <section className="pure-u-1 transaction-container section-container -maxi-padding">
+          <div className="pure-u-1 round-gradient-container">
+            <div className="round-gradient-background"></div>
+          </div>
+          <GraphicContainer graphicData={graphicData} />
+        </section>
+      )
+    }
+  }
+})

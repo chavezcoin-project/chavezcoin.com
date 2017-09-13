@@ -41,7 +41,7 @@ window.GuideContainer = React.createClass({
   }
 })
 
-window.GuideSection = React.createClass({
+window.GuideSectionEnglish = React.createClass({
   render: function() {
     var yellow = $.parseJSON(this.props.yellow);
     yellow = $.parseJSON(yellow);
@@ -53,9 +53,9 @@ window.GuideSection = React.createClass({
     return(
       <section className="pure-u-1 guide-container section-container _nopadding -flex-center">
         <div className="pure-u-1 guide-wrapper" id="guide">
-          <GuideContainer option="yellow" title="¿Qué es Chavezcoin?" text={yellow} video_path={video} />
-          <GuideContainer option="blue" title="Obtener y usar Chavezcoin es más fácil que ganar las elecciones con Tibisay" text={blue} />
-          <GuideContainer option="red" title="Chavezcoin es más seguro que el palacio de Miraflores" text={red} />
+          <GuideContainer option="yellow" title="¿What is Chavezcoin?" text={yellow} video_path={video} />
+          <GuideContainer option="blue" title="Get and use Chavezcoin is easier than win the presidential election with Tibisay as ally." text={blue} />
+          <GuideContainer option="red" title="Chavezcoin is safer than the Miraflores palace" text={red} />
         </div>
       </section>
 

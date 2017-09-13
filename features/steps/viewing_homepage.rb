@@ -29,7 +29,7 @@ class Spinach::Features::ViewingHomepage < Spinach::FeatureSteps
   end
 
   step 'I should see the graphic details' do
-   expect(page).to have_css("section.transaction-counter-container.active")
+    expect(page).to have_css("section.transaction-counter-container.active")
     expect(page).to have_selector('.graphic-container')
   end
 

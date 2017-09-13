@@ -1,4 +1,4 @@
-window.SkewFlag = React.createClass({
+window.SkewFlagEnglish = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
@@ -9,11 +9,11 @@ window.SkewFlag = React.createClass({
               <TransactionContainer type='blur' />
               <HideCoinAnimation />
               <h2 className="tag-text -banner -lightgrey -midsize">
-                Dispara tus niveles de patria hasta las nubes.
+                Let your patria level get to the sky
               </h2>
               <div className="pure-u-1 buttons-container">
-                <a className="main-button -blue" href="#">Gana Chavezcoin</a>
-                <a className="main-button -red" href="#">Descargar Wallet</a>
+                <a className="main-button -blue" href="#">Get Chavezcoin</a>
+                <a className="main-button -red" href="#">Download Wallet</a>
               </div>
             </div>
             <ActionMobile images={images} />
@@ -46,16 +46,15 @@ window.HeaderCount = React.createClass({
 })
 
 
-window.HeaderHome = React.createClass({
+window.HeaderHomeEnglish = React.createClass({
   render: function() {
-    console.log(this.props.location);
     var images = $.parseJSON(this.props.images);
     images = $.parseJSON(images);
     return(
       <header className="pure-u-1">
         <section className="abstract-banner pure-u-1" id="inicio">
           <HeaderCount price={this.props.chcprice} />
-          <SkewFlag images={images} />
+          <SkewFlagEnglish images={images} />
         </section>
       </header>
     )

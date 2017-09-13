@@ -189,50 +189,6 @@ jQuery(document).ready(function($) {
       return !$.trim(el.html())
   }
 
-  var scrollTimer, lastScrollFireTime = 0;
-  var minScrollTime = 100;
-  function showAnimation(element){
-    var range = {
-        top: $(this).scrollTop()
-    }
-    guideContainer.each(function(){
-      if ($(window).width() > 993) {
-        if(($(this).position().top - ($(this).position().top * .10) ) <= range.top && !((advantages.offset().top - advantages.offset().top * .10) <= range.top)) {
-          var now = new Date().getTime();
-          if (!scrollTimer) {
-              if (now - lastScrollFireTime > (1 * minScrollTime)) {
-                fixedAnimation.show();
-                fixedAnimation.css({
-                  'opacity': '1',
-                  'transition': 'all .5s'
-                });
-                if (isEmpty(fixedAnimation)) {
-                  fixedAnimation.append('<figure class="cloud-draw -big -mindelay"></figure> <figure class="cloud-draw -small -middelay"></figure><figure class="cloud-draw -round -lgdelay"></figure><figure class="cloud-draw -big -maxdelay"></figure><figure class="cloud-draw -round -small -maxdelay"></figure><figure class="cloud-draw -round -maxdelay"></figure><figure class="aero-globe"><div class="left"></div><div class="right"></div><div class="bottom"></div><div class="background"><img class="coin" src="/assets/c_coin-f56141681bbe6c6b4547b92c790d951bdecc18eae54b9b9d83a4596146446e08.png" alt="C coin"></div><div class="stripright"></div><div class="stripleft"></div><div class="basket"></div><div class="chavez"><img src="/assets/chavez-eye-close-d930760d719fe5f964910f40bc03c03d3d9fda4d54bf4c5faec2f295c1dfbf7c.png" alt="Chavez eye close"></div></figure><figure class="flying-birds -top"><img src="/assets/bird-ea33f4f8e923ca9423f6714dde6830f403121a396cf219e8c0ebb3e833b15046.gif" alt="Bird"></figure><figure class="flying-birds -mid"><img src="/assets/bird-ea33f4f8e923ca9423f6714dde6830f403121a396cf219e8c0ebb3e833b15046.gif" alt="Bird"></figure><figure class="flying-birds -bottom"><img src="/assets/bird-ea33f4f8e923ca9423f6714dde6830f403121a396cf219e8c0ebb3e833b15046.gif" alt="Bird"></figure>')
-                }
-                lastScrollFireTime = now;
-              }
-              scrollTimer = setTimeout(function() {
-                scrollTimer = null;
-                lastScrollFireTime = new Date().getTime();
-              }, minScrollTime);
-          }
-        }else {
-          fixedAnimation.css({
-            'opacity': '0',
-            'transition': 'all .25s'
-          });
-          lastScrollFireTime = now;
-          setTimeout(function() {
-            fixedAnimation.empty();
-            fixedAnimation.hide();
-          }, 500);
-        }
-      }else {
-        fixedAnimation.hide();
-      }
-
-    });
-  }
   function slideBoxes(element){
     var range = {
         top: $(this).scrollTop()
@@ -265,7 +221,6 @@ jQuery(document).ready(function($) {
 
   $(window).scroll(function(e){
       didScroll = true;
-      showAnimation(this);
       slideBoxes(this);
   });
 

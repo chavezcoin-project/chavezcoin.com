@@ -46,19 +46,25 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
   }
   > .limited-wrapper {
     height: 100%;
-  }
-  > .limited-wrapper > .abstract-banner-content {
-    @include flex_centered();
-    align-self: center;
     transform: skewY(12deg);
-    @include xs {
-      align-self: flex-end;
-    }
-    @include md {
+    > .inner-content {
       align-self: center;
+      margin-bottom: -3rem;
+      @include xs {
+        align-self: flex-end;
+      }
+      @include md {
+        align-self: center;
+      }
+      @include lg {
+        align-self: flex-end;
+        margin-right: 20%;
+      }
     }
+  }
+  > .limited-wrapper > .inner-content >.abstract-banner-content {
+    @include flex_centered();
     @include lg {
-      align-self: flex-end;
       width: 27.5rem
     }
     @include xl {
@@ -66,7 +72,7 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     }
     > .animation {
       @include lg {
-        margin: 2rem auto;
+        margin: 2rem auto 1rem;
       }
     }
     > .tag-text {
@@ -76,10 +82,16 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     }
     > .blur-counter-container {
       display: none;
-      width: 15rem;
+      width: 19rem;
       @include lg {
         display: block;
       }
+    }
+  }
+  > .limited-wrapper > .inner-content > .device-illustration {
+    display: none;
+    @include lg {
+      display: flex;
     }
   }
 }

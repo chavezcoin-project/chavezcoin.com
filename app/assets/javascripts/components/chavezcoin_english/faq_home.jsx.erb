@@ -1,0 +1,25 @@
+window.FaqContainerEnglish = React.createClass({
+  render: function() {
+    var faqs = [];
+    this.props.faqList.forEach(function(faq) {
+      faqs.push(<FaqContent faq={faq} key={faq.id} />);
+    });
+    return(
+      <div className="-flex-center pure-u-1 faq-container section-container" id="faq">
+        <SectionMessage title={'Mision Robinson to the rescue'} message={"¿Are you new in the cryptocurrency world? Don't worry, mision Robinson have all the answer you need."} />
+        <div className="limited-wrapper faqs-list">{faqs}</div>
+      </div>
+    )
+
+  }
+})
+
+window.FaqListEnglish = React.createClass({
+  render: function() {
+    var faqs = $.parseJSON(this.props.faqs);
+    faqs = $.parseJSON(faqs);
+    return(
+      <FaqContainerEnglish faqList={faqs} />
+    )
+  }
+})
