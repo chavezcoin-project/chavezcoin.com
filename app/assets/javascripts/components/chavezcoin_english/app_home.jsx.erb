@@ -1,10 +1,9 @@
 window.AppContainerEnglish = React.createClass({
   render: function() {
-    var images = this.props.images;
     var messages = [{"text": "With our app you can use Chavezcoin in a quickly, economical and secure enviroment."}, {"text": " Welcome to the future, welcome to Chavezcoin"}];
     return(
       <div className="limited-wrapper -app -center-around">
-        <ActionMobile images={images} />
+        <MobileDefaultEnglish images={this.props.images} />
         <SectionMessageMid title={'An intergalactic and supreme application'} messages={messages} option="app" />
       </div>
     )
@@ -14,12 +13,14 @@ window.AppContainerEnglish = React.createClass({
 
 window.AppPromoEnglish = React.createClass({
   render: function() {
+    var imagesDevice = $.parseJSON(this.props.imagesDevice);
     var images = $.parseJSON(this.props.images);
+    imagesDevice = $.parseJSON(imagesDevice);
     images = $.parseJSON(images);
     return(
       <section className="-flex-center pure-u-1 app-container section-container -skew-container-inverted" id="app">
         <SliderContainer images={images} />
-        <AppContainerEnglish images={images} />
+        <AppContainerEnglish images={imagesDevice} />
       </section>
     )
   }

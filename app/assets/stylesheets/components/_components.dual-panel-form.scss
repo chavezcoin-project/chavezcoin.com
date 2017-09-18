@@ -1,0 +1,9 @@
+.dual-panel-form {
+  @include flex_centered();
+  border-radius: .5rem;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  width: 45rem;
+  z-index: 1;
+}

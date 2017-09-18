@@ -1,0 +1,19 @@
+.hero-banner {
+  @include flex_centered();
+  align-content: unset;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 7rem 1rem 3rem;
+  @include md {
+    height: 100vh;
+  }
+  &.-login {
+    @include lg {
+      justify-content: flex-start;
+      > .limited-wrapper > .dual-panel-form {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

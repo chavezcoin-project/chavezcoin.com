@@ -40,10 +40,18 @@
       justify-content: flex-start;
     }
   }
+  &.-center-start {
+    @include flex_centered();
+    @include lg {
+      justify-content: flex-start;
+    }
+  }
   &.-guide {
+    @include sm {
+      width: 80%;
+    }
     @include lg {
       width: 60%;
-      margin-left: 0;
     }
     > .menssage-container > .main-title {
       @include flex_between();
@@ -68,6 +76,18 @@
   }
   &.-app {
     z-index: 10;
+    > .content {
+      margin-top: 3rem;
+      @include lg {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.-tablet-bye {
+    border-top: solid .05rem $wildsand;
+    margin-top: 2rem;
+    padding: 3rem 0;
     > .content {
       margin-top: 3rem;
       @include lg {

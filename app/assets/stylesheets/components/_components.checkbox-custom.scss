@@ -1,0 +1,37 @@
+.hidden:checked ~ .checkbox-custom {
+  border: .1rem solid transparent;
+  &:after {
+    opacity: 1;
+  }
+}
+
+
+.checkbox-custom {
+  border: .1rem solid lighten($scorpion, 15%);
+  border-radius: .2rem;
+  cursor: pointer;
+  display: inline-block;
+  height: 0.65rem;
+  position: relative;
+  top: .15rem;
+  transition: all .5s;
+  width: .65rem;
+  &:after {
+    content: 'L';
+    color: $ripelemon;
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: -.25rem;
+    opacity: 0;
+    position: absolute;
+    top: -.85rem;
+    transform: rotate(-45deg);
+    transition: all .5s;
+  }
+  &:hover {
+    border: .1rem solid transparent;
+    &:after {
+      opacity: 1;
+    }
+  }
+}

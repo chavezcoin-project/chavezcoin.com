@@ -1,27 +1,62 @@
 window.LinkDetail = React.createClass({
   render: function() {
-    var link = '#' + this.props.name;
-    return(
-      <li className="pure-menu-item menu-item">
-        <a href={link} className="menu-link link">
-          <span className="bounceletter">{this.props.first_letter} </span>
-          {this.props.cut_name}
-        </a>
-      </li>
-    )
+    var self = this ;
+    if (!this.props.name) {
+      var session = [];
+      if (self.props.session_link[0] == 'login') {
+        session.push(<a key={self.props.session_link[0]} href={self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
+      }else {
+        session.push(<a key={self.props.session_link[0]} rel="nofollow" data-method="delete" href={self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
+      }
+      return(
+        <li className="pure-menu-item menu-item">
+          {session}
+        </li>
+      )
+    }else {
+      var link = '#' + this.props.name;
+      if (window.location.pathname == this.props.link_root) {
+        return(
+          <li className="pure-menu-item menu-item">
+            <a href={this.props.link_root + link} className="menu-link link">
+              <span className="bounceletter">{this.props.first_letter} </span>
+              {this.props.cut_name}
+            </a>
+          </li>
+        )
+      }else {
+        return(
+          <li className="pure-menu-item menu-item">
+            <a href={this.props.link_root + link} className="menu-link link no-animated">
+              <span className="bounceletter">{this.props.first_letter} </span>
+              {this.props.cut_name}
+            </a>
+          </li>
+        )
+      }
+    }
   }
 })
 
 window.MenuLinks = React.createClass({
   render: function() {
+    var self = this ;
     var options = [{"name": "inicio", "first_letter": "I", "cut_name": "nicio"}, {"name": "guide", "first_letter": "G", "cut_name": "uía"}, {"name": "advantages", "first_letter": "V", "cut_name": "entajas"}, {"name": "market", "first_letter": "C", "cut_name": "ompra"}, {"name": "app", "first_letter": "A", "cut_name": "pp"}, {"name": "blog", "first_letter": "B", "cut_name": "log"}, {"name": "soporte", "first_letter": "S", "cut_name": "oporte"}]
     var links = [];
     options.forEach(function(option) {
-      links.push(<LinkDetail name={option.name} first_letter={option.first_letter} key={option.name} cut_name={option.cut_name} />);
+      links.push(<LinkDetail link_root={self.props.link_root} name={option.name} first_letter={option.first_letter} key={option.name} cut_name={option.cut_name} />);
     });
+    var session_link = [];
+    if (this.props.session_link[0] == 'login') {
+      session_link.push(<LinkDetail link_root={self.props.link_root} key={self.props.session_link[0]} first_letter="L" cut_name="ogin" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+    }
+    else {
+      session_link.push(<LinkDetail link_root={self.props.link_root} first_letter="L" cut_name="ogout" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+    }
     return(
       <ul className="menu-links pure-menu-list">
         {links}
+        {session_link}
       </ul>
     )
   }
@@ -40,7 +75,7 @@ window.NavMenu = React.createClass({
           <i className="fa fa-bars slide-button"></i>
           <div className="fade-screen pure-u-1"></div>
           <div className="menu-links-container">
-            <MenuLinks />
+            <MenuLinks link_root={link_root} session_link={this.props.session_link} />
           </div>
         </div>
       </nav>

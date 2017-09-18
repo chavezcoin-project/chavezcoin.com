@@ -32,7 +32,7 @@ window.MarketExchange = React.createClass({
   },
   render: function() {
     var coinsJson = this.props.coins;
-    var markets = this.props.markets;
+    var markets = $.parseJSON(this.props.markets);
     var time = window.formatTime(markets.timestamp);
     return(
       <CoinContainer coins={coinsJson} markets={markets} time={time} />

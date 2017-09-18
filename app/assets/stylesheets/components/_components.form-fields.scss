@@ -1,0 +1,19 @@
+.form-fields {
+  @include display_flex();
+  align-items: flex-end;
+  border: none;
+  padding: 0;
+  &.-separated {
+    justify-content: space-between;
+  }
+  > .field > .link {
+    color: lighten($scorpion, 10%);
+    font-size: .75rem;
+    &:hover {
+      color: $ripelemon;
+    }
+  }
+  > .field > .tag-text {
+    font-size: .9rem;
+  }
+}

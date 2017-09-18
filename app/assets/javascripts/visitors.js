@@ -50,28 +50,16 @@ jQuery(document).ready(function($) {
       graphicDetails.css('display', 'flex');
     }else {
       if (transactionCounter.hasClass(activeClass)) {
-        transactionCounter.animate({
-          marginRight: '-100%'},
-          250);
         setTimeout(function() {
           graphicDetails.animate({
-            opacity: 0,
-            height: 0},
+            opacity: 0},
           500);
-        }, 250);
-        setTimeout(function() {
-          graphicDetails.css('z-index', '-1');
         }, 250);
         transactionCounter.removeClass(activeClass);
       }else {
-        transactionCounter.animate({
-          marginRight: 0},
-          250);
-        graphicDetails.css('z-index', '5');
         setTimeout(function() {
           graphicDetails.animate({
-            opacity: 1,
-            height: '15rem'},
+            opacity: 1},
           250);
         }, 250);
         transactionCounter.addClass(activeClass);
@@ -115,9 +103,17 @@ jQuery(document).ready(function($) {
   }
 
   $('.menu-link').on('click', function(e) {
-    e.preventDefault(); // prevents default scrolling
-    var y = $(this.hash).offset().top; // grabs the #id element offset location
-    $('html,body').animate({scrollTop: y}, 1000); // animate the scroll
+    e.preventDefault();
+    if ($(this).hasClass('session') || $(this).hasClass('no-animated') ) {
+      if (window.location.hostname.replace(/\\/g, '') == 'localhost') {
+        window.location = 'http://' + window.location.hostname.replace(/\\/g, '') + ':3000' + $(this).attr('href');
+      }else {
+        window.location = 'http://' + window.location.hostname.replace(/\\/g, '') + $(this).attr('href');
+      }
+    }else {
+      var y = $(this.hash).offset().top;
+      $('html,body').animate({scrollTop: y}, 1000);
+    }
   });
 
   $('.guide-expand').click(function(e) {
@@ -220,8 +216,10 @@ jQuery(document).ready(function($) {
   }
 
   $(window).scroll(function(e){
-      didScroll = true;
+    if (!$('.menu-link').hasClass('no-animated')) {
       slideBoxes(this);
+    }
+      didScroll = true;
   });
 
 
@@ -265,26 +263,9 @@ jQuery(document).ready(function($) {
     if($(window).width() > 993) {
       menuLinks.css('right', '0');
       fadeScreen.css('display', 'none');
-      graphicDetails.css({
-        'opacity': '0',
-        'height': '0',
-        'z-index': '-1',
-        'display': 'block'
-      });
-      transactionCounter.css({
-        marginRight: '-100%'
-      });
     }else {
       menuLinks.css('right', '-50%');
       fadeScreen.css('display', 'none');
-      graphicDetails.css({
-        'opacity': '',
-        'height': '',
-        'z-index': ''
-      });
-      transactionCounter.css({
-        marginRight: ''
-      });
     }
   });
 

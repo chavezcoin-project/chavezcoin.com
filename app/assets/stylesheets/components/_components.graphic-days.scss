@@ -1,12 +1,22 @@
 .graphic-days {
   @include flex_between();
   margin-top: 1rem;
-  padding: 0 .5rem;
+  padding: 0;
+  @include xs {
+    padding: 0 .5rem;
+  }
   > .day {
     color: rgba($black, .7);
     font-family: $primary-font-family;
     font-size: $medium-font-size;
     font-weight: bold;
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: none;
+      @include sm {
+        display: block;
+      }
+    }
     &:last-of-type {
       display: none;
       @include xs {

@@ -22,11 +22,14 @@ window.TransactionContainerEnglish = React.createClass({
       var graphicData = $.parseJSON(this.props.graphicData);
       graphicData = $.parseJSON(graphicData);
       return(
-        <section className="pure-u-1 transaction-container section-container -maxi-padding">
+        <section className="pure-u-1 transaction-container section-container">
           <div className="pure-u-1 round-gradient-container">
             <div className="round-gradient-background"></div>
           </div>
-          <GraphicContainer graphicData={graphicData} />
+          <div className="device-illustration tablet-horizontal">
+             <GraphicContainer graphicData={graphicData} />
+             <span className="button graphic-details"></span>
+          </div>
         </section>
       )
     }

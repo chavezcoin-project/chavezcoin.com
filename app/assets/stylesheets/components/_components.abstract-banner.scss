@@ -10,32 +10,27 @@
     max-height: 40rem;
   }
   @include lg {
-    max-height: 67.5rem;
+    max-height: 45rem;
   }
-  > .limited-wrapper {
+  > .limited-wrapper,
+  > .limited-wrapper.-flex-center {
+    align-items: center;
     height: 100%;
-    transform: skewY(12deg);
+    z-index: 99999;
     > .inner-content {
-      align-self: center;
-      margin-bottom: -3rem;
-      @include xs {
-        align-self: flex-end;
-      }
-      @include md {
-        align-self: center;
-      }
-      @include lg {
-        align-self: flex-end;
+      width: 100%;
+      @include xl {
+        width: 90%;
       }
     }
   }
-  > .limited-wrapper > .inner-content >.abstract-banner-content {
+  > .limited-wrapper > .inner-content > .abstract-banner-content {
     @include flex_centered();
     @include lg {
       width: 27.5rem
     }
     @include xl {
-      width: 33rem;
+      width: 31.5rem;
     }
     > .animation {
       @include lg {

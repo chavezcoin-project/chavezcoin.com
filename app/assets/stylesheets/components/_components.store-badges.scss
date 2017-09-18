@@ -1,0 +1,12 @@
+.store-badges {
+  background: asset_url('cropChavezcoinFront.jpg') center center / 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%;
+  > .image {
+    opacity: 0;
+    transition: all .5s;
+  }
+}

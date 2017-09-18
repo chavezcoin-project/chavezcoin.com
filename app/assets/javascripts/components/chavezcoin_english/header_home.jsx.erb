@@ -2,7 +2,7 @@ window.SkewFlagEnglish = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
-      <div className="limited-wrapper -flex-around">
+      <div className="limited-wrapper -flex-center">
         <section className="inner-content">
           <div className="abstract-banner-content">
             <TransactionContainer type='blur' />
@@ -15,8 +15,8 @@ window.SkewFlagEnglish = React.createClass({
               <a className="main-button -red" href="#">Download Wallet</a>
             </div>
           </div>
-          <ActionMobile images={images} />
           <HeaderCount price={this.props.chcprice} />
+          <ActionMobileEnglish images={images} />
         </section>
       </div>
     )
@@ -33,7 +33,7 @@ window.HeaderHomeEnglish = React.createClass({
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color">
           </div>
-          <SkewFlagEnglish images={images} />
+          <SkewFlagEnglish images={images} chcprice='1'/>
         </section>
       </header>
     )

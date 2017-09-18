@@ -1,0 +1,31 @@
+.hero-vertical-skew-section {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  &:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 200%;
+  }
+  &:before {
+    background-attachment: fixed;
+    transform: translateZ(1px) skewX(-15deg);
+  }
+  &.-left,
+  &.-right:before {
+    left: 0;
+  }
+  &.-right,
+  &.-left:before {
+    right: 0;
+  }
+  &.-left:before {
+    background: $danube;
+  }
+  &.-right:before {
+    background: lighten($ripelemon, 10%);
+  }
+}

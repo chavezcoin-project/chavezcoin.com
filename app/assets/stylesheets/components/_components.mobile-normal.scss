@@ -20,8 +20,17 @@
   &.-app-section {
     height: 30rem;
     width: 17.5rem;
+    > .button,
+    > .button-no-js {
+      left: calc(50% - 1.5rem);
+    }
+    > .button-no-js:hover + .store-badges > .image {
+      opacity: 1;
+    }
   }
-  > .speaker, > .button {
+  > .speaker,
+  > .button,
+  > .button-no-js {
     background-color: darken(lightgrey, 7.5%);
     content: '';
     position: absolute;
@@ -33,7 +42,8 @@
     left: calc(50% - 2.5rem);
     width: 5rem;
   }
-  > .button {
+  > .button,
+  > .button-no-js {
     border-bottom: .1rem solid $black;
     border-radius: 50%;
     border-top: .1rem solid $black;

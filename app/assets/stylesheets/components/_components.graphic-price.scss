@@ -6,6 +6,13 @@
     font-family: $primary-font-family;
     font-size: $medium-font-size;
     font-weight: bold;
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: none;
+      @include sm {
+        display: block;
+      }
+    }
   }
   &.-hidden {
     opacity: 0;

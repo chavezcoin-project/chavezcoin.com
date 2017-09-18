@@ -1,6 +1,15 @@
 .transaction-container {
-  @include flex_around();
+  @include flex_centered();
   background: $white;
   margin-top: 1rem;
   z-index: 3;
+  > .tablet-horizontal {
+    margin-bottom: 2rem;
+    @include md {
+      margin-top: -2rem;
+    }
+    @include lg {
+      margin-bottom: 4rem;
+    }
+  }
 }

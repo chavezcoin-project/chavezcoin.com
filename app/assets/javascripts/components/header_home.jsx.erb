@@ -22,7 +22,7 @@ window.SkewFlag = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
-      <div className="limited-wrapper -flex-around">
+      <div className="limited-wrapper -flex-center">
         <section className="inner-content">
           <div className="abstract-banner-content">
             <TransactionContainer type='blur' />
@@ -31,12 +31,12 @@ window.SkewFlag = React.createClass({
               Dispara tus niveles de patria hasta las nubes.
             </h2>
             <div className="pure-u-1 buttons-container">
-              <a className="main-button -blue" href="#">Gana Chavezcoin</a>
+              <a className="main-button -blue" href="/users/sign_in">Gana Chavezcoin</a>
               <a className="main-button -red" href="#">Descargar Wallet</a>
             </div>
           </div>
-          <ActionMobile images={images} />
           <HeaderCount price={this.props.chcprice} />
+          <ActionMobile images={images} />
         </section>
       </div>
     )
@@ -45,7 +45,6 @@ window.SkewFlag = React.createClass({
 
 window.HeaderHome = React.createClass({
   render: function() {
-    console.log(this.props.location);
     var images = $.parseJSON(this.props.images);
     images = $.parseJSON(images);
     return(
@@ -53,7 +52,7 @@ window.HeaderHome = React.createClass({
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color">
           </div>
-          <SkewFlag images={images} />
+          <SkewFlag images={images} chcprice='1'/>
         </section>
       </header>
     )

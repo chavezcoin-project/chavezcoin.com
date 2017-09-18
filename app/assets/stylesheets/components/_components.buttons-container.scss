@@ -1,6 +1,12 @@
 .buttons-container {
   @include flex_centered;
+  @include lg {
+    justify-content: space-around;
+  }
   > .main-button {
     margin: 0 2.5% 1rem;
+    @include lg {
+      margin: 0;
+    }
   }
 }

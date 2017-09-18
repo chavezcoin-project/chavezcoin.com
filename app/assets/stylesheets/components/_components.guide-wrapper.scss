@@ -30,32 +30,42 @@
       margin-top: -2rem;
       padding: 5rem 1rem 2rem;
       z-index: 5;
+      @include md {
+        padding: 4.25rem 1rem 1.25rem;
+      }
       @include lg {
-        height: calc(15rem + 5rem);
         margin: -7rem 0 0;
-        padding: 0 1rem 2.5rem;
+        padding: 15rem 1rem 2rem;
+      }
+      @include xl {
+        margin: -7rem 0 0;
+        padding: 14.25rem 1rem 1.25rem;
       }
     }
     &.-blue {
       background: $danube;
       margin-top: -6rem;
-      padding: 8.5rem 1rem 2rem;
+      padding: 8rem 1rem 0;
       z-index: 4;
+      @include md {
+        padding: 8rem 1rem .5rem;
+      }
       @include lg {
-        padding: 0 1rem 1.5rem;
         margin: -7rem 0 0;
-        height: calc(14.5rem + 3rem);
+        padding: 9rem 1rem .5rem;
       }
     }
     &.-red {
       background: $persianred;
       margin-top: -6rem;
-      padding: 8.5rem 1rem 2rem;
+      padding: 8.75rem 1rem 1.25rem;
       z-index: 3;
       @include lg {
-        height: calc(12.5rem + 5rem);
         margin: -7rem 0 0;
-        padding: 0 1rem 2.5rem;
+        padding: 10rem 1rem 1.5rem;
+      }
+      @include xl {
+        padding: 9rem 1rem .5rem;
       }
     }
     &.-inverted {

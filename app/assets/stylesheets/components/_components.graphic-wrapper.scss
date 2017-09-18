@@ -16,6 +16,13 @@
     height: 50%;
     margin: 0 .25rem;
     width: 2rem;
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: none;
+      @include sm {
+        display: block;
+      }
+    }
     &:last-of-type {
       display: none;
       @include xs {

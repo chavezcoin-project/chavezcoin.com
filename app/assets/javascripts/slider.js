@@ -10,15 +10,15 @@ jQuery(document).ready(function($) {
     for (var i = 0; i < total_background; i++) {
       if (i > 0) {
         if (background.eq(i).hasClass('-devise')) {
-          slider.append('<figure class="slider-image -devise -hidden '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: cover;"></figure>');
+          slider.append('<figure class="slider-image -devise -hidden '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: 100%;"></figure>');
         }else {
-          slider.append('<figure class="slider-image -default -hidden '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') fixed center center no-repeat; background-size: cover;"></figure>');
+          slider.append('<figure class="slider-image -default -hidden '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: cover;"></figure>');
         }
       }else {
         if (background.eq(i).hasClass('-devise')) {
-          slider.append('<figure class="slider-image -devise -shown '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: cover;"></figure>');
+          slider.append('<figure class="slider-image -devise -shown '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: 100%;"></figure>');
         }else {
-          slider.append('<figure class="slider-image -default -shown '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') fixed center center no-repeat; background-size: cover;"></figure>');
+          slider.append('<figure class="slider-image -default -shown '+background.eq(i).attr('alt')+'" style="background: url('+background.eq(i).attr('src')+') center center no-repeat; background-size: cover;"></figure>');
         }
       }
       background.eq(i).remove();

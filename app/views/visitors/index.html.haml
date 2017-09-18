@@ -1,19 +1,19 @@
 .pure-g.homepage
   - if @visitor_country['countryCode'] == 'VE' || @visitor_country['countryCode'] == 'MX' || @visitor_country['countryCode'] == 'AR' || @visitor_country['countryCode'] == 'BO' || @visitor_country['countryCode'] == 'CL' || @visitor_country['countryCode'] == 'CO' || @visitor_country['countryCode'] == 'EC' || @visitor_country['countryCode'] == 'ES' || @visitor_country['countryCode'] == 'JM' || @visitor_country['countryCode'] == 'PA' || @visitor_country['countryCode'] == 'PY' || @visitor_country['countryCode'] == 'PE' || @visitor_country['countryCode'] == 'PR' || @visitor_country['countryCode'] == 'DO' || @visitor_country['countryCode'] == 'UY' || @visitor_country['countryCode'] == 'CU'
-    = react_component("HeaderHome", {chcprice: 1, images: @slider}, class: "pure-u-1")
+    = react_component("HeaderHome", {chcprice: 1, images: @sliderDevice}, class: "pure-u-1")
     = react_component("TransactionContainer", {graphicData: @graphicData, type: 'graphic'}, class: "pure-u-1")
     = react_component("GuideSection", {yellow: @text_yellow, blue: @text_blue, red: @text_red}, class: "pure-u-1")
     = react_component("AdvantagesList", {advantages: @advantages}, class: "pure-u-1")
     = react_component("MarketExchange", {coins: @coins, markets: @markets}, class: "pure-u-1")
-    = react_component("AppPromo", {images: @slider}, class: "pure-u-1")
+    = react_component("AppPromo", {images: @slider, imagesDevice: @SliderDeviceTablet}, class: "pure-u-1")
     = react_component("BlogList", {posts: @posts}, class: "pure-u-1")
     = react_component("FaqList", {faqs: @faqs}, class: "pure-u-1")
   - else
-    = react_component("HeaderHomeEnglish", {chcprice: 1, images: @slider}, class: "pure-u-1")
+    = react_component("HeaderHomeEnglish", {chcprice: 1, images: @sliderDevice}, class: "pure-u-1")
     = react_component("TransactionContainerEnglish", {graphicData: @graphicData, type: 'graphic'}, class: "pure-u-1")
     = react_component("GuideSectionEnglish", {yellow: @text_yellow, blue: @text_blue, red: @text_red}, class: "pure-u-1")
     = react_component("AdvantagesListEnglish", {advantages: @advantages}, class: "pure-u-1")
     = react_component("MarketExchangeEnglish", {coins: @coins, markets: @markets}, class: "pure-u-1")
-    = react_component("AppPromoEnglish", {images: @slider}, class: "pure-u-1")
+    = react_component("AppPromoEnglish", {images: @slider, imagesDevice: @SliderDeviceTablet}, class: "pure-u-1")
     = react_component("BlogListEnglish", {posts: @posts}, class: "pure-u-1")
     = react_component("FaqListEnglish", {faqs: @faqs}, class: "pure-u-1")
