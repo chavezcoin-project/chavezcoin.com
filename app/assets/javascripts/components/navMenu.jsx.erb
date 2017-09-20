@@ -48,10 +48,10 @@ window.MenuLinks = React.createClass({
     });
     var session_link = [];
     if (this.props.session_link[0] == 'login') {
-      session_link.push(<LinkDetail link_root={self.props.link_root} key={self.props.session_link[0]} first_letter="L" cut_name="ogin" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+      session_link.push(<LinkDetail link_root={self.props.link_root} key={self.props.session_link[0]} first_letter="I" cut_name="ngresar" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
     }
     else {
-      session_link.push(<LinkDetail link_root={self.props.link_root} first_letter="L" cut_name="ogout" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+      session_link.push(<LinkDetail link_root={self.props.link_root} first_letter="S" cut_name="alir" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
     }
     return(
       <ul className="menu-links pure-menu-list">

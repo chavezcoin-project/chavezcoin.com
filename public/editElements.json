@@ -1,0 +1,92 @@
+[
+  {
+    "selector": "h2",
+    "properties": {
+      "key": "message",
+      "className": "main-title -left-center -midsize -black"
+    },
+    "text": "Editar usuario"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[email]",
+      "className": "field",
+      "autoFocus": "autofocus",
+      "placeholder": "Email",
+      "type": "email",
+      "name": "user[email]",
+      "value": "alex@dailydrip.com",
+      "id": "user_email"
+    }
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "mensaje_uno",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(Déjar en blanco si no quieres cambiarlo)"
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "mensaje_dos",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(6 carácteres mínimo)"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[password]",
+      "className": "field",
+      "autoComplete": "off",
+      "placeholder": "Contraseña",
+      "type": "password",
+      "name": "user[password]",
+      "id": "user_password"
+    }
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[password]",
+      "className": "field",
+      "autoComplete": "off",
+      "placeholder": "Confirmar Contraseña",
+      "type": "password",
+      "name": "user[password_confirmation]",
+      "id": "user_password_confirmation"
+    }
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "mensaje_tres",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(Ingresa tu contraseña actrual para aplicar cambios)"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[password]",
+      "className": "field",
+      "autoComplete": "off",
+      "type": "password",
+      "name": "user[current_password]",
+      "id": "user_current_password"
+    }
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "commit",
+      "className": "main-button -blue",
+      "type": "submit",
+      "name": "commit",
+      "value": "Actualizar"
+    }
+  }
+]

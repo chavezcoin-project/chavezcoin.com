@@ -41,7 +41,6 @@ window.AdvantageContainer = React.createClass({
 window.AdvantagesList = React.createClass({
   render: function() {
   	var advantagesJson = $.parseJSON(this.props.advantages);
-    advantagesJson = $.parseJSON(advantagesJson);
     return(
     	<AdvantageContainer advantages={advantagesJson} />
     )

@@ -15,8 +15,6 @@ window.AppPromo = React.createClass({
   render: function() {
     var images = $.parseJSON(this.props.images);
     var imagesDevice = $.parseJSON(this.props.imagesDevice);
-    images = $.parseJSON(images);
-    imagesDevice = $.parseJSON(imagesDevice);
     return(
       <section className="-flex-center pure-u-1 app-container section-container -skew-container-inverted" id="app">
         <SliderContainer images={images} />

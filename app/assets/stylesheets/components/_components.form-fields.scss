@@ -6,6 +6,9 @@
   &.-separated {
     justify-content: space-between;
   }
+  > .field {
+    @include flex_centered();
+  }
   > .field > .link {
     color: lighten($scorpion, 10%);
     font-size: .75rem;

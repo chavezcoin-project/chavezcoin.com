@@ -1,0 +1,91 @@
+[
+  {
+    "selector": "h2",
+    "properties": {
+      "key": "message",
+      "className": "main-title -left-center -midsize -black"
+    },
+    "text": "Edit user"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[email]",
+      "className": "field",
+      "autoFocus": "autofocus",
+      "placeholder": "Email",
+      "type": "email",
+      "name": "user[email]",
+      "id": "user_email"
+    }
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "message_one",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(Leave blank if you don't want to change it)"
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "message_two",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(6 characters minimun)"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[password]",
+      "className": "field",
+      "autoComplete": "off",
+      "placeholder": "Password",
+      "type": "password",
+      "name": "user[password]",
+      "id": "user_password"
+    }
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[password_confirmation]",
+      "className": "field",
+      "autoComplete": "off",
+      "placeholder": "Confirm Password",
+      "type": "password",
+      "name": "user[password_confirmation]",
+      "id": "user_password_confirmation"
+    }
+  },
+  {
+    "selector": "span",
+    "properties": {
+      "key": "message_three",
+      "className": "tag-text -lightblack -midsmall _nomargin"
+    },
+    "text": "(Write your current password to apply changes)"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "user[current_password]",
+      "className": "field",
+      "autoComplete": "off",
+      "type": "password",
+      "name": "user[current_password]",
+      "id": "user_current_password"
+    }
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "commit",
+      "className": "main-button -blue",
+      "type": "submit",
+      "name": "commit",
+      "value": "Update"
+    }
+  }
+]

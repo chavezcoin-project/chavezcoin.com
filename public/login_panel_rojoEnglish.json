@@ -1,0 +1,11 @@
+{
+  "textTop": {
+    "top": "Welcome back",
+    "bottom": "partner, glad to see you again"
+  },
+  "textBottom": {
+    "top": "You don't have an account yet? ",
+    "middle": "Sign up",
+    "bottom": " and start winning ChavezCoin!"
+  }
+}

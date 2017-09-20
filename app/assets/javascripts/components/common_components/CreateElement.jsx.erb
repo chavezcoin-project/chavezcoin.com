@@ -1,0 +1,7 @@
+window.CreateElement = React.createClass({
+  render: function() {
+    return (
+      React.createElement(this.props.elementSelector, this.props.elementProperties)
+    )
+  }
+})

@@ -89,7 +89,6 @@ window.BlogContainerEnglish = React.createClass({
 window.BlogListEnglish = React.createClass({
   render: function() {
     var posts = $.parseJSON(this.props.posts);
-    posts = $.parseJSON(posts);
     return(
       <BlogContainerEnglish postsList={posts} />
     )

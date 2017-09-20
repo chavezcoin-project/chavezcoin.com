@@ -1,0 +1,87 @@
+window.FormBackgroundText = React.createClass({
+  getInitialState: function() {
+    return {textTop: '', textMiddle: '', textBottom: ''}
+  },
+  render: function() {
+    this.state.textTop = this.props.text.top;
+    this.state.textMiddle = this.props.text.middle;
+    this.state.textBottom = this.props.text.bottom;
+    return (
+      React.createElement('span', {
+        className: 'tag-text -white -midsmall'
+      },
+        this.state.textTop,
+        React.createElement('a', {
+          className: 'link',
+          href: '/users/sign_up',
+        }, this.state.textMiddle),
+        this.state.textBottom
+      )
+    )
+  }
+})
+
+window.FormBackgroundTopText = React.createClass({
+  getInitialState: function() {
+    return {textTop: 'Welcome', textBottom: ''}
+  },
+  render: function() {
+    this.state.textTop = this.props.text.top;
+    this.state.textBottom = this.props.text.bottom;
+    return (
+      React.createElement('div', {
+        className: 'content'
+      },
+        React.createElement('h2', {
+          className: 'main-title -left -fullwidth _nomargin'
+        }, this.state.textTop),
+        React.createElement('h2', {
+          className: 'main-title -left -lgsize -fullwidth'
+        }, this.state.textBottom),
+      )
+    )
+  }
+})
+
+
+window.FormPanel = React.createClass({
+  getInitialState: function() {
+    return {option: '', elements: [], text: {}};
+  },
+  render: function() {
+    var elements = {};
+    var self = this;
+    if (this.props.elements) {
+      elements = $.parseJSON(this.props.elements);
+    }
+    if (this.props.text) {
+      this.state.text = $.parseJSON(this.props.text);
+    }
+    switch (this.props.option) {
+      case 'form':
+        elements.forEach(function(element) {
+          if (/^[A-Z]/.test(element.selector[0]) === true) {
+            self.state.elements.push(React.createElement(window[element.selector], element.properties, element.text));
+          }else {
+            self.state.elements.push(React.createElement(element.selector, element.properties, element.text));
+          }
+        });
+        return (
+          React.createElement('div', {
+            className: self.props.panelClass
+          }, self.state.elements)
+        )
+        break;
+      default:
+        return (
+          React.createElement('div', {
+            className: self.props.panelClass
+          },
+            React.createElement(FormBackgroundTopText, {text: this.state.text.textTop}),
+            React.createElement(FormBackgroundText, {text: this.state.text.textBottom})
+          )
+        )
+        break;
+    }
+  }
+})

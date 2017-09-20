@@ -46,7 +46,6 @@ window.FaqContainer = React.createClass({
 window.FaqList = React.createClass({
   render: function() {
     var faqs = $.parseJSON(this.props.faqs);
-    faqs = $.parseJSON(faqs);
     return(
       <FaqContainer faqList={faqs} />
     )

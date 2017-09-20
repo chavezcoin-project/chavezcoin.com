@@ -31,7 +31,7 @@ window.SkewFlag = React.createClass({
               Dispara tus niveles de patria hasta las nubes.
             </h2>
             <div className="pure-u-1 buttons-container">
-              <a className="main-button -blue" href="/users/sign_in">Gana Chavezcoin</a>
+              <a className="main-button -blue" href={this.props.blueButtonLink} >Gana Chavezcoin</a>
               <a className="main-button -red" href="#">Descargar Wallet</a>
             </div>
           </div>
@@ -46,13 +46,12 @@ window.SkewFlag = React.createClass({
 window.HeaderHome = React.createClass({
   render: function() {
     var images = $.parseJSON(this.props.images);
-    images = $.parseJSON(images);
     return(
       <header className="pure-u-1">
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color">
           </div>
-          <SkewFlag images={images} chcprice='1'/>
+          <SkewFlag images={images} chcprice='1' blueButtonLink={this.props.blueButtonLink} />
         </section>
       </header>
     )

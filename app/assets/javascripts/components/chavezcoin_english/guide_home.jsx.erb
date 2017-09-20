@@ -44,11 +44,8 @@ window.GuideContainer = React.createClass({
 window.GuideSectionEnglish = React.createClass({
   render: function() {
     var yellow = $.parseJSON(this.props.yellow);
-    yellow = $.parseJSON(yellow);
     var blue = $.parseJSON(this.props.blue);
-    blue = $.parseJSON(blue);
     var red = $.parseJSON(this.props.red);
-    red = $.parseJSON(red);
     var video = "<%= asset_path('comment.mp4') %>";
     return(
       <section className="pure-u-1 guide-container section-container _nopadding -flex-center">

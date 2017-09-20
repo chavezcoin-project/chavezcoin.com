@@ -15,7 +15,7 @@
     overflow: hidden;
     padding: 0 6.5rem 0 1.25rem;
     @include md {
-      padding: 0 8rem 0 1.25rem;
+      padding: 0 8.5rem 0 1.25rem;
     }
     &:before {
       content: '[';
@@ -45,7 +45,7 @@
     padding-left: 10rem;
     text-align: left;
     @include md {
-      padding-left: 13rem;
+      padding-left: 13.75rem;
     }
     >.item {
       color: $ripelemon;

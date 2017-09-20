@@ -1,0 +1,29 @@
+window.HeroBanner = React.createClass({
+  getInitialState: function() {
+    return {components: []};
+  },
+  render: function() {
+    var self = this;
+    this.props.components.forEach(function(component) {
+      self.state.components.push(React.createElement(window[component.selector], component.properties, component.text));
+    });
+    return (
+      React.createElement('section', {
+        className: "hero-banner -"+ this.props.layout
+      },
+        React.createElement('figure', {
+          className: 'hero-vertical-skew-section -left'
+        }),
+        React.createElement('figure', {
+          className: 'hero-vertical-skew-section -right'
+        }),
+        React.createElement('figure', {
+          className: "bg-hero -"+ this.props.layout
+        }),
+        React.createElement('div', {
+          className:  "limited-wrapper "+ this.props.limited_wrapper_class
+        }, this.state.components)
+      )
+    )
+  }
+})

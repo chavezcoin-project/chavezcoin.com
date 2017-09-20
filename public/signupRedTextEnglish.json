@@ -1,0 +1,11 @@
+{
+  "textTop": {
+    "top": "Welcome",
+    "bottom": "partner, glad to have you onboard"
+  },
+  "textBottom": {
+    "top": "You already have an account? ",
+    "middle": "Login",
+    "bottom": " and start winning ChavezCoin!"
+  }
+}
