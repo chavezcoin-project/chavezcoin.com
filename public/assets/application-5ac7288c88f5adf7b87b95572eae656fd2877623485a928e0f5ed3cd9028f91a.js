@@ -29489,8 +29489,7 @@ jQuery.event = {
 							event.preventDefault();
 							event.stopPropagation();
 						}
-					}
-				}
+					}J				}
 			}
 		}
 

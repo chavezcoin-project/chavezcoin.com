@@ -20,6 +20,9 @@ window.SessionForm = React.createClass({
     if (this.props.method) {
       this.state.method = this.props.method;
     }
+    if (this.props.method) {
+      this.state.id = this.props.id;
+    }
     return (
       React.createElement('form', {
         className: this.state.className,
