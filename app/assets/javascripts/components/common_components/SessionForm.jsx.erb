@@ -1,6 +1,13 @@
 window.SessionForm = React.createClass({
   getInitialState: function() {
-    return {components: [], form_url: '', token: '', className: ''};
+    return {
+      components: [],
+      form_url: '',
+      token: '',
+      className: '',
+      method: 'post',
+      id: 'new_user'
+    };
   },
   render: function() {
     var self = this;
@@ -10,13 +17,16 @@ window.SessionForm = React.createClass({
     this.state.form_url = this.props.form_url;
     this.state.token = this.props.authenticity_token;
     this.state.className = this.props.formClass;
+    if (this.props.method) {
+      this.state.method = this.props.method;
+    }
     return (
       React.createElement('form', {
         className: this.state.className,
-        id: 'new_user',
+        id: this.state.id,
         action: this.state.form_url,
         acceptCharset: 'UTF-8',
-        method: 'post'
+        method: this.state.method
       },
         React.createElement('input', {
           name: 'utf8',
