@@ -10,6 +10,15 @@
   {
     "selector": "input",
     "properties": {
+      "key": "_method",
+      "type": "hidden",
+      "name": "_method",
+      "value": "put"
+    }
+  },
+  {
+    "selector": "input",
+    "properties": {
       "key": "user[email]",
       "className": "field",
       "autoFocus": "autofocus",

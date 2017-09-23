@@ -5,7 +5,7 @@
       "key": "message",
       "className": "main-title -left-center -midsize -black"
     },
-    "text": "Edit user"
+    "text": "Crear nueva cuenta"
   },
   {
     "selector": "input",
@@ -22,18 +22,10 @@
   {
     "selector": "span",
     "properties": {
-      "key": "message_one",
-      "className": "tag-text -lightblack -midsmall _nomargin"
-    },
-    "text": "(Leave blank if you don't want to change it)"
-  },
-  {
-    "selector": "span",
-    "properties": {
       "key": "message_two",
       "className": "tag-text -lightblack -midsmall _nomargin"
     },
-    "text": "(6 characters minimun)"
+    "text": "(Mínimo 6 carácteres)"
   },
   {
     "selector": "input",
@@ -41,7 +33,7 @@
       "key": "user[password]",
       "className": "field",
       "autoComplete": "off",
-      "placeholder": "Password",
+      "placeholder": "Contraseña",
       "type": "password",
       "name": "user[password]",
       "id": "user_password"
@@ -53,29 +45,10 @@
       "key": "user[password_confirmation]",
       "className": "field",
       "autoComplete": "off",
-      "placeholder": "Confirm Password",
+      "placeholder": "Confirmar Contraseña",
       "type": "password",
       "name": "user[password_confirmation]",
       "id": "user_password_confirmation"
-    }
-  },
-  {
-    "selector": "span",
-    "properties": {
-      "key": "message_three",
-      "className": "tag-text -lightblack -midsmall _nomargin"
-    },
-    "text": "(Write your current password to apply changes)"
-  },
-  {
-    "selector": "input",
-    "properties": {
-      "key": "user[current_password]",
-      "className": "field",
-      "autoComplete": "off",
-      "type": "password",
-      "name": "user[current_password]",
-      "id": "user_current_password"
     }
   },
   {
@@ -85,7 +58,7 @@
       "className": "main-button -blue",
       "type": "submit",
       "name": "commit",
-      "value": "Update"
+      "value": "Registrarse"
     }
   }
 ]

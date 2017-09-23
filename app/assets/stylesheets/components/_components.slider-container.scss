@@ -29,11 +29,11 @@
 
 @keyframes focus {
   0% {
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center center;
   }
   100% {
-    background-size: 110%;
+    background-size: 110% 110%;
     background-position: top right;
   }
 }

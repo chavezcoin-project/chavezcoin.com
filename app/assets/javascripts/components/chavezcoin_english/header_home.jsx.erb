@@ -16,7 +16,7 @@ window.SkewFlagEnglish = React.createClass({
             </div>
           </div>
           <HeaderCount price={this.props.chcprice} />
-          <ActionMobileEnglish images={images} />
+          <ActionMobile images={images} class='-app-section' message="¡click me, i'm great!"/>
         </section>
       </div>
     )
@@ -32,7 +32,7 @@ window.HeaderHomeEnglish = React.createClass({
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color">
           </div>
-          <SkewFlagEnglish images={images} chcprice='1' blueButtonLink                                                                                                                                                                                                                                                                            ={this.props.blueButtonLink} />
+          <SkewFlagEnglish images={images} chcprice='1' blueButtonLink={this.props.blueButtonLink} />
         </section>
       </header>
     )

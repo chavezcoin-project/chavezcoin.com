@@ -1,0 +1,141 @@
+.animated-star {
+  color: darken($white, 15%);
+  display: none;
+  position: absolute;
+  text-shadow: 0 .3rem .1rem rgba($black, .3);
+  > .fa {
+    animation-delay: 15s;
+    color: inherit;
+    font-size: 2rem;
+  }
+  &:nth-child(1) {
+    animation: zoomInOut alternate infinite 5.5s;
+    left: 35%;
+    top: 5%;
+    > .fa {
+      animation: moveStar 5s alternate;
+    }
+  }
+  &:nth-child(2) {
+    animation: zoomInOut alternate infinite 6s;
+    left: 70%;
+    top: 15%;
+    > .fa {
+      animation: moveStar 2s alternate;
+    }
+  }
+  &:nth-child(3) {
+    animation: zoomInOut alternate infinite 7s;
+    top: 35%;
+    left: 25%;
+    > .fa {
+      animation: moveStar 4s alternate;
+    }
+  }
+  &:nth-child(4) {
+    animation: zoomInOut alternate infinite 8s;
+    top: 50%;
+    left: 75%;
+    > .fa {
+      animation: moveStar 1.5s alternate;
+    }
+  }
+  &:nth-child(5) {
+    animation: zoomInOut alternate infinite 8.5s;
+    top: 30%;
+    left: 50%;
+    > .fa {
+      animation: moveStar 7s alternate;
+    }
+  }
+  &:nth-child(6) {
+    animation: zoomInOut alternate infinite 6s;
+    bottom: 40%;
+    left: 40%;
+    > .fa {
+      animation: moveStar 3s alternate;
+    }
+  }
+  &:nth-child(7) {
+    animation: zoomInOut alternate infinite 8.5s;
+    top: 75%;
+    left: 65%;
+    > .fa {
+      animation: moveStar 8s alternate;
+    }
+  }
+  &:nth-child(8) {
+    animation: zoomInOut alternate infinite 7s;
+    bottom: 15%;
+    left: 30%;
+    > .fa {
+      animation: moveStar 7s alternate;
+    }
+  }
+}
+
+@keyframes zoomInOut {
+  0%, 20% {
+    color: darken($white, 15%);
+    text-shadow: 0 .3rem .1rem rgba($black, .3);
+    transform: scale(1);
+  }
+  10% {
+    color: $white;
+    margin: 0;
+    text-shadow: 0 .7rem .1rem rgba($black, .3);
+    transform: scale(1.2);
+  }
+  40% {
+    margin-left: -.5rem;
+    margin-top: -.5rem;
+  }
+  80% {
+    margin-left: -.5rem;
+    margin-top: -.5rem;
+  }
+  100% {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@keyframes moveStar {
+  0% {
+    margin-left: 30rem;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  2.5% {
+    transform: rotate(180deg);
+  }
+  5% {
+    transform: rotate(0);
+  }
+  7.5% {
+    transform: rotate(180deg);
+  }
+  10% {
+    transform: rotate(0);
+  }
+  1.25% {
+    transform: rotate(180deg);
+  }
+  15% {
+    transform: rotate(0);
+  }
+  17.5% {
+    transform: rotate(180deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  22.5% {
+    transform: rotate(180deg);
+  }
+  25%, 100% {
+    margin-left: 0rem;
+    opacity: 1;
+    transform: rotate(0);
+  }
+}

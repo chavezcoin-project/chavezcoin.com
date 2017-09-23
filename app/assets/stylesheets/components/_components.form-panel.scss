@@ -10,13 +10,14 @@
   }
   &.-background {
     background-color: rgba($persianred, .4);
+    border-radius: 1rem 0rem 0 1rem;
     display: none;
     @include md {
       display: flex;
     }
     > .tag-text,
     > .content > .main-title {
-      text-shadow: 0 .05rem .1rem rgba($black, .2);
+      text-shadow: 0 .1rem .1rem rgba($black, .2);
     }
     > .tag-text {
       align-self: flex-end;
@@ -32,6 +33,7 @@
   &.-form {
     align-items: center;
     background: $white;
+    border-radius: 0 1rem 1rem 0;
     flex-direction: column;
     justify-content: space-around;
   }

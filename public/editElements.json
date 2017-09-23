@@ -5,7 +5,16 @@
       "key": "message",
       "className": "main-title -left-center -midsize -black"
     },
-    "text": "Editar usuario"
+    "text": "Editar Usuario"
+  },
+  {
+    "selector": "input",
+    "properties": {
+      "key": "_method",
+      "type": "hidden",
+      "name": "_method",
+      "value": "put"
+    }
   },
   {
     "selector": "input",
@@ -16,25 +25,24 @@
       "placeholder": "Email",
       "type": "email",
       "name": "user[email]",
-      "value": "alex@dailydrip.com",
       "id": "user_email"
     }
   },
   {
     "selector": "span",
     "properties": {
-      "key": "mensaje_uno",
+      "key": "message_one",
       "className": "tag-text -lightblack -midsmall _nomargin"
     },
-    "text": "(Déjar en blanco si no quieres cambiarlo)"
+    "text": "(Déjar en blanco si no lo quieres cambiar)"
   },
   {
     "selector": "span",
     "properties": {
-      "key": "mensaje_dos",
+      "key": "message_two",
       "className": "tag-text -lightblack -midsmall _nomargin"
     },
-    "text": "(6 carácteres mínimo)"
+    "text": "(Mínimo 6 carácteres)"
   },
   {
     "selector": "input",
@@ -51,10 +59,10 @@
   {
     "selector": "input",
     "properties": {
-      "key": "user[password]",
+      "key": "user[password_confirmation]",
       "className": "field",
       "autoComplete": "off",
-      "placeholder": "Confirmar Contraseña",
+      "placeholder": "Confirmar contraseña",
       "type": "password",
       "name": "user[password_confirmation]",
       "id": "user_password_confirmation"
@@ -63,15 +71,15 @@
   {
     "selector": "span",
     "properties": {
-      "key": "mensaje_tres",
+      "key": "message_three",
       "className": "tag-text -lightblack -midsmall _nomargin"
     },
-    "text": "(Ingresa tu contraseña actrual para aplicar cambios)"
+    "text": "(Coloca tu contraseña actual para aplicar cambios)"
   },
   {
     "selector": "input",
     "properties": {
-      "key": "user[password]",
+      "key": "user[current_password]",
       "className": "field",
       "autoComplete": "off",
       "type": "password",

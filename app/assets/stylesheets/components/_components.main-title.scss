@@ -3,13 +3,14 @@
 @import 'settings.global';
 
 .main-title {
-  color: white;
+  color: $white;
   font-family: $secondary-font-family;
   font-size: 3.25rem;
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  text-shadow: 0 .2rem .1rem rgba($black, .2);
   width: 95%;
   z-index: 1;
   @include lg {

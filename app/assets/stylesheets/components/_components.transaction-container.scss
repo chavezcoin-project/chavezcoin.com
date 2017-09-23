@@ -1,15 +1,15 @@
 .transaction-container {
-  @include flex_centered();
   background: $white;
-  margin-top: 1rem;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
   z-index: 3;
-  > .tablet-horizontal {
-    margin-bottom: 2rem;
-    @include md {
-      margin-top: -2rem;
-    }
+  > .limited-wrapper {
+    @include flex_centered();
+    perspective: 80rem;
+  }
+  > .limited-wrapper > .tablet-horizontal {
     @include lg {
-      margin-bottom: 4rem;
+      transform: rotateY(35deg);
     }
   }
 }

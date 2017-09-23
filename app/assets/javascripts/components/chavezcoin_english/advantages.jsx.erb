@@ -14,7 +14,7 @@ window.AdvantageInfo = React.createClass({
   }
 })
 
-window.AdvantageContainer = React.createClass({
+window.AdvantageContainerEnglish = React.createClass({
   render: function() {
     var articleTop = [];
     var articleBottom = [];
@@ -42,7 +42,7 @@ window.AdvantagesListEnglish = React.createClass({
   render: function() {
   	var advantagesJson = $.parseJSON(this.props.advantages);
     return(
-    	<AdvantageContainer advantages={advantagesJson} />
+    	<AdvantageContainerEnglish advantages={advantagesJson} />
     )
   }
 })

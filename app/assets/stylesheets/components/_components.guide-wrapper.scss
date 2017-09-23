@@ -7,6 +7,7 @@
     position: relative;
     transform: translateZ(1px) skewY(-2.5deg);
     > .limited-wrapper {
+      align-items: center;
       transform: translateZ(1px) skewY(2.5deg);
       > .-guide > .menssage-container > .main-title > .cross {
         align-self: flex-start;
@@ -27,8 +28,8 @@
     }
     &.-yellow {
       background: $ripelemon;
-      margin-top: -2rem;
-      padding: 5rem 1rem 2rem;
+      margin-top: -4rem;
+      padding: 5rem 1rem .75rem;
       z-index: 5;
       @include md {
         padding: 4.25rem 1rem 1.25rem;
@@ -38,8 +39,8 @@
         padding: 15rem 1rem 2rem;
       }
       @include xl {
-        margin: -7rem 0 0;
-        padding: 14.25rem 1rem 1.25rem;
+        margin: -11rem 0 0;
+        padding: 13rem 1rem 2rem;
       }
     }
     &.-blue {
@@ -54,6 +55,9 @@
         margin: -7rem 0 0;
         padding: 9rem 1rem .5rem;
       }
+      @include xl {
+        padding: 10rem 1rem .5rem;
+      }
     }
     &.-red {
       background: $persianred;
@@ -62,10 +66,10 @@
       z-index: 3;
       @include lg {
         margin: -7rem 0 0;
-        padding: 10rem 1rem 1.5rem;
+        padding: 11rem 1rem 1.5rem;
       }
       @include xl {
-        padding: 9rem 1rem .5rem;
+        padding: 10rem 1rem 1rem;
       }
     }
     &.-inverted {

@@ -1,78 +1,45 @@
-window.ActionMobileEnglish = React.createClass({
-  render: function() {
-    var images = [];
-    this.props.images.forEach(function(image) {
-      if (images.length < 3) {
-        images.push(<img className="slider-image -devise" src={image.image} key={image.id}></img>);
-      }
-    });
-    return(
-      <div className="device-illustration mobile-normal -app-section">
-        <div className="speaker"></div>
-        <div className="button -devise">
-          <span className="tool-tip">Click me!</span>
-        </div>
-        <div className="device-image-container -backgrounda slider-container -devise">
-          {images}
-        </div>
-      </div>
-    )
-  }
-})
-
 window.ActionMobile = React.createClass({
+  getInitialState: function() {
+    return {message: '', class: '', images: []};
+  },
   render: function() {
-    var images = [];
+    var self = this;
+    this.state.class = this.props.class;
+    this.state.message = this.props.message;
     this.props.images.forEach(function(image) {
-      images.push(<img className="slider-image -devise" src={image.image} key={image.id}></img>);
+      self.state.images.push(<img className="slider-image -devise" src={image.image} key={image.id}></img>);
     });
     return(
-      <div className="device-illustration mobile-normal -app-section">
+      <div className={"device-illustration mobile-normal " + this.state.class}>
         <div className="speaker"></div>
         <div className="button -devise">
-          <span className="tool-tip">¡Clickeame, soy genial!</span>
+          <span className="tool-tip">{this.state.message}</span>
         </div>
         <div className="device-image-container -backgrounda slider-container -devise">
-          {images}
+          {this.state.images}
         </div>
       </div>
     )
   }
 })
-
-window.MobileDefaultEnglish = React.createClass({
-  render: function() {
-    var images = [];
-    this.props.images.forEach(function(image) {
-      images.push(<img className="image" src={image.image} key={image.id}></img>);
-    });
-    return(
-      <div className="device-illustration mobile-normal -app-section">
-        <div className="speaker"></div>
-        <a className="button-no-js" href="#inicio">
-        </a>
-        <div className="store-badges">
-          {images}
-        </div>
-      </div>
-    )
-  }
-})
-
 
 window.MobileDefault = React.createClass({
+  getInitialState: function() {
+    return {class: '', images: []};
+  },
   render: function() {
-    var images = [];
+    var self = this;
+    this.state.class = this.props.class;
     this.props.images.forEach(function(image) {
-      images.push(<img className="image" src={image.image} key={image.id}></img>);
+      self.state.images.push(<img className="image" src={image.image} key={image.id}></img>);
     });
     return(
-      <div className="device-illustration mobile-normal -app-section">
+      <div className={"device-illustration mobile-normal " + this.state.class}>
         <div className="speaker"></div>
         <a className="button-no-js" href="#inicio">
         </a>
         <div className="store-badges">
-          {images}
+          {this.state.images}
         </div>
       </div>
     )

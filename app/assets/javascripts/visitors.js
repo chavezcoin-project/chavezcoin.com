@@ -121,13 +121,23 @@ jQuery(document).ready(function($) {
     var parent = $(this).parents('.guide');
     var video = parent.find('.video-container');
     var text = parent.find('.tag-text');
+    var infoContainer = parent.find('.-guide');
+    var animation = parent.find('.animation-container');
+    var star = animation.find('.animated-star');
     if (parent.hasClass('-active')) {
+      animation.animate({width: '0'}, 500).slideToggle(500);
       parent.removeClass('-active');
+      infoContainer.css('width', '70%');
     }else {
+      animation.slideToggle(500).animate({width: '40%'}, 1000);
       parent.addClass('-active');
+      infoContainer.css('width', '60%');
     }
     video.slideToggle(500);
     text.slideToggle(500);
+    setTimeout(function() {
+      star.slideToggle(500);
+    }, 1000);
   });
 
   slide_interruptor.click(function(e) {
