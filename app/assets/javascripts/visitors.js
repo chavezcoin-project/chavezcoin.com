@@ -125,13 +125,17 @@ jQuery(document).ready(function($) {
     var animation = parent.find('.animation-container');
     var star = animation.find('.animated-star');
     if (parent.hasClass('-active')) {
-      animation.animate({width: '0'}, 500).slideToggle(500);
+      animation.animate({width: '0'}, 1000).slideToggle(1000);
       parent.removeClass('-active');
-      infoContainer.css('width', '70%');
+      if($(window).width() > 993) {
+        infoContainer.animate({width: '70%'}, 1000);
+      }
     }else {
       animation.slideToggle(500).animate({width: '40%'}, 1000);
       parent.addClass('-active');
-      infoContainer.css('width', '60%');
+      if($(window).width() > 993) {
+        infoContainer.animate({width: '60%'}, 1000);
+      }
     }
     video.slideToggle(500);
     text.slideToggle(500);

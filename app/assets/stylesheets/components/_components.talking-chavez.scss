@@ -2,17 +2,98 @@
   @include flex_center();
   animation: hideShow 4s;
   align-items: flex-end;
-  height: 50%;
+  height: 60%;
   overflow: hidden;
   position: absolute;
   top: 0;
   &:before {
     animation: talkingChavez 15s infinite 2s alternate;
-    background: asset_url('logo.png') center center / 100%;
+    background: asset_url('logo.png') center center no-repeat / 100%;
     content: '';
-    height: 8rem;
+    height: 12rem;
+    margin-left: 15%;
     transition: all .5s;
-    width: 8rem;
+    width: 12rem;
+  }
+  &:after {
+    color: $scorpion;
+    animation: write 15s infinite 2s;
+    content: '';
+    font-family: $secondary-font-family;
+    font-size: 2rem;
+    left: 1.25rem;
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    width: 13rem;
+  }
+}
+
+@keyframes write {
+  30% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+    content: 'J';
+  }
+  34% {
+    content: 'Jo';
+  }
+  36% {
+    content: 'Joi';
+  }
+  38% {
+    content: 'Join';
+  }
+  40% {
+    content: 'Join ';
+  }
+  42% {
+    content: 'Join m';
+  }
+  44% {
+    content: 'Join me';
+  }
+  46% {
+    content: 'Join me ';
+  }
+  48% {
+    content: 'Join me c';
+  }
+  50% {
+    content: 'Join me co';
+  }
+  52% {
+    content: 'Join me comp';
+  }
+  54% {
+    content: 'Join me compa';
+  }
+  56% {
+    content: 'Join me compat';
+  }
+  58% {
+    content: 'Join me compatr';
+  }
+  60% {
+    content: 'Join me compatri';
+  }
+  62% {
+    content: 'Join me compatrio';
+  }
+  64% {
+    content: 'Join me compatriot';
+  }
+  66% {
+    content: 'Join me compatriots';
+  }
+  68% {
+    content: 'Join me compatriots!';
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
   }
 }
 
@@ -27,70 +108,33 @@
 
 @keyframes talkingChavez {
   0% {
-    background: asset_url('logo.png') center center / 100%;
-    margin-bottom: 0;
+    margin-bottom: -15rem;
   }
-  29% {
-    margin-bottom: 0;
+  10% {
+    margin-bottom: -4.5rem;
+  }
+  20% {
+    margin-bottom: -15rem;
+  }
+  25% {
+    margin-bottom: 2rem;
   }
   30% {
-    margin-bottom: .25rem;
-  }
-  32.5% {
     margin-bottom: 0;
   }
-  35% {
-    margin-bottom: .25rem;
-  }
-  37.5% {
+  70% {
     margin-bottom: 0;
   }
-  49% {
-    background: asset_url('logo.png') center center / 100%;
-    margin-bottom: 0;
-  }
-  50% {
-    background: asset_url('logo-flop.png') center center / 100%;
-    margin-bottom: .25rem;
-  }
-  52.5% {
-    margin-bottom: 0;
-  }
-  55% {
-    margin-bottom: .25rem;
-  }
-  57.5% {
-    margin-bottom: 0;
-  }
-  60% {
-    margin-bottom: .25rem;
-  }
-  62.5% {
-    margin-bottom: 0;
-  }
-  65% {
-    margin-bottom: .25rem;
-  }
-  67.5% {
-    margin-bottom: 0;
-  }
-  79% {
-    margin-bottom: 0;
+  75% {
+    margin-bottom: 2rem;
   }
   80% {
-    margin-bottom: .25rem;
+    margin-bottom: -15rem;
   }
-  82.5% {
-    margin-bottom: 0;
-  }
-  85% {
-    margin-bottom: .25rem;
-  }
-  87.5% {
-    margin-bottom: 0;
+  90% {
+    margin-bottom: -4.5rem;
   }
   100% {
-    background: asset_url('logo-flop.png') center center / 100%;
-    margin-bottom: 0;
+    margin-bottom: -15rem;
   }
 }
