@@ -7,7 +7,8 @@ window.GuideContainer = React.createClass({
       video_path: '',
       coinsGroup: [],
       coinAnimated: [],
-      stars: []
+      stars: [],
+      language: '-español',
     };
   },
   render: function() {
@@ -15,18 +16,19 @@ window.GuideContainer = React.createClass({
     this.state.option = this.props.option;
     this.state.messages = this.props.text;
     this.state.title = this.props.title;
+    this.state.language = this.props.language;
     switch (this.state.option) {
       case "yellow":
         self.state.video_path = this.props.video_path;
-        for (var i = 0; i < 10; i++) {
-          if (i % 2 == 0) {
-            self.state.coinsGroup.push(<span key={"span-" + i} className={"coin-group -right coin-" + i}></span>)
-          }else {
-            self.state.coinsGroup.push(<span key={"span-" + i} className={"coin-group -left coin-" + i}></span>)
-          }
-        }
-        for (var i = 0; i < 3; i++) {
-          self.state.coinAnimated.push(<span key={"coinSpan-" + i} className={"coin-animated coin-" + i}></span>)
+        for (var i = 0; i < 5; i++) {
+          self.state.coinAnimated.push(
+            <div key={"coinSpan-" + i} className={"coin-animated coin coin-" + i}>
+              <div className="front"></div>
+              <div className="front_b"></div>
+              <div className="back"></div>
+              <div className="back_b"></div>
+            </div>
+          )
         }
         return(
           <div className="pure-u-1 guide -inverted -yellow">
@@ -36,12 +38,6 @@ window.GuideContainer = React.createClass({
                 <VideoContainer video_path={this.state.video_path} />
               </div>
               <div className=" pure-u-2-5 animation-container -coins">
-                <div className="coingroup-container">
-                  {this.state.coinsGroup}
-                </div>
-                <div className="coingroup-container">
-                  {this.state.coinsGroup}
-                </div>
                 <div className="coinAnimated-container">
                   {this.state.coinAnimated}
                 </div>
@@ -75,8 +71,8 @@ window.GuideContainer = React.createClass({
               <div className="limited-wrapper -flex-center -guide">
                 <SectionMessageMid option="guide" messages={this.state.messages} title={this.state.title} />
               </div>
-              <div className=" pure-u-2-5 animation-container -chavez">
-                <figure className="pure-u-1 talking-chavez">
+              <div className="pure-u-2-5 animation-container -chavez">
+                <figure className={'pure-u-1 talking-chavez ' + this.state.language}>
                   <span className="comic-globe"></span>
                 </figure>
               </div>

@@ -1,4 +1,5 @@
 .inner-content {
   @include flex_around();
+  align-items: center;
   perspective: 80rem;
 }

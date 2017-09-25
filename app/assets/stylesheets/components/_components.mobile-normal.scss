@@ -1,6 +1,6 @@
 .mobile-normal {
   @include display_flex();
-  border: .1rem solid lighten($scorpion, 10%);
+  border: .1rem solid $scorpion;
   height: 30rem;
   padding: 3rem 1.5rem;
   position: relative;
@@ -12,6 +12,13 @@
     > .button,
     > .button-no-js {
       left: calc(50% - 1.5rem);
+    }
+  }
+  &.-header {
+    > .speaker,
+    > .button,
+    > .button-no-js {
+      background-color: lighten($black, 12.5%);
     }
   }
   > .speaker,
@@ -53,9 +60,12 @@
   > .button-no-js:hover + .store-badges > .image {
     opacity: 1;
   }
-  > .device-image-container {
-    background: $black;
+  > .device-image-container,
+  > .store-badges {
     background-size: cover;
     border: .1rem solid lighten($scorpion, 50%);
+  }
+  > .device-image-container {
+    background: $black;
   }
 }

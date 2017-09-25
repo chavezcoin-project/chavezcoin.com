@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
   var advantages = $('.advantages-container');
   var boxColor = $('.box-color');
   var graphicDetailsButton = $('.graphic-details');
-  var graphicDetails = $('.graphic-container');
+  var tabletApp = $('.tablet-horizontal .background');
   var transactionCounter = $('.transaction-counter-container');
   var counterBlur = $('.transaction-counter.-blur');
   var counterNav = $('.transaction-counter.-blur-nav');
@@ -45,26 +45,7 @@ jQuery(document).ready(function($) {
 
   graphicDetailsButton.click(function(e) {
     e.preventDefault();
-    if ($(window).width() < 993) {
-      graphicDetails.slideToggle('slow');
-      graphicDetails.css('display', 'flex');
-    }else {
-      if (transactionCounter.hasClass(activeClass)) {
-        setTimeout(function() {
-          graphicDetails.animate({
-            opacity: 0},
-          500);
-        }, 250);
-        transactionCounter.removeClass(activeClass);
-      }else {
-        setTimeout(function() {
-          graphicDetails.animate({
-            opacity: 1},
-          250);
-        }, 250);
-        transactionCounter.addClass(activeClass);
-      }
-    }
+    tabletApp.slideToggle('slow');
   });
 
   function checkInRange() {
@@ -124,23 +105,26 @@ jQuery(document).ready(function($) {
     var infoContainer = parent.find('.-guide');
     var animation = parent.find('.animation-container');
     var star = animation.find('.animated-star');
+
     if (parent.hasClass('-active')) {
-      animation.animate({width: '0'}, 1000).slideToggle(1000);
       parent.removeClass('-active');
-      if($(window).width() > 993) {
-        infoContainer.animate({width: '70%'}, 1000);
-      }
+      animation.animate({width: 0}, 1000);
+      setTimeout(function() {
+        video.slideToggle(1000);
+        text.slideToggle(1000);
+        animation.slideToggle(1000);
+      }, 1000);
     }else {
-      animation.slideToggle(500).animate({width: '40%'}, 1000);
       parent.addClass('-active');
-      if($(window).width() > 993) {
-        infoContainer.animate({width: '60%'}, 1000);
-      }
+      video.slideToggle(1000);
+      text.slideToggle(1000);
+      setTimeout(function() {
+        animation.slideToggle(250);
+        animation.animate({width: '40%'}, 1000);
+      }, 500);
     }
-    video.slideToggle(500);
-    text.slideToggle(500);
     setTimeout(function() {
-      star.slideToggle(500);
+      star.slideToggle(1000);
     }, 1000);
   });
 

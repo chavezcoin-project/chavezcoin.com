@@ -9,7 +9,7 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
   outline: .1rem solid transparent;
   position: absolute;
   top: 0;
-  transform: translateZ(1px) skewY(-12deg);
+  transform: translateZ(1px) skewY(-5deg);
   transform-origin: left;
   z-index: 3;
   &.-flag-color{
@@ -32,10 +32,10 @@ $gradient2: linear-gradient(230deg, $ripelemon 0%, $danube 50%, darken($persianr
     height: 100%;
     left: initial;
     right: 0;
-    transform: translateZ(1px) skewY(12deg);
+    transform: translateZ(1px) skewY(5deg);
     transform-origin: right;
     > .limited-wrapper {
-      transform: skewY(-12deg);
+      transform: skewY(-5deg);
     }
   }
   &.-inverted.-blue {

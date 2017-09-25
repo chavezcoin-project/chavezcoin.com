@@ -17,7 +17,7 @@
   }
   &:after {
     color: $scorpion;
-    animation: write 15s infinite 2s;
+    animation: escribir 15s infinite 2s;
     content: '';
     font-family: $secondary-font-family;
     font-size: 2rem;
@@ -27,69 +27,177 @@
     top: 2rem;
     width: 13rem;
   }
+  &.-english:after {
+    animation: write 15s infinite 2s;
+  }
+}
+
+
+@keyframes escribir {
+  30% {
+    opacity: 0;
+  }
+  32.5% {
+    content: '|';
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  37.5% {
+    content: '|';
+    opacity: 1;
+  }
+  41.25% {
+    content: 'Ú|';
+  }
+  42.5% {
+    content: 'Ún|';
+  }
+  43.75% {
+    content: 'Úne|';
+  }
+  45% {
+    content: 'Únet|';
+  }
+  46.25% {
+    content: 'Únete|';
+  }
+  47.5% {
+    content: 'Únete |';
+  }
+  48.75% {
+    content: 'Únete a|';
+  }
+  50% {
+    content: 'Únete a |';
+  }
+  51.25% {
+    content: 'Únete a m|';
+  }
+  52.5% {
+    content: 'Únete a mi|';
+  }
+  53.75% {
+    content: 'Únete a mi |';
+  }
+  55% {
+    content: 'Únete a mi c|';
+  }
+  56.25% {
+    content: 'Únete a mi ca|';
+  }
+  57.5% {
+    content: 'Únete a mi cam|';
+  }
+  58.75% {
+    content: 'Únete a mi cama|';
+  }
+  60% {
+    content: 'Únete a mi camar|';
+  }
+  61.25% {
+    content: 'Únete a mi camara|';
+  }
+  62.5% {
+    content: 'Únete a mi camarad|';
+  }
+  63.75% {
+    content: 'Únete a mi camarad|';
+  }
+  65% {
+    content: 'Únete a mi camarada|';
+  }
+  66.25% {
+    content: 'Únete a mi camarada!|';
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
 }
 
 @keyframes write {
   30% {
+    content: '|';
     opacity: 0;
   }
-  32% {
+  32.5% {
     opacity: 1;
-    content: 'J';
   }
-  34% {
-    content: 'Jo';
+  35% {
+    opacity: 0;
   }
-  36% {
-    content: 'Joi';
-  }
-  38% {
-    content: 'Join';
+  37.5% {
+    opacity: 1;
   }
   40% {
-    content: 'Join ';
+    opacity: 0;
   }
-  42% {
-    content: 'Join m';
+  42.5% {
+    content: '|';
+    opacity: 1;
   }
-  44% {
-    content: 'Join me';
+  43.75% {
+    content: 'J|';
   }
-  46% {
-    content: 'Join me ';
+  45% {
+    content: 'Jo|';
   }
-  48% {
-    content: 'Join me c';
+  46.25% {
+    content: 'Joi|';
+  }
+  47.5% {
+    content: 'Join|';
+  }
+  48.75% {
+    content: 'Join |';
   }
   50% {
-    content: 'Join me co';
+    content: 'Join m|';
   }
-  52% {
-    content: 'Join me comp';
+  51.25% {
+    content: 'Join me|';
   }
-  54% {
-    content: 'Join me compa';
+  52.5% {
+    content: 'Join me |';
   }
-  56% {
-    content: 'Join me compat';
+  53.75% {
+    content: 'Join me c|';
   }
-  58% {
-    content: 'Join me compatr';
+  55% {
+    content: 'Join me co|';
+  }
+  56.25% {
+    content: 'Join me comp|';
+  }
+  57.5% {
+    content: 'Join me compa|';
+  }
+  58.75% {
+    content: 'Join me compat|';
   }
   60% {
-    content: 'Join me compatri';
+    content: 'Join me compatr|';
   }
-  62% {
-    content: 'Join me compatrio';
+  61.25% {
+    content: 'Join me compatri|';
   }
-  64% {
-    content: 'Join me compatriot';
+  62.5% {
+    content: 'Join me compatrio|';
   }
-  66% {
-    content: 'Join me compatriots';
+  63.75% {
+    content: 'Join me compatriot|';
+  }
+  65% {
+    content: 'Join me compatriots|';
+  }
+  66.25% {
+    content: 'Join me compatriots!|';
   }
   68% {
-    content: 'Join me compatriots!';
     opacity: 1;
   }
   70% {

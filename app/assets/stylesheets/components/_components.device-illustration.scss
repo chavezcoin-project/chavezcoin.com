@@ -1,11 +1,16 @@
 .device-illustration {
   @include flex_centered();
   background-color: $black_squeeze;
-  border-radius: 3rem;
+  border-radius: 1.85rem;
   box-shadow: inset 0 .2rem 1.5rem -.5rem rgba($black, .5), inset 0 -.2rem 1.5rem -.5rem rgba($black, .5), inset .3rem 0 1.5rem -.5rem rgba($black, .5), inset -.3rem 0 1.5rem -.5rem rgba($black, .5), 0 1rem .75rem -.75rem $black;
+  outline: 1px solid transparent;
   transition: all 1s;
-  &.tablet-horizontal {
+  &.tablet-horizontal,
+  &.-header {
     background-color: lighten($black, 5%);
-  box-shadow: inset 0 .2rem 1.5rem -.5rem rgba($white, .5), inset 0 -.2rem 1.5rem -.5rem rgba($white, .5), inset .3rem 0 1.5rem -.5rem rgba($white, .5), inset -.3rem 0 1.5rem -.5rem rgba($white, .5), 0 1rem .75rem -.75rem $black;
+    box-shadow: inset 0 .2rem 1.5rem -.5rem rgba($black, .5), inset 0 -.2rem 1.5rem -.5rem rgba($black, .5), inset .3rem 0 1.5rem -.5rem rgba($black, .5), inset -.3rem 0 1.5rem -.5rem rgba($black, .5), 0 1rem .75rem -.75rem $black;
+  }
+  &.-header {
+    background-color: lighten($black, 17.5%);
   }
 }
