@@ -46,7 +46,38 @@ window.FormBackgroundTopText = React.createClass({
 
 window.FormPanel = React.createClass({
   getInitialState: function() {
-    return {option: '', elements: [], text: {}};
+    return {
+      option: '',
+      elements: [],
+      text: {},
+      errors: {}
+    }
+  },
+  handleErrors: function(errors){
+    var error_messages = [],
+        self = this;
+    if (this.props.errors) {
+      console.log(this.state.errors);
+      self.state.errors = self.props.errors;
+      for (var i = 0; i < self.state.errors.errors.length; i++) {
+        error_messages.push(<li className="tag-text -midsmall -scorpion error" key={i}>{self.state.errors.errors[i]}</li>)
+      }
+      return (
+        React.createElement('div', {
+          key: "errors",
+          className: "field -errors"
+        },
+          React.createElement('h2', {
+            key: "error sentence",
+            className: "tag-text -regular -black -center"
+          }, this.state.errors.sentence),
+          React.createElement('ul', {
+            key: "errors",
+            className: "field -errors"
+          }, error_messages)
+        )
+      )
+    }
   },
   render: function() {
     var elements = {};
@@ -69,7 +100,10 @@ window.FormPanel = React.createClass({
         return (
           React.createElement('div', {
             className: self.props.panelClass
-          }, self.state.elements)
+          },
+            self.state.elements,
+            this.handleErrors()
+          )
         )
         break;
       default:

@@ -32,7 +32,6 @@ class ApplicationController < ActionController::Base
       @loginRedPanel = File.read("#{Rails.root}/public/login_panel_rojo.json")
       @editElements = File.read("#{Rails.root}/public/editElements.json")
       @editRedPanel = File.read("#{Rails.root}/public/editFormRed.json")
-      @signupElements = File.read("#{Rails.root}/public/signupElements.json")
       @signupRedPanel = File.read("#{Rails.root}/public/signupRedText.json")
     else
       @loginForm = File.read("#{Rails.root}/public/login_textEnglish.json")

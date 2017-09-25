@@ -5,7 +5,7 @@
       "key": "message",
       "className": "main-title -left-center -midsize -black"
     },
-    "text": "Crear nueva cuenta"
+    "text": "Registrar cuenta"
   },
   {
     "selector": "input",
@@ -45,7 +45,7 @@
       "key": "user[password_confirmation]",
       "className": "field",
       "autoComplete": "off",
-      "placeholder": "Confirmar Contraseña",
+      "placeholder": "Confirmar contraseña",
       "type": "password",
       "name": "user[password_confirmation]",
       "id": "user_password_confirmation"
