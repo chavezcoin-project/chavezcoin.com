@@ -51,7 +51,8 @@
     z-index: 0;
   }
   > .background {
-    background: asset_url('tabletApp') center center no-repeat / cover;
+    background: asset_url('tabletApp') center center no-repeat;
+    background-size: cover;
     position: absolute;
     z-index: 2;
   }

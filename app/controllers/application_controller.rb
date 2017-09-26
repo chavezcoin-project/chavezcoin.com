@@ -17,8 +17,7 @@ class ApplicationController < ActionController::Base
 
   def set_variables
     @ip = remote_ip()
-    @visitor_country = HTTParty.get('http://ip-api.com/json/' + @ip)
-    puts @visitor_country.body, @visitor_country.code, @visitor_country.message, @visitor_country.headers.inspect
+    @visitor_country = ''
 
     if user_signed_in?
       @link = ['logout', destroy_user_session_path]

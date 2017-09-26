@@ -25,8 +25,9 @@ window.TransactionContainerEnglish = React.createClass({
         <section className="pure-u-1 transaction-container section-container -skew-container">
           <div className="limited-wrapper">
             <div className="device-illustration tablet-horizontal">
-               <GraphicContainer graphicData={graphicData} />
-               <span className="button graphic-details"></span>
+              <div className="background"></div>
+              <GraphicContainer graphicData={graphicData} />
+              <span className="button graphic-details"></span>
             </div>
             <SectionMessageMid title={"The graphic doesn't lie"} messages={messages} option="side" />
           </div>
