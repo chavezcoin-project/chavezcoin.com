@@ -7,5 +7,6 @@
     "top": "No tienes una cuenta? ",
     "middle": "Regístrate",
     "bottom": " y empieza a ganar Chavezcoin!"
-  }
+  },
+  "link": "/users/sign_up"
 }

@@ -7,5 +7,6 @@
     "top": "You don't have an account yet? ",
     "middle": "Sign up",
     "bottom": " and start winning ChavezCoin!"
-  }
+  },
+  "link": "/users/sign_up"
 }

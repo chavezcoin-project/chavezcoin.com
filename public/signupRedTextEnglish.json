@@ -7,5 +7,6 @@
     "top": "You already have an account? ",
     "middle": "Login",
     "bottom": " and start winning ChavezCoin!"
-  }
+  },
+  "link": "/users/sign_in"
 }

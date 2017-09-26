@@ -1,11 +1,12 @@
-window.FormBackgroundText = React.createClass({
+window.FormBackgroundBottomText = React.createClass({
   getInitialState: function() {
-    return {textTop: '', textMiddle: '', textBottom: ''}
+    return {textTop: '', textMiddle: '', textBottom: '', link: ''}
   },
   render: function() {
     this.state.textTop = this.props.text.top;
     this.state.textMiddle = this.props.text.middle;
     this.state.textBottom = this.props.text.bottom;
+    this.state.link = this.props.link;
     return (
       React.createElement('span', {
         className: 'tag-text -white -midsmall'
@@ -13,7 +14,7 @@ window.FormBackgroundText = React.createClass({
         this.state.textTop,
         React.createElement('a', {
           className: 'link',
-          href: '/users/sign_up',
+          href: this.state.link,
         }, this.state.textMiddle),
         this.state.textBottom
       )
@@ -112,7 +113,7 @@ window.FormPanel = React.createClass({
             className: self.props.panelClass
           },
             React.createElement(FormBackgroundTopText, {text: this.state.text.textTop}),
-            React.createElement(FormBackgroundText, {text: this.state.text.textBottom})
+            React.createElement(FormBackgroundBottomText, {text: this.state.text.textBottom, link: this.state.text.link})
           )
         )
         break;
