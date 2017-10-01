@@ -6,6 +6,7 @@
     = react_component("AdvantagesList", {advantages: @advantages}, class: "pure-u-1")
     = react_component("MarketExchange", {coins: @coins, markets: @markets}, class: "pure-u-1")
     = react_component("AppPromo", {images: @slider, imagesDevice: @SliderDeviceTablet}, class: "pure-u-1")
+    = react_component("SocialMedia", {} , class: "pure-u-1")
     = react_component("BlogList", {posts: @posts}, class: "pure-u-1")
     = react_component("FaqList", {faqs: @faqs}, class: "pure-u-1")
   - else
@@ -15,5 +16,6 @@
     = react_component("AdvantagesListEnglish", {advantages: @advantages}, class: "pure-u-1")
     = react_component("MarketExchangeEnglish", {coins: @coins, markets: @markets}, class: "pure-u-1")
     = react_component("AppPromoEnglish", {images: @slider, imagesDevice: @SliderDeviceTablet}, class: "pure-u-1")
+    = react_component("SocialMedia", {language: 'english'}, class: "pure-u-1")
     = react_component("BlogListEnglish", {posts: @posts}, class: "pure-u-1")
     = react_component("FaqListEnglish", {faqs: @faqs}, class: "pure-u-1")

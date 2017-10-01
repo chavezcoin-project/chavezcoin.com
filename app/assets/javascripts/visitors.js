@@ -103,6 +103,7 @@ jQuery(document).ready(function($) {
     var video = parent.find('.video-container');
     var text = parent.find('.tag-text');
     var infoContainer = parent.find('.-guide');
+    var testList = parent.find('.icon-bullet-list');
     var animation = parent.find('.animation-container');
     var star = animation.find('.animated-star');
 
@@ -112,15 +113,18 @@ jQuery(document).ready(function($) {
       setTimeout(function() {
         video.slideToggle(1000);
         text.slideToggle(1000);
+        testList.slideToggle(1000);
         animation.slideToggle(1000);
       }, 1000);
     }else {
       parent.addClass('-active');
       video.slideToggle(1000);
+      testList.slideToggle(1000);
       text.slideToggle(1000);
       setTimeout(function() {
         animation.slideToggle(250);
         animation.animate({width: '40%'}, 1000);
+        testList.css('display', 'flex');
       }, 500);
     }
     setTimeout(function() {
@@ -228,6 +232,9 @@ jQuery(document).ready(function($) {
   var showmodal = function() {
     fadeScreen.fadeIn(500).css('display', 'flex');
   }
+
+  showmodal();
+
   var menuLinks =  $('.menu-links-container');
   var showMenu = function() {
     if (menuLinks.hasClass('on')) {
@@ -275,4 +282,5 @@ jQuery(document).ready(function($) {
     proximity:450,
     density: 32500
   });
+
 });

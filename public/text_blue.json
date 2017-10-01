@@ -1,11 +1,28 @@
 [
   {
-    "text": "Al descargar la aplicación y realizar el registro en nuestra página, el sistema automáticamente generará un monedero encriptado en el cual podrás guardar tus CC y también usarlos. Si deseas realizar alguna transferencia o cambio, se genera un ID único asociado a tu monedero que funciona como un número de cuenta bancario y el cual es imposible de rastrear, es totalmente anónimo, enteramente seguro y cambia automáticamente cada día."
+    "text": "Primero descargamos la Wallet (cartera virtual) en android o windows, luego nos registramos y empezamos a tener todos estos beneficios:"
   },
   {
-    "text": "Para obtener CC, existirán diversas formas, la primera vendrá directamente desde nosotros, ya que al ser una criptomoneda única de Venezuela y que solo podrás obtener dentro del territorio nacional, cuando realices los pasos necesarios para obtener tu monedero, te será otorgado cierta cantidad de CC."
+    "benefits":
+    [
+      {
+        "text": "ID única"
+      },
+      {
+        "text": "Obtener Monedas por el sistema de recompensa (Si eres venezolano)"
+      },
+      {
+        "text": "Intercambia con quien quieras"
+      },
+      {
+        "text": "Conseguir activos, comida o jugar la loteria"
+      },
+      {
+        "text": "Poder de inversion"
+      }
+    ]
   },
   {
-    "text": "Otras maneras de obtener CC serían comprando directamente a algún otro usuario, con el sistema de referidos o realizando algún tipo de trueque con los venezolanos. ChavezCoin (CC) no podrá ser minada, CC será pre-minada por nuestro equipo y entregada a los usuarios por nosotros, queremos que todos los usuarios participen por igual en el futuro que está por llegar, no queremos que el poder sea para un grupo selecto, queremos que el poder de ChavezCoin esté en las manos de todos."
+    "text": "Si eres extranjero puedes obtener CC de cualquier venezolano que quiera intercambiar mediante los sitios web de intercambio, al hacer eso estas ayudando a alguien para que compre bienes para su familia y por lo tanto ayudas a toda Venezuela."
   }
 ]

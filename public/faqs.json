@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "question": "¿Qué es una cryptomoneda?",
-    "answer": "Una criptomoneda es una moneda virtual que sirve para intercambiar bienes y servicios a través de un sistema de transacciones electrónicas sin la necesidad de un intermediario. A diferencia de otros intentos de dinero electrónico, las criptomonedas incorporan los principios de la criptografía para implementar una economía segura, anónima y descentralizada."
+    "question": "¿Qué es una criptomoneda?",
+    "answer": "es una moneda digital basada en un algoritmo llamado blockchain, es completamente descentralizada y es practicamente imposible controlarla una vez publicada."
   },
   {
     "id": 2,
     "question": "¿Qué es una cartera (wallet)?",
-    "answer": "Es un monedero electrónico que tienes que usar para enviar y recibir cryptomonedas en todo el mundo de manera anónima y gratuita, tienes distintas versiones, para tu ordenador, móvil, tablet, e incluso online.  \n\n No existe otro sistema aparte de éste, en el que tu cuenta no pertenezca a alguien más. Por ejemplo, si Paypal decide por alguna razón que tu cuenta ha sido mal usada, ellos tienen el poder de congelar todo el dinero perteneciente a esa cuenta, sin consultarte. Entonces, depende de ti hacer todo lo que sea necesario para aclarar el problema y poder acceder a tus fondos. \n\n Con Chavezcoin tu eres dueño del la id privada y pública que conforman tu cartera. NADIE puede quitártelo."
+    "answer": "Cómo su ombre lo indica, es una cartera, pero online; sirve para controlar todas las monedas que tengas, ya sea para enviar o recibir, es completamente personal y, salvo tu, nada ni nadie puede controlarlo."
   },
   {
     "id": 3,
     "question": "¿Qué podré hacer con mis Chavezcoin?",
-    "answer": "Chavezcoin es simailar a la moneda oficial de cualquier país. Es una moneda descentralizada con la cual podrás comprar productos, pagar servicios o invertir. Podrás comprar o transferir tus Chavezcoin a tus contactos donde quieran que estén, de una manera totalmente privada. También podrás cambiar tus Chavezcoin por dinero tradicional, si así lo deseas."
+    "answer": "ChávezCoin será como el dinero que usamos diariamente, pero sin sus desventajas. Podrás comprar bienes, pagar cuentas o incluso jugar la lotería. Puedes enviarle CC a cualquier persona que desees y es totalmente seguro y anónimo."
   },
   {
     "id": 4,
     "question": "¿Por qué no hay Chavezcoin disponibles actualmente?",
-    "answer":"Chavezcoin está basado en un nuevo y revolucionario sistema tecnológico que va a facilitar el acceso a las cryptodivisas para todas aquellas personas que tienen poca o ninguna experiencia con este tipo de sistema. \n\n Uno de los objetivos de Chavezcoin es la de proveer una alternativa monetaria que ayude a solventar la crisis económica de Venezuela, por eso nuestro equipo se esfuerza por desarrollar nuevas características y ventajas que no podrás encontrar en ninguna cryptomoneda, esto leva tiempo. Por nuestra página web podrás ver un anuncio que indique la fecha de salida, cuando la fase de desarrollo esté terminada."
+    "answer":"ChavezCoin será publicada el 12 de Diciembre del 2017."
   },
   {
     "id": 5,
-    "question": "¿Cuántas Chavezcoin hay en existencia?",
-    "answer": "El suministro de las chavezcoin sera igual al de la poblacion actual venezolana, 31 millones. Ni una sola moneda más puede existir."
+    "question": "¿Cuántas Chavezcoin habrá en existencia?",
+    "answer": "El suministro de las chavezcoin sera igual al de la poblacion actual venezolana, 31 millones la cual tendra una inflacion del 3% por año. (El promedio de crecimiento poblacional en Venezuela)"
   },
   {
     "id": 6,
     "question": "¿Cómo puedo obtener Chavezcoin?",
-    "answer": "A diferencias de otras criptomonedas, Chavezcoin no sera minada. No dejaremos que las monedas caigan en manos de los pocos que tienen los recursos para sacar ventaja minando mucho mas que una persona normal, en cambio, vamos a distribuir las monedas en nuestra página web. Por supuesto, también podrás comprar comprar y vender Chavezcoin en sitios web de cambio."
+    "answer": "Si eres venezolano, puedes ganar CC usando el sistema de recompensa. Si eres extrajero, puedes obtener CC de cualquiera que esté vendiendolos en nuestra página de intercambio."
   },
   {
     "id": 7,
     "question": "¿Cuál es el valor estimado de Chavezcoin?",
-    "answer": "El valor de salida de un Chavezcoin será de $1, a partir de éste punto, el valor de la moneda irá en aumento."
+    "answer": "Luego de publicado, el valor será de 1$/CC, a partir de ahí, el valor será determinado por los usuarios."
   },
   {
     "id": 8,
     "question": "¿Cómo puedo crear una cuenta?",
-    "answer": "Debes hacer click en 'Ingresar' en el menu de Chavezcoin.com. Serás redireccionado a una página para ingresar al sistema; ahí sólo debes hacer click en 'crea una cuenta', luego debes ingresar tu email en el cuadro de texto y hacer click en aceptar. \n\n Un correo será enviado para verificar que tu email sea real y de tu propiedad, debes ingresar a tu correo y hacer click en el link de verificación; una vez hecho esto, el sistema te solicitará que ingreses una contraseña para completar tu registro, tu cuenta será creada y estará completamente operacional."
+    "answer": "Haz click en registrate en la página de ingreso al sistema y sigue las instrucciones."
   },
   {
     "id": 9,
     "question": "¿Es seguro?",
-    "answer": "Las cryptomonedas, son actualmente las divisas mas seguras que existen. A diferencia del dinero impreso, tus chavezcoin no serán robadas ni tampoco podrás perderlas. Ningún banco validará las transacciones ni te cobrará comisiones por ello, es TU dinero y nadie podrá investigar o espiar qué haces con él."
+    "answer": "las criptomonedas son el sistema monetario mas seguro de la actualidad, puedes hacer todo lo que quieras con él y puedes estar 100 seguro que estarás a salvo."
   },
   {
     "id": 10,
     "question": "¿Qué es un referido?",
-    "answer": "Los Referidos (del inglés referrer) son personas a quien tú recomiendas una empresa o servicio, y éstos prueban o se registran en dichos servicios. Estos serían tus referidos."
+    "answer": "Es una de las tareas que ofrece el sistema de recompensa para obtener mas CC. Mientras mas personas invites usando el sistema, mas CC vas a ganar. (Sólo para venezolanos)"
   }
 ]

@@ -1,0 +1,48 @@
+.hexagon-container {
+  > .hexagon {
+    @include flex_centered();
+    background-color: darken($ripelemon, 2.5%);
+    height: 2.75rem;
+    margin: 3rem .75rem;
+    position: relative;
+    transition: all 1s;
+    width: 5rem;
+    @include lg {
+      margin: 3rem 1.5rem;
+    }
+    &:hover {
+      background-color: $white;
+      transform: rotate(90deg);
+      &:before,
+      &:after {
+        border-bottom-color: $white;
+        border-top-color: $white;
+      }
+      > .fa {
+        color: darken($ripelemon, 2.5%);
+        transform: rotate(-90deg);
+      }
+    }
+    &:before,
+    &:after {
+      border-left: 2.5rem solid transparent;
+      border-right: 2.5rem solid transparent;
+      content: "";
+      position: absolute;
+      transition: all 1s;
+      width: 0;
+    }
+    &:before {
+      bottom: 100%;
+      border-bottom: 1.75rem solid darken($ripelemon, 2.5%);
+    }
+    &:after {
+      border-top: 1.75rem solid darken($ripelemon, 2.5%);
+      right: 0;
+      top: 100%;
+    }
+    > .fa {
+      font-size: 2rem;
+    }
+  }
+}

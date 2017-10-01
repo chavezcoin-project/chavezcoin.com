@@ -14,7 +14,22 @@ window.SectionMessageMid = React.createClass({
           messagesIndividual.push(<p className="tag-text -left-center" key={contrrol} >{message.text}</p>);
           break;
         default:
-          messagesIndividual.push(<p className="tag-text -white _marginbottom-md -left" key={contrrol} >{message.text}</p>);
+          if (message.benefits) {
+            var benefits = [];
+            var control = 0;
+            message.benefits.forEach(function(benefit) {
+              benefits.push(
+                <li className="pure-u-1 pure-u-lg-5-12 item" key={control} >
+                  <i className="fa fa-check-circle"></i>
+                  <p className="tag-text -white -left" >{benefit.text}</p>
+                </li>
+              );
+              control++;
+            });
+            messagesIndividual.push(<ul className="pure-u-1 icon-bullet-list" key={contrrol} >{benefits}</ul>);
+          }else {
+            messagesIndividual.push(<p className="tag-text -white _marginbottom-md -left" key={contrrol} >{message.text}</p>);
+          }
           break;
       }
       contrrol++;

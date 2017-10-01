@@ -2,51 +2,51 @@
   {
     "id": 1,
     "question": "¿What is a cryptocurrency?",
-    "answer": "A cryptocurrency is a virtual currency that os used to trade goods and services through an electronic transaction system, without the requirement of third parties. The cryptocurrencies uses the same values as cryptography to implement a decentrilized, safe and anonymous economy."
+    "answer": "Is a digital coin made by an algorithm named blockchain, is completely decentralized and is almost impossible to control this technology after is deployed."
   },
   {
     "id": 2,
     "question": "¿What is a wallet?",
-    "answer": "Its an electronic wallet used to send and receive cryptocurrencies around the world, anonymous and free. There're different versions, for desktop pc, mobile or tablet devices and even online. There's no other system apart from this, in which your account doesn't belong to anyone else. For example, if Paypal decides, for some reason, that there's something wrong or suspicious with your account; they have the power to block your account and freeze the funds without your concern; then you have to make anything necessary to clafiry the issue and have access to your money again. With CHavezcoin you are the only owner of the wallet public and private id, NO ONE can take them from you."
+    "answer": "Like his name indicates, is a wallet but digital, where you can control all the coins you have whether you want to send, receive or exchange. Is totally personal and nothing or noone can control it."
   },
   {
     "id": 3,
     "question": "¿What can i do with my Chavezcoins?",
-    "answer": "Chavezcoin works like any other currency. It's a decentrilized cryptocurrency that you can use to buy products, pay services or invest. You can buy and transfer your Chavezcoin to your contacts wherever they are, in a completely private way. You can also change your Chavezcoin for traditional money, if you want."
+    "answer": "ChavezCoin will be like the paper-money we use this days but without any disvantages. You will be able to buy goods, buy items, pay bills or even play the lottery. You can send to anyone you like and totally anonymous and safe."
   },
   {
     "id": 4,
     "question": "¿Why there're no Chavezcoin available yet?",
-    "answer":"The system used by Chavezcoin is new and revolutionary, it'll make easier the access to cryptocurrencies to people with little or non existent experience. One of the main goals of the project, is to provide a way to solve the current economical crisis that Venezuela is facing, that's why our team is working hard to develop new features that you cannot find in any other cryptocurrency, this takes time. In our web page you will see and announcement indicating the release date when the develop fase is finished"
+    "answer":"ChavezCoin will be release in 12th December of 2017."
   },
   {
     "id": 5,
-    "question": "¿How many Chavezcoin exist?",
-    "answer": "El amount of Chavezcoin is the same as the actual population of Venezuela, 31000000, not even one more coin can/will exist."
+    "question": "¿How many ChavezCoin will be available?",
+    "answer": "The amount of ChavezCoin will be 31 million corresponding to the quantity of people in the country, with an inflation of the 3% per year  (The average growth of the people in Venezuela)"
   },
   {
     "id": 6,
     "question": "¿How can i obtain Chavezcoin?",
-    "answer": "Unlike other cryptocurrencies, Chavezcoin can't be mined. We will not let Chavezcoin to fall into the hands of only those with means to take advantages mining a lot more than a regular person. Instead, we're going to distribute the coins in our webpage; of course, you can sell and buy Chaveszcoin in any exchange without any restriction."
+    "answer": "If you are Venezuelan just follow the bounty system and you can earn CC. If you are not Venezuelan you can get CC from anyone who is selling in our exchange page available."
   },
   {
     "id": 7,
-    "question": "¿How much does it cost one Chavezcoin?",
-    "answer": "The release value is $1, from there, the price most likely will grow"
+    "question": "¿What will be the value of ChavezCoin?",
+    "answer": "After the release the price will be 1$ per CC, from then the price will be determined by the users."
   },
   {
     "id": 8,
     "question": "¿How can i make an account?",
-    "answer": "You must go to the login screen, there you will see a sign up link, click it and put your email in the text field then click 'Accept'. You will receive a verification email to make sure everything's ok with the supplied mail; click the link we sent to you, the system will ask for a password to complete the process, once you provide the pass and clicks OK, the account will be created and completely operative."
+    "answer": "Click in register in login page and follow the instructions."
   },
   {
     "id": 9,
     "question": "¿It's safe?",
-    "answer": "At the present time, cryptocurrencies are the safest currencies in the world. Unline traditional money, your Chavezcoin will not be stolen nor taken away from you. No financial entity will validate the transactions nor will take fees for doing so, its YOUR money and no one can track nor spy whatever you do with it."
+    "answer": "Cryptocurrencys are the most secure system of money at the moment, you will be able to do anything you want and be 100% certain that you will be safe."
   },
   {
     "id": 10,
-    "question": "¿What is a referred?",
-    "answer": "Referred is a term given to the people you show a service or product and start use it from that amoment onwards, making them your referred."
+    "question": "¿What is a referrer?",
+    "answer": "Is one of the task you earn in the bounty system to get more CC. The more people you get in the referral system the more CC you get. (Only for Venezuelan)"
   }
 ]

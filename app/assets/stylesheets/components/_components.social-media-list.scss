@@ -1,0 +1,10 @@
+.social-media-list {
+  @include flex_centered;
+  max-width: 90%;
+  @include md {
+    max-width: 75%;
+  }
+  @include lg {
+    max-width: 50%;
+  }
+}

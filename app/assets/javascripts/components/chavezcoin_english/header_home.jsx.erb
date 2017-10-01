@@ -8,7 +8,7 @@ window.SkewFlagEnglish = React.createClass({
             <TransactionContainer type='blur' />
             <HideCoinAnimation />
             <h2 className="tag-text -banner -lightgrey -midsize">
-              Let your patria level get to the sky
+              ¡Raise your assets to the moon!
             </h2>
             <div className="pure-u-1 buttons-container">
               <a className="main-button -blue" href={this.props.blueButtonLink} >Get Chavezcoin</a>
@@ -29,6 +29,16 @@ window.HeaderHomeEnglish = React.createClass({
     var images = $.parseJSON(this.props.images);
     return(
       <header className="pure-u-1">
+        <div className="fade-screen -header pure-u-1">
+          <i className="close">x</i>
+          <article className="default-modal" >
+            <figure className="logo -chavez"></figure>
+            <p className="text tag-text -fullwidth -center">¡Sign up and start winning ChavezCoin!</p>
+            <div className="pure-u-1 buttons-container">
+              <a className="main-button -blue" href={this.props.blueButtonLink} >Get Chavezcoin</a>
+            </div>
+          </article>
+        </div>
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color">
           </div>

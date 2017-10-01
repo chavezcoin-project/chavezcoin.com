@@ -1,0 +1,16 @@
+.icon-bullet-list {
+  @include flex_between();
+  display: none;
+  padding: 1rem;
+  @include lg {
+    max-width: 80%;
+  }
+  > .item {
+    @include flex_between();
+    margin-bottom: .5rem;
+    > .tag-text {
+      display: none;
+      width: 90%;
+    }
+  }
+}
