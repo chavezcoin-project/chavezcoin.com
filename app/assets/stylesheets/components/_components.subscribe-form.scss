@@ -4,36 +4,67 @@
   > .fielset {
     @include flex_centered();
     background: darken($danube, 15%);
-    border: .1rem solid $danube;
+    border: .1rem solid transparent;
     border-radius: 4rem;
-    overflow:hidden;
     position: relative;
     width: 25rem;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       > .button {
         color: $white;
         transform: rotate(180deg);
         transition: all .5s;
       }
     }
-    > .input {
+    > .input:focus + .button,
+    > .input:active + .button {
+      color: $white;
+      transform: rotate(180deg);
+      transition: all .5s;
+    }
+    &:before,
+    &:after {
+      content: '';
+      border-radius: 4rem;
+      position: absolute;
+      width: calc(100% + .2rem);
+    }
+    &:before {
+      border: .1rem solid transparent;
+      background: linear-gradient(230deg, $green_haze 0%, darken($ripelemon, 15%) 90%);
+      height: calc(100%);
+      left: -.3rem;
+      top: -.075rem;
+    }
+    &:after {
       background: darken($danube, 15%);
+      height: calc(100% - .2rem);
+      left: 0;
+      top: .15rem;
+    }
+    > .input {
+      background: transparent;
+      border: none;
       color: $white;
       font-family: $primary-font-family;
       font-size: 1.25rem;
+      outline: .1rem solid transparent;
       padding: 1rem;
       width: 100%;
+      z-index: 2;
     }
     > .button {
       @include flex_centered();
-      background: linear-gradient(230deg, darken($danube, 15%) 0%, darken($persianred, 2.5%) 90%);
+      background: linear-gradient(230deg, $green_haze 0%, darken($ripelemon, 15%) 90%);
       border-radius: 50%;
       font-size: 2rem;
-      height: 3.75rem;
+      height: 3.5rem;
       position: absolute;
       right: 0;
       top: 0;
-      width: 3.75rem;
+      width: 3.5rem;
+      z-index: 2;
     }
   }
 }
