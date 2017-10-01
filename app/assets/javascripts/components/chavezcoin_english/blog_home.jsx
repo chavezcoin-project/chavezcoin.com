@@ -78,7 +78,7 @@ window.BlogContainerEnglish = React.createClass({
     });
     return(
       <section className="-flex-center pure-u-1 blog-container section-container" id="blog">
-        <SectionMessage title={'Latest News'} message={'Fin out what`s new with Chavezcoin and the cryptocurrency world.'} />
+        <SectionMessage title={'Latest News'} message={'Fin out what`s new!'} />
         <div className="limited-wrapper blog -flex-around">{posts}</div>
       </section>
     )

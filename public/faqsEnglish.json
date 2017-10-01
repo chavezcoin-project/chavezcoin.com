@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "question": "¿What is a cryptocurrency?",
+    "question": "What is a cryptocurrency?",
     "answer": "Is a digital coin made by an algorithm named blockchain, is completely decentralized and is almost impossible to control this technology after is deployed."
   },
   {
     "id": 2,
-    "question": "¿What is a wallet?",
+    "question": "What is a wallet?",
     "answer": "Like his name indicates, is a wallet but digital, where you can control all the coins you have whether you want to send, receive or exchange. Is totally personal and nothing or noone can control it."
   },
   {
     "id": 3,
-    "question": "¿What can i do with my Chavezcoins?",
+    "question": "What can i do with my Chavezcoins?",
     "answer": "ChavezCoin will be like the paper-money we use this days but without any disvantages. You will be able to buy goods, buy items, pay bills or even play the lottery. You can send to anyone you like and totally anonymous and safe."
   },
   {
     "id": 4,
-    "question": "¿Why there're no Chavezcoin available yet?",
+    "question": "Why there're no Chavezcoin available yet?",
     "answer":"ChavezCoin will be release in 12th December of 2017."
   },
   {
     "id": 5,
-    "question": "¿How many ChavezCoin will be available?",
+    "question": "How many ChavezCoin will be available?",
     "answer": "The amount of ChavezCoin will be 31 million corresponding to the quantity of people in the country, with an inflation of the 3% per year  (The average growth of the people in Venezuela)"
   },
   {
     "id": 6,
-    "question": "¿How can i obtain Chavezcoin?",
+    "question": "How can i obtain Chavezcoin?",
     "answer": "If you are Venezuelan just follow the bounty system and you can earn CC. If you are not Venezuelan you can get CC from anyone who is selling in our exchange page available."
   },
   {
     "id": 7,
-    "question": "¿What will be the value of ChavezCoin?",
+    "question": "What will be the value of ChavezCoin?",
     "answer": "After the release the price will be 1$ per CC, from then the price will be determined by the users."
   },
   {
     "id": 8,
-    "question": "¿How can i make an account?",
+    "question": "How can i make an account?",
     "answer": "Click in register in login page and follow the instructions."
   },
   {
     "id": 9,
-    "question": "¿It's safe?",
+    "question": "It's safe?",
     "answer": "Cryptocurrencys are the most secure system of money at the moment, you will be able to do anything you want and be 100% certain that you will be safe."
   },
   {
     "id": 10,
-    "question": "¿What is a referrer?",
+    "question": "What is a referrer?",
     "answer": "Is one of the task you earn in the bounty system to get more CC. The more people you get in the referral system the more CC you get. (Only for Venezuelan)"
   }
 ]
