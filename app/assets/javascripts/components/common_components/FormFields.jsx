@@ -3,7 +3,6 @@ window.FormFields = React.createClass({
     return {fields: [], inputs: [], option: ''};
   },
   render: function() {
-    console.log(this.props);
     var self = this;
     this.state.option = this.props.option;
     this.props.fields.forEach(function(field, index) {

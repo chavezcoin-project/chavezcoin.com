@@ -58,7 +58,6 @@ window.FormPanel = React.createClass({
     var error_messages = [],
         self = this;
     if (this.props.errors) {
-      console.log(this.state.errors);
       self.state.errors = self.props.errors;
       for (var i = 0; i < self.state.errors.errors.length; i++) {
         error_messages.push(<li className="tag-text -midsmall -scorpion error" key={i}>{self.state.errors.errors[i]}</li>)

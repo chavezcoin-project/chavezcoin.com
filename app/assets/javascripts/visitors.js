@@ -233,7 +233,9 @@ jQuery(document).ready(function($) {
     fadeScreen.fadeIn(500).css('display', 'flex');
   }
 
-  showmodal();
+  if (fadeScreen.hasClass('header')) {
+    showmodal();
+  }
 
   var menuLinks =  $('.menu-links-container');
   var showMenu = function() {
