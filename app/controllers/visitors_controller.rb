@@ -1,7 +1,7 @@
 class VisitorsController < ApplicationController
   def index
     @graphicData = File.read("#{Rails.root}/public/transaction.json")
-    @coins = HTTParty.get('https://coinmarketcap-nexuist.rhcloud.com/api/all')
+    @coins = HTTParty.get('https://api.coinmarketcap.com/v1/ticker/?limit=10')
     puts @coins.body, @coins.code, @coins.message, @coins.headers.inspect
     @markets = {
       ticker:
