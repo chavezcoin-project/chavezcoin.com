@@ -1,0 +1,19 @@
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+.h1 overview user
+%br
+%br
+.first-box
+  %p Quieres referir a un amigo? Comparte el link que esta abajo.
+  %p= " #{new_user_registration_url(referral: current_user.referrer_key)}"
+.second-box
+  - if current_user.referral_attribution
+    %p= "you have been referred by #{current_user.referral_attribution.from}"

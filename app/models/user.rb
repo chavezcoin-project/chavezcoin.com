@@ -8,4 +8,15 @@ class User < ActiveRecord::Base
     user: 0,
     admin: 1
   }
+
+  after_create :generate_referrer_key!
+
+  has_one :referral_attribution
+  has_many :referrals, foreign_key: 'referred_by'
+
+  def generate_referrer_key!
+    if referrer_key.nil?
+      update_attribute(:referrer_key, "#{Haikunator.haikunate(0)}-#{id}")
+    end
+  end
 end
