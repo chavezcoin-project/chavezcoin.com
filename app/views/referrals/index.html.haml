@@ -1,0 +1,12 @@
+%br
+%br
+%br
+%br
+%br
+%br
+.h1 Your Referrals
+%br
+%br
+.user-referrals
+  - @user_referrals.each do |referral|
+    %p= "Emal: #{referral.user.email} / Date: #{referral.created_at}"
