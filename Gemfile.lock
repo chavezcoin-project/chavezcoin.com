@@ -371,6 +371,8 @@ GEM
       execjs
       railties (>= 3.2)
       tilt
+    recaptcha (4.6.2)
+      json
     redcarpet (3.4.0)
     redis (3.3.3)
     ref (2.0.0)
@@ -583,6 +585,7 @@ DEPENDENCIES
   rack-timeout
   rails (~> 4.2.9)
   react-rails
+  recaptcha
   redcarpet
   rspec-rails
   rspec_api_documentation

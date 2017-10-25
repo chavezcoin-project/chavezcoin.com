@@ -16,7 +16,7 @@ class RegistrationsController < Devise::RegistrationsController
     if referral_user.present?
       @user = User.new(sign_up_params)
 
-      if @user.save
+      if @user.save # && verify_recaptcha(model: @user) - fix reCAPTCHA field in react forms
         Referral.create(user: @user, referred_by: referral_user.id)
         ReferralAttribution.create(user: @user, from: cookies[:referral])
         cookies.delete :referral
@@ -29,7 +29,7 @@ class RegistrationsController < Devise::RegistrationsController
     else
       @user = User.new(sign_up_params)
 
-      if @user.save
+      if @user.save # && verify_recaptcha(model: @user) - fix reCAPTCHA field in react forms
         sign_in(@user)
 
         redirect_to account_overview_path, notice: "Usuario creado exitosamente"
