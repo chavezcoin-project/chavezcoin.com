@@ -22,6 +22,7 @@ gem 'skywalker'
 gem "react-rails"
 gem "httparty"
 gem "whenever"
+gem "recaptcha", require: "recaptcha/rails"
 
 # heroku-like uniqueish ids
 gem 'haikunator'
