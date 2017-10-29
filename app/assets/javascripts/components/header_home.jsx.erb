@@ -1,68 +1,96 @@
 window.HeaderCount = React.createClass({
   render: function() {
-    var price = this.props.price;
     return(
       <div className="count-container">
         <div className="planet-rotate"></div>
         <figure className="chavezcoin">
           <img src="<%= asset_path('coin.png') %>" className="coin"></img>
         </figure>
-        <div className="equal">
-          =
-        </div>
-        <div className="usd">
-          ${price}.00
+        <Count />
+        <div className="tag-text -banner -regular -lightgrey normalize">
+          <h3>Próximamente</h3>
         </div>
       </div>
     )
   }
 })
+
+window.BannerFixed = React.createClass({
+  render: function() {
+    return(
+      <div id="banner" className="button-banner">
+        <a className="main-button -blue" href="http://chavezcoin.tk/rewardsystem" >
+          Gana Chavezcoin
+        </a>
+        <a className="main-button -red" href="http://www.mediafire.com/file/h7d1g2veam6r01v/coming-soon_0.jpg">
+          Descargar Wallet
+        </a>
+      </div>
+    );
+  }
+});
 
 window.SkewFlag = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
       <div className="limited-wrapper -flex-center">
+        <div className="menssage-container _margintop-lg _paddingTop-lg _paddingBottom-md">
+          <h3 className="main-title -lgsize -fullwidth">UNA NUEVA CRIPTOMONEDA PARA VENEZUELA POR VENEZOLANOS</h3>
+        </div>
         <section className="inner-content">
-          <div className="abstract-banner-content">
+          <div className="abstract-banner-content -normal">
             <TransactionContainer type='blur' />
             <HideCoinAnimation />
             <h2 className="tag-text -banner -lightgrey -midsize">
               ¡Haz crecer tus bienes hasta la luna!
             </h2>
-            <div className="pure-u-1 buttons-container">
-              <a className="main-button -blue" href={this.props.blueButtonLink} >Gana Chavezcoin</a>
-              <a className="main-button -red" href="#">Descargar Wallet</a>
+            <div className="pure-u-1 buttons-container button-header">
+              <a className="main-button -blue" href="http://chavezcoin.tk/rewardsystem" >
+                Gana Chavezcoin
+              </a>
+              <a className="main-button -red" href="http://www.mediafire.com/file/h7d1g2veam6r01v/coming-soon_0.jpg">
+                Descargar Wallet
+              </a>
             </div>
           </div>
           <HeaderCount price={this.props.chcprice} />
           <ActionMobile images={images} class='-app-section -header' message='¡clickeame, soy genial!' />
         </section>
+        <BannerFixed />
       </div>
-    )
+    );
   }
 })
+
+window.SubscribeModal = React.createClass({
+  render: function() {
+    return(
+      <div className="fade-screen -header pure-u-1" id="fadescreen">
+        <i className="close">x</i>
+        <article className="default-modal" >
+          <figure className="logo -chavez"></figure>
+          <p className="text tag-text -fullwidth -center">Suscríbete y entérate las últimas noticias de ChavezCoin</p>
+          <div className="pure-u-1 buttons-container">
+            <a href={"/ES#socialmedia"} className="main-button -blue click-socialmedia">Suscribirse</a>
+          </div>
+        </article>
+      </div>
+    );
+  }
+})  
 
 window.HeaderHome = React.createClass({
   render: function() {
     var images = $.parseJSON(this.props.images);
     return(
       <header className="pure-u-1">
-        <div className="fade-screen -header pure-u-1">
-          <i className="close">x</i>
-          <article className="default-modal" >
-            <figure className="logo -chavez"></figure>
-            <p className="text tag-text -fullwidth -center">¡Regístrate y empieza a ganar ChávezCoin!</p>
-            <div className="pure-u-1 buttons-container">
-              <a className="main-button -blue" href={this.props.blueButtonLink} >Gana Chavezcoin</a>
-            </div>
-          </article>
-        </div>
+        <SubscribeModal />
         <section className="abstract-banner pure-u-1" id="inicio">
-          <div className="pure-u-1 skew-container-abstract -flag-color">
-          </div>
+          <div className="pure-u-1 skew-container-abstract -flag-color"></div>
           <SkewFlag images={images} chcprice='1' blueButtonLink={this.props.blueButtonLink} />
         </section>
+        <BannerFixed />
       </header>
     )
   }

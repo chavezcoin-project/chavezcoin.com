@@ -10,9 +10,11 @@
     height: 20rem;
   }
   @include lg {
-    height: 25rem;
+    // height: 25rem;
+    height: 22.5rem;
     padding: 2.5rem 3rem;
-    width: 40rem;
+    // width: 40rem;
+    width: 35rem;
     z-index: 1;
   }
   &:after,

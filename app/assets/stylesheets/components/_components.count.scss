@@ -1,0 +1,36 @@
+.container-timer {
+  background-color: rgba(0,0,0,0.2);
+	border-radius: .75rem;
+  overflow: hidden;
+  
+	>.item {
+    float: left;
+    position: relative;
+    width: 2.5rem;
+    height: 2rem;
+    border-right: 1px solid white;
+		> p {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-family: $special-font;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all 1s;
+  	}
+  }
+  
+  >.item:nth-child(-n+4){
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  >.item:nth-child(4n) {
+    border: hidden;
+  }
+
+	>.item:nth-child(5){
+  	clear: both;
+ 	}
+}

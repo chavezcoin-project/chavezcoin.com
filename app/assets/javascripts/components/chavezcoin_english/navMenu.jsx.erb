@@ -1,7 +1,7 @@
 window.MenuLinksEnglish = React.createClass({
   render: function() {
     var self = this;
-    var options = [{"name": "inicio", "first_letter": "H", "cut_name": "ome"}, {"name": "guide", "first_letter": "G", "cut_name": "uide"}, {"name": "advantages", "first_letter": "A", "cut_name": "dvantages"}, {"name": "market", "first_letter": "B", "cut_name": "uy"}, {"name": "app", "first_letter": "A", "cut_name": "pp"}, {"name": "blog", "first_letter": "B", "cut_name": "log"}, {"name": "soporte", "first_letter": "S", "cut_name": "upport"}]
+    var options = [{"name": "inicio", "first_letter": "H", "cut_name": "ome"}, {"name": "guide", "first_letter": "G", "cut_name": "uide"}, {"name": "advantages", "first_letter": "A", "cut_name": "dvantages"}, {"name": "market", "first_letter": "B", "cut_name": "uy"}, {"name": "app", "first_letter": "A", "cut_name": "pp"}, {"name": "blog", "first_letter": "B", "cut_name": "log"}, {"name": "faq", "first_letter": "S", "cut_name": "upport"}]
     var links = [];
     options.forEach(function(option) {
       links.push(<LinkDetail link_root={self.props.link_root} name={option.name} first_letter={option.first_letter} key={option.name} cut_name={option.cut_name} />);
@@ -17,6 +17,7 @@ window.MenuLinksEnglish = React.createClass({
       <ul className="menu-links pure-menu-list">
         {links}
         {session_link}
+        <FormatLanguage selected={"EN"}/>
       </ul>
     )
   }
@@ -26,7 +27,7 @@ window.NavMenuEnglish = React.createClass({
   render: function() {
     var link_root = this.props.link_root;
     return(
-      <nav className="pure-g nav-menu pure-menu-horizontal">
+      <nav className="nav-menu pure-menu-horizontal">
         <div className="limited-wrapper">
           <figure className="logo-container">
             <a href={link_root} ><img className="logo" src="<%= asset_path('logo.png') %>"></img></a>

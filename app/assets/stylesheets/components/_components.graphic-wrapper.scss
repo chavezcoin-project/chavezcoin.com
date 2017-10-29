@@ -6,10 +6,12 @@
   height: 9rem;
   padding: 0 .5rem;
   @include lg {
-    height: 12.5rem;
+    // height: 12.5rem;
+    height: 10rem;
   }
   @include xl {
-    height: 15rem;
+    // height: 15rem;
+    height: 12.5rem;
   }
   > .bar {
     background: $danube;

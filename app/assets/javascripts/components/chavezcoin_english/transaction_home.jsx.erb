@@ -1,3 +1,23 @@
+window.CounterContainerEnglish = React.createClass({
+  render: function() {
+    var type = this.props.type;
+    var total = this.props.totalchc;
+    if (type == 'blur' || type == 'blur-nav') {
+      return(
+        <div className="blur-counter-container">
+          <input className="total_transactions" max="100" min="0" step="1" type="hidden" defaultValue={total} ></input>
+          <div className={"pure-u-1 transaction-counter -" + type}>
+            <p className="pure-u-1 tag-text -lightblack -center">
+              Coins Avaliable
+            </p>
+            <div className="background"></div>
+          </div>
+        </div>
+      )
+    }
+  }
+})
+
 window.TransactionContainerEnglish = React.createClass({
   getInitialState: function() {
     return {secondsElapsed: 0};
@@ -16,7 +36,7 @@ window.TransactionContainerEnglish = React.createClass({
     if (type == 'blur' || type == 'blur-nav') {
       cantidad = 31000000;
       return(
-        <CounterContainer type={type} totalchc={cantidad} />
+        <CounterContainerEnglish type={type} totalchc={cantidad} />
       )
     }else {
       var messages = [{"text": "ChavezCoin is destined to triumph, this coin is meant to be an absolute hit and begin the cryptocurrency tendency into a whole country."}];

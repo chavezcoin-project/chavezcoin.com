@@ -1,0 +1,22 @@
+#dropdown {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	
+	#seleted {
+		padding: 2px;
+		max-width: 3rem;
+	}
+
+	> .dropdown-menu {
+		display: none;
+		position: absolute;
+
+	 	> a {
+	 		display: block;
+	 	}
+	}
+}
+.-open {	
+	display: block !important;
+}	

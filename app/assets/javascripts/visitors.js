@@ -24,6 +24,8 @@ jQuery(document).ready(function($) {
   var counterNav = $('.transaction-counter.-blur-nav');
   var share_button = $('.share-options');
   var activeClass = 'active'
+  var buttonBanner = $('.button-banner')
+  var buttonHeader = $('.button-header')
 
   share_button.click(function(e) {
     var parent = $(this).parents('.blog-box');
@@ -55,6 +57,8 @@ jQuery(document).ready(function($) {
       return;
     if (st > lastScrollTop){
         navHeader.addClass('-scrolled');
+        buttonBanner.addClass('-active');
+        buttonHeader.addClass('-hidden');
         counterBlur.animate({
           top: -15 + 'rem',
           opacity: 0
@@ -68,6 +72,8 @@ jQuery(document).ready(function($) {
         }, 250);
     } else if($(this).scrollTop() < 20) {
         navHeader.removeClass('-scrolled');
+        buttonBanner.removeClass('-active');
+        buttonHeader.removeClass('-hidden');
         counterNav.animate({
           bottom: -10 + 'rem',
           opacity: 0
@@ -92,9 +98,19 @@ jQuery(document).ready(function($) {
         window.location = 'http://' + window.location.hostname.replace(/\\/g, '') + $(this).attr('href');
       }
     }else {
-      var y = $(this.hash).offset().top;
+      var height = navHeader.height();
+      var y = $(this.hash).offset().top - height;
       $('html,body').animate({scrollTop: y}, 1000);
     }
+  });
+
+  $('.click-socialmedia').on('click', function(e){
+    e.preventDefault();
+    
+    closeModal();
+
+    var y = $('#socialmedia').offset().top
+    $('html,body').animate({scrollTop: y}, 1000);
   });
 
   $('.guide-expand').click(function(e) {

@@ -1,0 +1,61 @@
+window.FormatLanguage = React.createClass({
+  getInitialState: function() {
+    return({
+      open: false
+    });
+  },
+
+  handleChange: function(e) {
+    console.log(e.target);
+    console.log(e.target.value);
+    location.href = "http://localhost:3000/" + e.target.value;
+  },
+
+  makeLink: function(link) {
+    return (
+      "<%= asset_path("+link+") %>"
+    );
+  },
+
+  handleClick: function() {
+    var selected = document.getElementById("menu");
+    var open = this.state.open;
+
+    if (open == false) 
+      selected.classList.toggle("-open");
+    else 
+      selected.classList.remove("-open");
+
+    this.setState({open: !open})
+  },
+
+  setSeleted: function() {
+    if (this.props.selected == "ES")
+      return(<img className="logo" src={"<%= asset_path('flags/ES.png')%>"}/>)
+    else
+      return(<img className="logo" src={"<%= asset_path('flags/EN.png')%>"}/>)
+  },
+
+  getOption: function() {
+    if (this.props.selected != "ES")
+      return(<a href="/ES"><img className="logo" src={"<%= asset_path('flags/ES.png')%>"}/></a>)
+    else
+      return(<a href="/EN"><img className="logo" src={"<%= asset_path('flags/EN.png')%>"}/></a>)
+  },
+
+  render: function() {  
+    return(
+      <li className="pure-menu-item menu-item">
+        <div id="dropdown" className="dropdown">
+          <div id="selected" onClick={this.handleClick}>
+            {this.setSeleted()}
+          </div>
+          <div id="menu" className="dropdown-menu">
+            {this.getOption()}
+          </div>
+        </div>
+      </li>
+    );
+  }
+});
+

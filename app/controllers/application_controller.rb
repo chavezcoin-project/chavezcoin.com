@@ -27,6 +27,7 @@ class ApplicationController < ActionController::Base
       @link = ['login', new_user_session_path]
       @blueButtonLink = new_user_session_path
     end
+    
     if @visitor_country['countryCode'] == 'VE' || @visitor_country['countryCode'] == 'MX' || @visitor_country['countryCode'] == 'AR' || @visitor_country['countryCode'] == 'BO' || @visitor_country['countryCode'] == 'CL' || @visitor_country['countryCode'] == 'CO' || @visitor_country['countryCode'] == 'EC' || @visitor_country['countryCode'] == 'ES' || @visitor_country['countryCode'] == 'JM' || @visitor_country['countryCode'] == 'PA' || @visitor_country['countryCode'] == 'PY' || @visitor_country['countryCode'] == 'PE' || @visitor_country['countryCode'] == 'PR' || @visitor_country['countryCode'] == 'DO' || @visitor_country['countryCode'] == 'UY' || @visitor_country['countryCode'] == 'CU'
       @loginForm = File.read("#{Rails.root}/public/login_text.json")
       @loginRedPanel = File.read("#{Rails.root}/public/login_panel_rojo.json")

@@ -37,6 +37,9 @@
     @include xl {
       width: 31.5rem;
     }
+    &.-normal { 
+      align-self: normal;
+    }
     > .animation {
       @include lg {
         margin: 2rem auto 1rem;
