@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
+  scope "(:locale)", :locale => /es|en|ch|kr/ do
+    devise_for :users, controllers: {
+      sessions: 'sessions',
+      registrations: 'registrations'
+    }
+    devise_scope :user do
+      get '/account/overview' => 'registrations#overview'
+    end
+    root 'visitors#index'
 
-  devise_for :users, controllers: {
-    sessions: 'sessions',
-    registrations: 'registrations'
-  }
-  devise_scope :user do
-    get '/account/overview' => 'registrations#overview'
+    get ":format", to: "visitors#index"
+
+    get 'referrals' => 'referrals#index'
   end
-
-  root 'visitors#index'
-
-  get ":format", to: "visitors#index"
-
-  get 'referrals' => 'referrals#index'
 end

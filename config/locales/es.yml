@@ -1,0 +1,37 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  home:
+    header:
+      blue_button: "Gana ChavezCoin"
+      red_button: "Descarga Wallet"
+      counter: "Próximamente"
+      coin_counter: "Disponibles"
+      title: "UNA NUEVA CRIPTOMONEDA PARA VENEZUELA POR VENEZOLANOS"
+      slogan: "¡Haz crecer tus bienes hasta la luna!"
+    graphic:
+      title: La gráfica no miente
+      text: ChavezCoin esta destinada a triunfar, esta moneda sera un exito absoluto y comenzara la tendencia de criptomonedas en todo un pais.
+    yellow_section:
+      title: "¿Qué es Chavezcoin?"
+      text: "ChavezCoin es una nueva y revolucionaria cryptomoneda, cambiará tu forma de ver el dinero y te abrirá las puertas a un futuro brillante, donde los problemas de las divisas tradicionales no existen"
+    blue_section:

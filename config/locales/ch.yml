@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+ch:
   header:
-    blue_button: "Win ChavezCoin"
-    red_button: "Download Wallet"
+    blue_button: "chinese ChavezCoin"
+    red_button: "chinese Wallet"

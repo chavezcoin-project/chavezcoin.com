@@ -82,6 +82,7 @@ window.SubscribeModal = React.createClass({
 
 window.HeaderHome = React.createClass({
   render: function() {
+    console.log(this.props.translations);
     var images = $.parseJSON(this.props.images);
     return(
       <header className="pure-u-1">
