@@ -1,98 +1,97 @@
 .limited-wrapper {
-  margin: 0 auto;
-  max-width: $xl;
-  position: relative;
-  width: 100%;
-  &.-flex-center {
-    @include flex_centered();
-    align-items: flex-start;
-  }
-  &.-flex-around {
-    @include flex_around();
-  }
-  &.faqs-list {
-    @include sm {
-      width: 75%;
+    margin: 0 auto;
+    max-width: $xl;
+    position: relative;
+    width: 100%;
+    &.-flex-center {
+        @include flex_centered();
+        align-items: flex-start;
     }
-  }
-  &.-center-around {
-    @include flex_centered();
-    @include lg {
-      @include flex_around();
+    &.-flex-around {
+        @include flex_around();
     }
-  }
-  &.-flex-start {
-    @include display_flex();
-    align-content: flex-end;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  &.-flex-end {
-    @include display_flex();
-    justify-content: flex-end;
-  }
-  &.-center-start-bottom {
-    @include flex_centered();
-    @include lg {
-      @include display_flex();
-      align-content: flex-end;
-      align-items: flex-end;
-      justify-content: flex-start;
+    &.faqs-list {
+        @include sm {
+            width: 75%;
+        }
     }
-  }
-  &.-center-start {
-    @include flex_centered();
-    @include lg {
-      justify-content: flex-start;
+    &.-center-around {
+        @include flex_centered();
+        @include lg {
+            @include flex_around();
+        }
     }
-  }
-  &.-guide {
-    @include sm {
-      width: 80%;
+    &.-flex-start {
+        @include display_flex();
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-start;
     }
-    @include lg {
-      width: 60%;
+    &.-flex-end {
+        @include display_flex();
+        justify-content: flex-end;
     }
-    > .menssage-container > .main-title {
-      @include flex_between();
-      cursor: pointer;
-      margin-bottom: 2rem;
+    &.-center-start-bottom {
+        @include flex_centered();
+        @include lg {
+            @include display_flex();
+            align-content: flex-end;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
     }
-    > .menssage-container > .main-title > .title {
-      width: 90%;
-      @include xs {
-        width: 95%;
-      }
+    &.-center-start {
+        @include flex_centered();
+        @include lg {
+            justify-content: flex-start;
+        }
     }
-    > .menssage-container > .tag-text {
-      margin-bottom: 1rem;
-      @include lg {
-        width: 80%;
-      }
+    &.-guide {
+        @include sm {
+            width: 80%;
+        }
+        @include lg {
+            width: 60%;
+        }
+        >.menssage-container>.main-title {
+            @include flex_between();
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+        >.menssage-container>.main-title>.title {
+            width: 90%;
+            @include xs {
+                width: 95%;
+            }
+        }
+        >.menssage-container>.tag-text {
+            margin-bottom: 1rem;
+            @include lg {
+                width: 80%;
+            }
+        }
+        >.tag-text:last {
+            margin-bottom: 2rem;
+        }
     }
-    > .tag-text:last {
-      margin-bottom: 2rem;
+    &.-app {
+        z-index: 10;
+        >.content {
+            margin-top: 3rem;
+            @include lg {
+                margin-top: 0;
+            }
+        }
     }
-  }
-  &.-app {
-    z-index: 10;
-    > .content {
-      margin-top: 3rem;
-      @include lg {
-        margin-top: 0;
-      }
+    &.-tablet-bye {
+        border-top: solid .05rem $wildsand;
+        margin-top: 2rem;
+        padding: 3rem 0;
+        >.content {
+            margin-top: 3rem;
+            @include lg {
+                margin-top: 0;
+            }
+        }
     }
-  }
-
-  &.-tablet-bye {
-    border-top: solid .05rem $wildsand;
-    margin-top: 2rem;
-    padding: 3rem 0;
-    > .content {
-      margin-top: 3rem;
-      @include lg {
-        margin-top: 0;
-      }
-    }
-  }
 }

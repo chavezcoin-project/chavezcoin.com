@@ -1,76 +1,76 @@
 // FIXME: remove this import, currently needed as work around to this issue:
 // https://github.com/rails/sprockets/issues/474
 @import 'settings.global';
-
 .main-title {
-  color: $white;
-  font-family: $secondary-font-family;
-  font-size: 3.25rem;
-  font-weight: 400;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-shadow: 0 .2rem .1rem rgba($black, .2);
-  width: 95%;
-  z-index: 1;
-  @include lg {
-    width: 80%;
-  }
-  > .extrablue {
-    color: $persianred;
-  }
-  > .red {
-    color: $persianred;
-  }
-  > .blue {
-    color: $danube;
-  }
-  > .yellow {
-    color: $ripelemon;
-  }
-  > .green {
-    color: $green_haze;
-  }
-  &.-lgsize {
-    font-size: 2.5rem;
-  }
-  &.-midsize {
-    font-size: 1.75rem;
-  }
-  &.-smallsize {
-    font-size: 1.25rem;
-  }
-  &.-black {
-    color: $scorpion;
-  }
-  &.-lightblack {
-    color: rgba($black, .75);
-  }
-  &.-left {
-    text-align: left;
-  }
-  &.-blue {
-    color: $danube;
-  }
-  &.-red {
-    color: $persianred;
-  }
-  &.-yellow {
-    color: $ripelemon;
-  }
-  &.-bold {
-    font-weight: bold;
-  }
-  &.-uppercase {
-    text-transform: uppercase;
-  }
-  &.-fullwidth {
-    width: 100%;
-  }
-  &.-left-center {
+    color: $white;
+    font-family: $secondary-font-family;
+    font-size: 3.25rem;
+    font-weight: 400;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    text-shadow: 0 .2rem .1rem rgba($black, .2);
+    width: 95%;
+    z-index: 1;
     @include lg {
-      text-align: left;
+        width: 80%;
     }
-  }
+    >.extrablue {
+        color: $persianred;
+    }
+    >.red {
+        color: $persianred;
+    }
+    >.blue {
+        color: $danube;
+    }
+    >.yellow {
+        color: $ripelemon;
+    }
+    >.green {
+        color: $green_haze;
+    }
+    &.-lgsize {
+        font-size: 2.5rem;
+    }
+    &.-midsize {
+        font-size: 1.75rem;
+    }
+    &.-smallsize {
+        font-size: 1.25rem;
+    }
+    &.-black {
+        color: $scorpion;
+    }
+    &.-lightblack {
+        color: rgba($black, .75);
+    }
+    &.-left {
+        text-align: left;
+    }
+    &.-blue {
+        color: $danube;
+    }
+    &.-red {
+        color: $persianred;
+    }
+    &.-yellow {
+        color: $ripelemon;
+    }
+    &.-bold {
+        font-weight: bold;
+    }
+    &.-uppercase {
+        text-transform: uppercase;
+    }
+    &.-fullwidth {
+        width: 100%;
+    }
+    &.-left-center {
+        text-align: center;
+        @include lg {
+            text-align: left;
+        }
+    }
 }
