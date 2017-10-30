@@ -4,7 +4,7 @@ window.CoinContainer = React.createClass({
     var time = this.props.time;
     return(
       <section className="-flex-center pure-u-1 market-container section-container" id="market">
-        <SectionMessageWhite title={'¡Exprópiense esas divisas!'} message={'Puedes cambiar tus ChavezCoin a la moneda que quieras, aquí podrás ver una guía de precios y una lista de criptomercados.'} />
+        <SectionMessageWhite title={'¡Exprópiense esas divisas!'} message={'Puedes cambiar tus ChavezCoin a la moneda que quieras. Aquí podrás ver una guía de precios y una lista de criptomercados.'} />
         <CoinsList />
         <SectionMessageWhite title={'Webs de Intercambio'} message={''} />
         <MarketsList marketlist={markets.ticker}  time={time} />

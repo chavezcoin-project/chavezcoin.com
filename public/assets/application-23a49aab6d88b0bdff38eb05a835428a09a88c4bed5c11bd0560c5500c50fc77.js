@@ -22447,7 +22447,7 @@ window.AdvantageContainerEnglish = React.createClass({
     return React.createElement(
       "section",
       { className: "pure-u-1 advantages-container section-container -flex-center -skew-container", id: "advantages" },
-      React.createElement(SectionMessage, { title: 'Our supreme commander have more surprises', message: "There're a lot of advantages you can ejnoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations." }),
+      React.createElement(SectionMessage, { title: 'Our supreme commander have more surprises', message: "There're a lot of advantages you can enjoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations." }),
       React.createElement(
         "div",
         { className: "pure-u-1 limited-wrapper advantages-wrapper" },

@@ -23155,7 +23155,7 @@ window.SocialMedia = React.createClass({
                     className: 'pure-u-1 subscribe-form'
                 }, React.createElement('p', {
                     className: 'tag-text -white -center -fullwidth _marginbottom-md'
-                }, 'Sé el primero en enterarte de las últimas noticias referentes a ChávezCoin'), React.createElement('div', {
+                }, 'Entérate al instante de cada noticia sobre ChavezCoin'), React.createElement('div', {
                     className: 'fielset'
                 }, React.createElement('input', {
                     className: 'input',
@@ -23209,7 +23209,7 @@ window.AdvantageContainerEnglish = React.createClass({
         });
         return React.createElement(
             "section", { className: "pure-u-1 advantages-container section-container -flex-center -skew-container", id: "advantages" },
-            React.createElement(SectionMessage, { title: 'Why get ChavezCoin?', message: "There're a lot of advantages you can ejnoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations." }),
+            React.createElement(SectionMessage, { title: 'Why get ChavezCoin?', message: "There're a lot of advantages you can enjoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations." }),
             React.createElement(
                 "div", { className: "pure-u-1 limited-wrapper advantages-wrapper" },
                 articleTop

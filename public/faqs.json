@@ -1,51 +1,51 @@
 [{
         "id": 1,
         "question": "¿Qué es una criptomoneda?",
-        "answer": "Es una moneda digital basada en un algoritmo llamado blockchain, es completamente descentralizada y es practicamente imposible controlarla una vez publicada."
+        "answer": "Es una moneda digital basada en un algoritmo, llamado blockchain. Es completamente descentralizada. Gracias a ello, una vez publicada, es virtualmente imposible que cualquier ente u organización pueda controlarla."
     },
     {
         "id": 2,
         "question": "¿Qué es una cartera (wallet)?",
-        "answer": "Como su nombre lo indica, es una cartera, pero online; sirve para controlar todas las monedas que tengas, ya sea para enviar o recibir, es completamente personal, y salvo tú, nada ni nadie puede controlarla."
+        "answer": "Como su nombre indica, es una cartera, pero online. Sirve para controlar todas las monedas que tengas. Tu cartera te permite enviar y recibir; es completamente personal y, salvo tú, nada ni nadie puede controlarla."
     },
     {
         "id": 3,
-        "question": "¿Qué podré hacer con mis Chavezcoin?",
-        "answer": "ChávezCoin será como el dinero que usamos diariamente, pero sin sus desventajas. Podrás comprar bienes, pagar cuentas o incluso jugar la lotería. Puedes enviarle CC a cualquier persona que desees y es totalmente seguro y anónimo."
+        "question": "¿Qué podré hacer con mis ChavezCoin?",
+        "answer": "ChavezCoin (CC) es como el dinero que usas diariamente, pero sin sus desventajas. Podrás comprar bienes, pagar cuentas y hasta jugar a la lotería. Puedes enviarle CC a cualquier persona que desees, de forma totalmente segura y anónima."
     },
     {
         "id": 4,
-        "question": "¿Por qué no hay Chavezcoin disponibles actualmente?",
-        "answer": "ChavezCoin será publicada el 12 de Diciembre del 2017."
+        "question": "¿Hay ChavezCoin disponibles, actualmente?",
+        "answer": "ChavezCoin será publicada el 12 de diciembre del 2017. Es decir que, en esa fecha, entrará en circulación."
     },
     {
         "id": 5,
-        "question": "¿Cuántas Chavezcoin habrá en existencia?",
-        "answer": "El suministro de las ChavezCoin será igual al de la población actual venezolana, 31 millones, la cual tendrá una inflación del 3% por año. (El promedio de crecimiento poblacional en Venezuela)"
+        "question": "¿Cuántas ChavezCoin habrá en existencia?",
+        "answer": "El suministro (o circulante) de ChavezCoin será equivalente al de la población actual venezolana: 31 millones. En adelante, se prevé que esta suma se incremente con una tasa de inflación de 3% anual. (Este es el promedio de crecimiento poblacional en Venezuela)."
     },
     {
         "id": 6,
-        "question": "¿Cómo puedo obtener Chavezcoin?",
-        "answer": "Si eres venezolano, puedes ganar CC usando el sistema de recompensa. Si eres extrajero, puedes obtener CC de cualquiera que esté vendiendolos en nuestra página de intercambio."
+        "question": "¿Cómo puedo obtener ChavezCoin (CC)?",
+        "answer": "Si eres venezolano, puedes ganar CC usando el sistema de recompensa. Si eres extranjero, puedes obtener CC de quienquiera que los venda en nuestra página de intercambio."
     },
     {
         "id": 7,
-        "question": "¿Cuál es el valor estimado de Chavezcoin?",
-        "answer": "Luego de publicado, el valor será de 1$/CC, a partir de ahí, el valor será determinado por los usuarios."
+        "question": "¿Cuál es el valor estimado de ChavezCoin?",
+        "answer": "ChavezCoin llegará al mercado monetario, el 12 de diciembre de 2017, con un valor inicial de un dólar estadounidense (1 CC = 1 USD). A partir de ahí, su valor será determinado por la libre dinámica de oferta y demanda, establecida por los usuarios."
     },
     {
         "id": 8,
         "question": "¿Cómo puedo crear una cuenta?",
-        "answer": "Haz clic en Regístrate en la página de ingreso al sistema y sigue las instrucciones."
+        "answer": "Haz clic en el botón de “Registro”, en la página de ingreso al sistema, y sigue las instrucciones."
     },
     {
         "id": 9,
         "question": "¿Es seguro?",
-        "answer": "Las criptomonedas son el sistema monetario más seguro de la actualidad, puedes hacer todo lo que quieras con ellas y puedes estar 100% seguro que estarás a salvo."
+        "answer": "Las criptomonedas conforman el sistema monetario más seguro de la actualidad. Puedes hacer lo que quieras con él y puedes estar 100% seguro de que estarás a salvo."
     },
     {
         "id": 10,
-        "question": "¿Qué es un referido?",
-        "answer": "Es una de las tareas que ofrece el sistema de recompensa para obtener más CC. Mientras más personas invites usando el sistema, más CC vas a ganar. (Sólo para venezolanos)"
+        "question": "¿Qué es un 'referido'?",
+        "answer": "Esta palabra hace referencia a una de las tareas que ofrece el sistema de recompensa, exclusivamente para usuarios venezolanos. Mientras más personas invites y usen el sistema (mientras más referidos tengas), más CC vas a ganar."
     }
 ]
