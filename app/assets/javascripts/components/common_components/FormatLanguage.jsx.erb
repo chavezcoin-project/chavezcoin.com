@@ -47,7 +47,9 @@ window.FormatLanguage = React.createClass({
     var _this = this;
     var flag_path = '';
     _this.state.languages.forEach(function(language) {
+      console.log(language.language);
       if(window.location.href.indexOf(language.language) > -1) {
+        console.log(language.language);
         flag_path = language.language;        
       }
     });
