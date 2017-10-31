@@ -47,9 +47,7 @@ window.FormatLanguage = React.createClass({
     var _this = this;
     var flag_path = '';
     _this.state.languages.forEach(function(language) {
-      console.log(window.location.href)
-      if(window.location.href.indexOf(language.language) > -1) {
-        console.log(language.language);
+      if(window.location.pathname.indexOf(language.language) > -1) {
         flag_path = language.language;        
       }
     });
@@ -66,12 +64,12 @@ window.FormatLanguage = React.createClass({
     var selected = '';
     var pathname = window.location.pathname;
     _this.state.languages.forEach(function(language) {
-      if(window.location.href.indexOf(language.language) > -1) {
+      if(window.location.pathname.indexOf(language.language) > -1) {
         pathname = pathname.replace(language.language, "");
       }
     });
     _this.state.languages.forEach(function(language) {
-      if(window.location.href.indexOf(language.language) == -1) {
+      if(window.location.pathname.indexOf(language.language) == -1) {
         flags.push(<a href={language.language + pathname} key={language.language + pathname} ><img className="logo" src={"<%= asset_path('/assets/flags"+language.language+".png')%>"}/></a>)
       }
     });
