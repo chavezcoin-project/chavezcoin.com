@@ -6,17 +6,17 @@ window.SocialMedia = React.createClass({
       [
         {
           name: 'facebook',
-          link: '#',
+          link: 'https://www.facebook.com/informandoavenezuela/',
           icon: 'fa-facebook'
         },
         {
           name: 'twitter',
-          link: '#',
+          link: 'https://twitter.com/infoeconvzla',
           icon: 'fa-twitter'
         },
         {
           name: 'instagram',
-          link: '#',
+          link: 'https://www.instagram.com/infoeconvzla/',
           icon: 'fa-instagram'
         }
       ]
@@ -37,7 +37,8 @@ window.SocialMedia = React.createClass({
             React.createElement('a',
               {
                 className: 'hexagon ' + media.name,
-                href: media.link
+                href: media.link,
+                target: '_blank'
               },
               React.createElement('i',
                 {
