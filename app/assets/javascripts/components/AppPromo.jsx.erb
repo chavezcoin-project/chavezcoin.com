@@ -1,10 +1,9 @@
 window.AppContainer = React.createClass({
   render: function() {
-    var messages = [{"text": "Con nuestra app, podrás usar ChavezCoin para realizar compras de manera rápida, segura y económica."}, {"text": " Bienvenido al futuro, bienvenido a ChavezCoin."}];
     return(
       <div className="limited-wrapper -app -center-around">
         <MobileDefault images={this.props.images}/>
-        <SectionMessageMid title={'Una aplicación suprema e intergaláctica'} messages={messages} option="app" />
+        <SectionMessageMid title={this.props.translations.title} translations={this.props.translations} option="app" />
       </div>
     )
 
@@ -18,7 +17,7 @@ window.AppPromo = React.createClass({
     return(
       <section className="-flex-center pure-u-1 app-container section-container -skew-container-inverted" id="app">
         <SliderContainer images={images} />
-        <AppContainer images={imagesDevice} />
+        <AppContainer images={imagesDevice} translations={this.props.translations} />
       </section>
     )
   }

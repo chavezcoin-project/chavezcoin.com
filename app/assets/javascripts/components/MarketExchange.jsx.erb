@@ -1,0 +1,34 @@
+window.CoinContainer = React.createClass({
+  render: function() {
+    var markets = this.props.markets;
+    var time = this.props.time;
+    return(
+      <section className="-flex-center pure-u-1 market-container section-container" id="market">
+        <SectionMessageWhite title={this.props.translations.title} message={this.props.translations.text} />
+        <CoinsList translations={this.props.translations.coin_guide} />
+        <SectionMessageWhite title={this.props.translations.exchange.title} message={''} />
+        <MarketsList marketlist={markets.ticker}  time={time} translations={this.props.translations.exchange} />
+      </section>
+
+    )
+  }
+})
+
+
+window.MarketExchange = React.createClass({
+  getInitialState: function() {
+    return {
+      markets: {},
+      time: '',
+      translations: {}
+    }
+  },
+  render: function() {
+    this.state.markets = $.parseJSON(this.props.markets);
+    this.state.time = window.formatTime(this.state.markets.timestamp);
+    this.state.translations = this.props.translations;
+    return(
+      <CoinContainer markets={this.state.markets} time={this.state.time} translations={this.state.translations} />
+    )
+  }
+})

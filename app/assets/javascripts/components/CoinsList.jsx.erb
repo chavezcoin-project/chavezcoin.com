@@ -38,23 +38,23 @@ window.CoinDetails = React.createClass({
     return(
       <ul className="pure-u-22-24 pure-u-md-1-2 pure-u-xl-7-24 two-column-list -currency-data">
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
-          <h4 className="main-title -smallsize -left -bold -fullwidth">Moneda:</h4>
+          <h4 className="main-title -smallsize -left -bold -fullwidth">{this.props.text.name} </h4>
           <p className="tag-text -white coin-name -capitalize">Bitcoin</p>
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
-          <h4 className="main-title -smallsize -left -bold -fullwidth">Último precio:</h4>
+          <h4 className="main-title -smallsize -left -bold -fullwidth">{this.props.text.last_price}</h4>
           <p className="tag-text -white coin-priceusd">0.00000387468 BTC/CHC</p>
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
-          <h4 className="main-title -smallsize -left -bold -fullwidth">Volumen:</h4>
+          <h4 className="main-title -smallsize -left -bold -fullwidth">{this.props.text.vol}</h4>
           <p className="tag-text -white coin-volume24">55659.64$</p>
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
-          <h4 className="main-title -smallsize -left -bold -fullwidth">Última Actualización:</h4>
-          <p className="tag-text -white coin-update">2:24 minutos</p>
+          <h4 className="main-title -smallsize -left -bold -fullwidth">{this.props.text.last_update}</h4>
+          <p className="tag-text -white coin-update">2:24 min</p>
         </li>
         <li className="pure-u-4-5 pure-u-sm-1-2 item">
-          <h4 className="main-title -smallsize -left -bold -fullwidth">Cambio:</h4>
+          <h4 className="main-title -smallsize -left -bold -fullwidth">{this.props.text.change}</h4>
           <p className="tag-text -yellow coin-change">0.8%</p>
         </li>
       </ul>
@@ -69,7 +69,7 @@ window.ChavezcoinDetails = React.createClass({
       <ul className=" pure-u-22-24 pure-u-md-1-2 pure-u-lg-10-24 pure-u-xl-9-24 two-column-list -currency-price">
         <li className="pure-u-1 item reward">
           <h4 className="main-title -smallsize -left -bold -fullwidth">
-            Vas a obtener
+            {this.props.text.you_got}
             <span>4.56</span>
             <span className="red">Chavez</span>
             <span className="yellow">coin</span>
@@ -109,12 +109,14 @@ window.CoinsList = React.createClass({
           total_supply: "16600250.0"
         }
       ],
-      control: 0
+      control: 0,
+      translations: {}
     };
   },
   render: function() {
     var self = this,
         coins = $.parseJSON($('.coins').attr('value'));
+    self.state.translations = self.props.translations;
     if (coins[0].id) {
       self.state.coins = coins;
     }
@@ -128,9 +130,9 @@ window.CoinsList = React.createClass({
     return(
       <div className="limited-wrapper price-container -flex-center">
         <ul className="pure-u-22-24 pure-u-md-1-2 pure-u-xl-1-3 two-column-list -currency-container">{this.state.coinList}</ul>
-        <CoinDetails />
-        <ChavezcoinDetails price={this.state.chavezcoinprice} />
-        <h4 className=" main-title -midsize message">Guía de precios por divisa.</h4>
+        <CoinDetails text={self.state.translations} />
+        <ChavezcoinDetails text={self.state.translations} price={this.state.chavezcoinprice} />
+        <h4 className=" main-title -midsize message">{self.state.translations.title}</h4>
       </div>
     )
 

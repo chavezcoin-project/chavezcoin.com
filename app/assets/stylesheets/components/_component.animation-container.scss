@@ -1,10 +1,11 @@
 .animation-container {
   display: none;
-  height: 35rem;
+  height: 20rem;
   overflow: hidden;
   position: relative;
   width: 0;
   &.-coins {
+    height: 35rem;
     perspective: 80rem;
   }
 }

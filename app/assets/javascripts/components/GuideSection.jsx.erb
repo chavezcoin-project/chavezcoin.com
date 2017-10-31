@@ -13,13 +13,12 @@ window.GuideContainer = React.createClass({
   },
   render: function() {
     var self = this;
-    this.state.option = this.props.option;
-    this.state.messages = this.props.text;
-    this.state.title = this.props.title;
-    this.state.language = this.props.language;
-    switch (this.state.option) {
+    self.state.option = self.props.option;
+    self.state.messages = self.props.translations.text;
+    self.state.title = self.props.translations.title;
+    switch (self.state.option) {
       case "yellow":
-        self.state.video_path = this.props.video_path;
+        self.state.video_path = self.props.video_path;
         for (var i = 0; i < 5; i++) {
           self.state.coinAnimated.push(
             <div key={"coinSpan-" + i} className={"coin-animated coin coin-" + i}>
@@ -34,12 +33,12 @@ window.GuideContainer = React.createClass({
           <div className="pure-u-1 guide -inverted -yellow">
             <div className="limited-wrapper -flex-center">
               <div className="limited-wrapper -flex-center -guide">
-                <SectionMessageMid option="guide" messages={this.state.messages} title={this.state.title} />
-                <VideoContainer video_path={this.state.video_path} />
+                <SectionMessageMid option="guide" translations={self.props.translations} />
+                <VideoContainer video_path={self.state.video_path} />
               </div>
               <div className=" pure-u-2-5 animation-container -coins">
                 <div className="coinAnimated-container">
-                  {this.state.coinAnimated}
+                  {self.state.coinAnimated}
                 </div>
               </div>
             </div>
@@ -55,24 +54,25 @@ window.GuideContainer = React.createClass({
           <div className="pure-u-1 guide -blue -after-inverted">
             <div className="limited-wrapper -flex-center">
               <div className="limited-wrapper -flex-center -guide">
-                <SectionMessageMid option="guide" messages={this.state.messages} title={this.state.title} />
+                <SectionMessageMid option="guide" translations={self.props.translations} />
               </div>
               <div className=" pure-u-2-5 animation-container -stars">
-                {this.state.stars}
+                {self.state.stars}
               </div>
             </div>
           </div>
         )
         break;
       default:
+        self.state.language = self.props.language.replace(/\//g, "");
         return(
           <div className="pure-u-1 guide -inverted -red" id="wallet">
             <div className="limited-wrapper -flex-center">
               <div className="limited-wrapper -flex-center -guide">
-                <SectionMessageMid option="guide" messages={this.state.messages} title={this.state.title} />
+                <SectionMessageMid option="guide" translations={self.props.translations} />
               </div>
               <div className="pure-u-2-5 animation-container -chavez">
-                <figure className={'pure-u-1 talking-chavez ' + this.state.language}>
+                <figure className={'pure-u-1 talking-chavez ' + self.state.language}>
                   <span className="comic-globe"></span>
                 </figure>
               </div>
@@ -86,16 +86,20 @@ window.GuideContainer = React.createClass({
 
 window.GuideSection = React.createClass({
   render: function() {
-    var yellow = $.parseJSON(this.props.yellow);
-    var blue = $.parseJSON(this.props.blue);
-    var red = $.parseJSON(this.props.red);
     var video = "<%= asset_path('comment.mp4') %>";
+    var pathname = window.location.pathname;
+    var path = '';
+    if (pathname == '/es' || pathname == '/en' || pathname == '/kr' || pathname == '/ch') {
+      path = pathname;
+    }else {
+      path = '/es'
+    }
     return(
       <section className="pure-u-1 guide-container section-container _nopadding -flex-center">
         <div className="pure-u-1 guide-wrapper" id="guide">
-          <GuideContainer option="yellow" title="¿Qué es ChavezCoin?" text={yellow} video_path={video} />
-          <GuideContainer option="blue" title="Obtener y usar ChavezCoin es más fácil que ganar las elecciones con Tibisay" text={blue} />
-          <GuideContainer option="red" title="ChavezCoin es más seguro que el palacio de Miraflores" text={red} />
+          <GuideContainer option="yellow" translations={this.props.translations.yellow_section} video_path={video} />
+          <GuideContainer option="blue" translations={this.props.translations.blue_section} />
+          <GuideContainer option="red" translations={this.props.translations.red_section} language={path} />
         </div>
       </section>
 

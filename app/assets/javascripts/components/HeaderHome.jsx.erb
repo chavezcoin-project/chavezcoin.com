@@ -1,4 +1,4 @@
-window.HeaderCountEnglish = React.createClass({
+window.HeaderCount = React.createClass({
   render: function() {
     return(
       <div className="count-container">
@@ -8,88 +8,89 @@ window.HeaderCountEnglish = React.createClass({
         </figure>
         <Count />
         <div className="tag-text -banner -regular -lightgrey normalize">
-          <h3>Left</h3>
+          <h3>{this.props.text}</h3>
         </div>
       </div>
     )
   }
 })
 
-window.BannerFixedEnglish = React.createClass({
+window.BannerFixed = React.createClass({
   render: function() {
     return(
       <div id="banner" className="button-banner">
         <a className="main-button -blue" href="http://chavezcoin.tk/rewardsystem" >
-          Get Chavezcoin
+          {this.props.blue_button}
         </a>
         <a className="main-button -red" href="http://www.mediafire.com/file/h7d1g2veam6r01v/coming-soon_0.jpg">
-          Download Wallet
+          {this.props.red_button}
         </a>
       </div>
     );
   }
 });
 
-window.SkewFlagEnglish = React.createClass({
+window.SkewFlag = React.createClass({
   render: function() {
     var images = this.props.images;
     return(
       <div className="limited-wrapper -flex-center">
         <div className="menssage-container _margintop-lg _paddingTop-lg _paddingBottom-md">
-          <h3 className="main-title -lgsize -fullwidth">A NEW CRYPTOCURRENCY FOR VENEZUELA BY VENEZUELANS</h3>
+          <h3 className="main-title -lgsize -fullwidth">{this.props.translations.title}</h3>
         </div>
         <section className="inner-content">
           <div className="abstract-banner-content -normal">
-            <TransactionContainerEnglish type='blur' />
+            <TransactionContainer type='blur' text={this.props.translations.coin_counter} />
             <HideCoinAnimation />
             <h2 className="tag-text -banner -lightgrey -midsize">
-              Raise your assets to the moon!
+              {this.props.translations.slogan}
             </h2>
             <div className="pure-u-1 buttons-container button-header">
               <a className="main-button -blue" href="http://chavezcoin.tk/rewardsystem" >
-                Get Chavezcoin
+                {this.props.translations.blue_button}
               </a>
-              <a className="main-button -red" href="http://www.mediafire.com/file/h7d1g2veam6r01v/coming-soon_0.jpg">
-                Download Wallet
+              <a target="_blank" className="main-button -red" href="http://www.mediafire.com/file/h7d1g2veam6r01v/coming-soon_0.jpg">
+                {this.props.translations.red_button}
               </a>
             </div>
           </div>
-          <HeaderCountEnglish price={this.props.chcprice} />
-          <ActionMobile images={images} class='-app-section -header' message="¡click me, i'm great!"/>
+          <HeaderCount price={this.props.chcprice} text={this.props.translations.counter} />
+          <ActionMobile images={images} class='-app-section -header' message={this.props.translations.click_me} />
         </section>
-        <BannerFixedEnglish />
-      </div>
-    )
-  }
-})
-
-window.SubscribeModalEnglish = React.createClass({
-  render: function() {
-    return(
-      <div className="fade-screen -header pure-u-1">
-        <i className="close">x</i>
-        <article className="default-modal" >
-          <figure className="logo -chavez"></figure>
-          <p className="text tag-text -fullwidth -center">Subscribe and find out latest news of ChavezCoin</p>
-          <div className="pure-u-1 buttons-container">
-            <a className="main-button -blue  click-socialmedia" href="/EN#socialmedia">Subscribe</a>
-          </div>
-        </article>
+        <BannerFixed blue_button={this.props.translations.blue_button} red_button={this.props.translations.red_button} />
       </div>
     );
   }
 })
 
-window.HeaderHomeEnglish = React.createClass({
+window.SubscribeModal = React.createClass({
+  render: function() {
+    return(
+      <div className="fade-screen -header pure-u-1" id="fadescreen">
+        <i className="close">x</i>
+        <article className="default-modal" >
+          <figure className="logo -chavez"></figure>
+          <p className="text tag-text -fullwidth -center">{this.props.translationsModal.text}</p>
+          <div className="pure-u-1 buttons-container">
+            <a href={"#socialmedia"} className="main-button -blue click-socialmedia">{this.props.translationsModal.button_text}</a>
+          </div>
+        </article>
+      </div>
+    );
+  }
+})  
+
+window.HeaderHome = React.createClass({
   render: function() {
     var images = $.parseJSON(this.props.images);
     return(
       <header className="pure-u-1">
-        <SubscribeModalEnglish />
+        <SubscribeModal translationsModal={this.props.translationsModal} />
         <section className="abstract-banner pure-u-1" id="inicio">
           <div className="pure-u-1 skew-container-abstract -flag-color"></div>
-          <SkewFlagEnglish images={images} chcprice='1' blueButtonLink={this.props.blueButtonLink} />
+          <SkewFlag images={images} chcprice='1' blueButtonLink={this.props.blueButtonLink} translations={this.props.translations} />
         </section>
+        <BannerFixed />
       </header>
     )
   }

@@ -1,16 +1,12 @@
-// FIXME: remove this import, currently needed as work around to this issue:
-// https://github.com/rails/sprockets/issues/474
-@import 'settings.global';
 .main-title {
     color: $white;
     font-family: $secondary-font-family;
     font-size: 3.25rem;
     font-weight: 400;
-    margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    text-shadow: 0 .2rem .1rem rgba($black, .2);
+    text-shadow: .1rem .15rem .35rem rgba($black, .4);
     width: 95%;
     z-index: 1;
     @include lg {

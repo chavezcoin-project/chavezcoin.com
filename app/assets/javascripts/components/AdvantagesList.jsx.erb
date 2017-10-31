@@ -14,22 +14,22 @@ window.AdvantageInfo = React.createClass({
   }
 })
 
-window.AdvantageContainerEnglish = React.createClass({
+window.AdvantageContainer = React.createClass({
   render: function() {
     var articleTop = [];
     var articleBottom = [];
     var control = 0;
-    this.props.advantages.forEach(function(advantage) {
+    $.each(this.props.advantages.features, function(key, advantage) {
       control ++;
       if (control <= 3) {
-      	articleTop.push(<AdvantageInfo advantage={advantage} key={advantage.title} />);
+        articleTop.push(<AdvantageInfo advantage={advantage} key={advantage.title} />);
       }else {
-      	articleBottom.push(<AdvantageInfo advantage={advantage} key={advantage.title} />);
+        articleBottom.push(<AdvantageInfo advantage={advantage} key={advantage.title} />);
       }
     });
     return(
     	<section className="pure-u-1 advantages-container section-container -flex-center -skew-container" id="advantages">
-    		<SectionMessage title={'Why get ChavezCoin?'} message={"There're a lot of advantages you can enjoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations."} />
+    		<SectionMessage title={this.props.advantages.title} message={this.props.advantages.text} />
 				<div className="pure-u-1 limited-wrapper advantages-wrapper">{articleTop}</div>
 				<div className="pure-u-1 limited-wrapper advantages-wrapper">{articleBottom}</div>
     	</section>
@@ -38,11 +38,10 @@ window.AdvantageContainerEnglish = React.createClass({
   }
 })
 
-window.AdvantagesListEnglish = React.createClass({
+window.AdvantagesList = React.createClass({
   render: function() {
-  	var advantagesJson = $.parseJSON(this.props.advantages);
     return(
-    	<AdvantageContainerEnglish advantages={advantagesJson} />
+    	<AdvantageContainer advantages={this.props.advantages} />
     )
   }
 })

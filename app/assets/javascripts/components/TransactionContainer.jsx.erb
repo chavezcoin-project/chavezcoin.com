@@ -8,7 +8,7 @@ window.CounterContainer = React.createClass({
           <input className="total_transactions" max="100" min="0" step="1" type="hidden" defaultValue={total} ></input>
           <div className={"pure-u-1 transaction-counter -" + type}>
             <p className="pure-u-1 tag-text -lightblack -center">
-              Disponibles
+              {this.props.text}
             </p>
             <div className="background"></div>
           </div>
@@ -34,14 +34,14 @@ window.TransactionContainer = React.createClass({
     clearInterval(this.interval);
   },
   render: function() {
-    var type = this.props.type;
+    var type = this.props.type,
+        text = this.props.text;
     if (type == 'blur' || type == 'blur-nav') {
       cantidad = 31000000;
       return(
-        <CounterContainer type={type} totalchc={cantidad} />
+        <CounterContainer type={type} totalchc={cantidad} text={text} />
       )
     }else {
-    var messages = [{"text": "ChavezCoin es una moneda destinada a triunfar. Será un éxito absoluto, que impulsará el uso de criptomonedas en todo un país."}];
       var graphicData = $.parseJSON(this.props.graphicData);
       return(
         <section className="pure-u-1 transaction-container section-container -skew-container">
@@ -51,7 +51,7 @@ window.TransactionContainer = React.createClass({
               <GraphicContainer graphicData={graphicData} />
               <span className="button graphic-details"></span>
             </div>
-            <SectionMessageMid title={"La gráfica no miente"} messages={messages} option="side" />
+            <SectionMessageMid translations={this.props.translations} option="side" />
           </div>
         </section>
       )

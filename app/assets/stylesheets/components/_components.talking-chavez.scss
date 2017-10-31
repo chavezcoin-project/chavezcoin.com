@@ -2,12 +2,12 @@
   @include flex_center();
   animation: hideShow 4s;
   align-items: flex-end;
-  height: 60%;
+  height: 20rem;
   overflow: hidden;
   position: absolute;
   top: 0;
   &:before {
-    animation: talkingChavez 15s infinite 2s alternate;
+    animation: talkingChavez 20s infinite 2s alternate;
     background: asset_url('logo.png') center center no-repeat / 100%;
     content: '';
     height: 12rem;
@@ -17,7 +17,7 @@
   }
   &:after {
     color: $scorpion;
-    animation: escribir 15s infinite 2s;
+    animation: escribir 20s infinite 2s;
     content: '';
     font-family: $secondary-font-family;
     font-size: 2rem;
@@ -27,8 +27,11 @@
     top: 2rem;
     width: 13rem;
   }
-  &.-english:after {
-    animation: write 15s infinite 2s;
+  &.en:after {
+    animation: write 20s infinite 2s;
+  }
+  &.kr:after  {
+    animation: korean 20s infinite 2s;
   }
 }
 
@@ -204,6 +207,95 @@
     opacity: 0;
   }
 }
+
+@keyframes korean {
+  30% {
+    content: '|';
+    opacity: 0;
+  }
+  32.5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  42.5% {
+    content: '|';
+    opacity: 1;
+  }
+  43.75% {
+    content: '저|';
+  }
+  45% {
+    content: '저를|';
+  }
+  46.25% {
+    content: '저를 |';
+  }
+  47.5% {
+    content: '저를 ';
+  }
+  48.75% {
+    content: '저를 |';
+  }
+  50% {
+    content: '저를 클|';
+  }
+  51.25% {
+    content: '저를 클릭|';
+  }
+  52.5% {
+    content: '저를 클릭하|';
+  }
+  53.75% {
+    content: '저를 클릭하세요|';
+  }
+  55% {
+    content: '저를 클릭하세요,|';
+  }
+  56.25% {
+    content: '저를 클릭하세요, |';
+  }
+  57.5% {
+    content: '저를 클릭하세요, 아';
+  }
+  58.75% {
+    content: '저를 클릭하세요, 아주|';
+  }
+  60% {
+    content: '저를 클릭하세요, 아주 |';
+  }
+  61.25% {
+    content: '저를 클릭하세요, 아주 좋|';
+  }
+  62.5% {
+    content: '저를 클릭하세요, 아주 좋아|';
+  }
+  63.75% {
+    content: '저를 클릭하세요, 아주 좋아요|';
+  }
+  65% {
+    content: '저를 클릭하세요, 아주 좋아요!|';
+  }
+  66.25% {
+    content: '저를 클릭하세요, 아주 좋아요!';
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
+
+
 
 @keyframes hideShow {
   0%, 50% {

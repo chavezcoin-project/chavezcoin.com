@@ -20,6 +20,194 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ch:
-  header:
-    blue_button: "chinese ChavezCoin"
-    red_button: "chinese Wallet"
+  nav_menu:
+    links:
+      link_one:
+        name: "inicio"
+        first_letter: "引发"
+        cut_name: ""
+      link_two: 
+        name: "guide"
+        first_letter: "引导"
+        cut_name: ""
+      link_three:
+        name: "advantages"
+        first_letter: "优点"
+        cut_name: ""
+      link_four:
+        name: "market"
+        first_letter: "购买"
+        cut_name: ""
+      link_five:
+        name: "app"
+        first_letter: "应用"
+        cut_name: ""
+      link_six:
+        name: "blog"
+        first_letter: "博客"
+        cut_name: ""
+      link_seven:
+        name: "faq"
+        first_letter: "支持"
+        cut_name: ""
+    session_link_login:
+      name: "login"
+      first_letter: "存款"
+      cut_name: ""
+    session_link_logout:
+      name: "logout"
+      first_letter: "出来"
+      cut_name: ""
+  home:
+    modal:
+      text: "订阅并查找ChavezCoin的最新消息"
+      button_text: "订阅"
+    header:
+      blue_button: "获取ChavezCoin"
+      red_button: "下载钱包"
+      counter: "剩下"
+      coin_counter: "可用币"
+      title: "委内瑞拉人给委内瑞拉的一种新的加密货币"
+      slogan: "把您的资产升到月球上去！"
+      click_me: "点击我，我很棒！"
+    graphic:
+      title: "画面是不会说谎的"
+      text: "查韦斯币注定是要成功的，这枚加密币注定是一个绝对的打击，并开始在整个国家的加密货币造成趋势。."
+      click_me: "点击我，我很棒！"
+    guide:
+      yellow_section:
+        title: "查韦斯币是什么?"
+        text: 
+          text_one: "查韦斯币是一种革命性的新型货币，它将改变你看待金钱的方式，打开通往光明未来的大门，在那里，传统货币的问题并不存在。."
+      blue_section:
+        title: "获取和使用查韦斯币是非常简单的！"
+        first_step: "首先，我们在安卓或windows上下载钱包，然后进行注册并开始拥有所有这些好处:"
+        benefits:
+          one: "特殊的账号"
+          two: "通过奖励系统获得加密币（如果您是委内瑞拉人）"
+          three: "与任何您想要的人交易"
+          four: "购买资产，吃或玩彩票"
+          five: "投资的力量"
+        end_text: "如果您是外国人，您可以从任何想通过交易网站交流的委内瑞拉人那里获得查韦斯币，这样您就可以帮助别人为他们的家人购买商品，从而帮助所有的委内瑞拉人。."
+      red_section:
+        title: "ChavezCoin is safe and intelligent!"
+        text: 
+          text_one: "当我们停止使用这个系统的时候，世界经济问题就会出现，银行将停止作为一个业联盟的运作，开始做他们应该做的事情，帮助人们，而不是赚钱。."
+          text_two: "查韦斯币是一种数码加密货币，完全分散和加密；不受任何政府实体或世界银行的控制。."
+          text_three: "加入我吧，同志们!"
+    advantages:
+      title: "为什么要用查韦斯币呢 ?"
+      text: "通过使用查韦斯币，您可以获得很多好处，它的安全性、速度和有效性将超过您的期望。"
+      features:
+        feature:
+          class: "box-color -yellow -upleft"
+          description: "查韦斯币不是由任何银行或金融机构控制的。."
+          title: "分散式"
+        feature_two:
+          class: "box-color -blue"
+          description: "查韦斯币的资金转移直接在有关各方之间进行"
+          title: "没有第三方"
+        feature_three:
+          class: "box-color -red -upRight"
+          description: "使用查韦斯币的话，您是钱包里唯一的主人，没人能把它拿走。"
+          title: "它是您的"
+        feature_four:
+          class: "box-color -yellow -downLeft"
+          description: "查韦斯币帮助您在进行交易时保护您的隐私。"
+          title: "匿名的"
+        feature_five:
+          class: "box-color -blue"
+          description: "当您使用查韦斯币时，您会帮助委内瑞拉的人民获得更好的生活质量."
+          title: "慈善的"
+        feature_six:
+          class: "box-color -red -downRight"
+          description: "查韦斯币基金的转账比传统的使用银行等第三方机构的资金要快得多。"
+          title: "快速"
+    exchange_guide:
+      title: "征收这些货币吧！"
+      text: "您可以把您的查韦斯币兑换成任何您想要的硬币，在这里您可以看到一个价格指南和一个加密市场的列表。"
+      coin_guide:
+        change: "更改:"
+        last_price: "最后价格:"
+        last_update: "最后更新:"
+        name: "硬币:"
+        title: "货币价格指南"
+        vol: "卷:"
+        you_got: "你得到了 "
+      exchange:
+        volume: "24h 卷"
+        graphic: "图像"
+        last_update: "最后更新:"
+        market_name: "市场名称"
+        price: "价钱"
+        title: "交易所网站"
+    app:
+      title: "跨星系和最高的应用"
+      text:
+        text_one: "使用我们的应用程序，您可以快速、经济和安全的环境中使用查韦斯币。"
+        text_two: "欢迎来到未来，欢迎来到查韦斯币的世界."
+    social_media:
+      title: "与我们联系"
+      text: "首先通过电子邮件接收最新的更新"
+      placeholder: "电子邮件地址"
+    blog:
+      title: "最新消息"
+      text: "了解最新消息"
+      posts:
+        post:
+          author: "Lillian Willis"
+          autor_avatar: "https://randomuser.me/api/portraits/women/20.jpg"
+          image_path: "/assets/tablet-content-b92c5d9217d438b4c4657b7265a32dba265eafa417ab0eb471e184471b0e836d.jpg"
+          text_link: "在"
+          category: "cryptocurrencies"
+          title: "现代社会的比特币效应"
+          date: "7月1日"
+          link_facebook: "asdasdsad/facebook"
+          link_google: "asdasdasd/google"
+          link_twitter: "asdasd/twitter"
+          share: "与你的朋友分享"
+    faq:
+      title: "常见问题解答"
+      text: "您是比特币世界的新手吗？别担心，这个常见问题部分有您需要的答案。"
+      text_end: '"没有回头路可走了!" -雨果查韦斯'
+      questions:
+        faq_one:
+          id: "1"
+          question: "什么是加密币？"
+          answer: "它是一种基于名为区块链的算法的数字货币，它是完全分散的，一旦发布就几乎不可能控制。"
+        faq_two:
+          id: "2"
+          question: "什么是加密钱包？"
+          answer: "顾名思义，它是一个钱包，但在网上；它可以控制您所拥有的所有加密币，无论是发送还是接收，都是完全私人的，除了您，什么都没有，没有人能控制它。"
+        faq_three:
+          id: "3"
+          question: "我可以用我的查韦斯币做什么?"
+          answer: "查韦斯币将会像我们现在使用的纸币，并且没有任何不好的影响。您可以买东西，付账单，甚至买彩票。您可以发送给任何您喜欢的人，完全匿名和安全。"
+        faq_four:
+          id: "4"
+          question: "为什么市面上还没有查韦斯币？"
+          answer: "查韦斯币将于2017年12月12日发行。"
+        faq_five:
+          id: "5"
+          question: "会发布多少个查韦斯币呢？"
+          answer: "查韦斯币的供应量将等于目前委内瑞拉人口的3100万，每年的通货膨胀率为3%。(委内瑞拉的平均人口增长)."
+        faq_six:
+          id: "6"
+          question: "我怎样才能获得查韦斯币？"
+          answer: "如果您是委内瑞拉人，只要遵循赏金制度，您就可以赚到CC(查韦斯币)。如果您不是委内瑞拉人，您可以从我们交换页面上出售的任何人那里得到CC。"
+        faq_seven:
+          id: "7"
+          question: "查韦斯币的价值是多少？"
+          answer: "在启动后，价格将是1美元/ CC，从那时起，价格将由用户决定。"
+        faq_eight:
+          id: "8"
+          question: "我要怎样才能开户？"
+          answer: "点击注册登录页面，并遵循指令。"
+        faq_nine:
+          id: "9"
+          question: "它是安全的呢?"
+          answer: "加密货币是当今最安全的货币体系，您可以用它们来做任何您想做的事情，您可以100%地确保您的交易是安全的。"
+        faq_ten:
+          id: "10"
+          question: "什么是介绍人？"
+          answer: "这是奖励系统获得更多CC的任务之一，您邀请越多的人使用这个系统，您就会获得更多的CC。(只限于委内瑞拉人)."

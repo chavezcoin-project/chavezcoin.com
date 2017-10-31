@@ -20,6 +20,193 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  header:
-    blue_button: "Win ChavezCoin"
-    red_button: "Download Wallet"
+  nav_menu:
+    links:
+      link_one:
+        name: "inicio"
+        first_letter: "H"
+        cut_name: "ome"
+      link_two: 
+        name: "guide"
+        first_letter: "G"
+        cut_name: "uide"
+      link_three:
+        name: "advantages"
+        first_letter: "A"
+        cut_name: "vantages"
+      link_four:
+        name: "market"
+        first_letter: "B"
+        cut_name: "uy"
+      link_five:
+        name: "app"
+        first_letter: "A"
+        cut_name: "pp"
+      link_six:
+        name: "blog"
+        first_letter: "B"
+        cut_name: "log"
+      link_seven:
+        name: "faq"
+        first_letter: "S"
+        cut_name: "upport"
+    session_link_login:
+      name: "login"
+      first_letter: "L"
+      cut_name: "ogin"
+    session_link_logout:
+      name: "logout"
+      first_letter: "L"
+      cut_name: "ogout" 
+  home:
+    modal:
+      text: "Subscribe and find out latest news of ChavezCoin"
+      button_text: "Subscribe"
+    header:
+      blue_button: "Get ChavezCoin"
+      red_button: "Download wallet"
+      counter: "left"
+      coin_counter: "available"
+      title: "A NEW CRYPTOCURRENCY FOR VENEZUELA BY VENEZUELANS"
+      slogan: "Raise your assets to the moon!"
+      click_me: "click me, i'm awesome!"
+    graphic:
+      title: "The Graphic Doesn't Lie"
+      text: "ChavezCoin is destined to triumph, this coin is meant to be an absolute hit and begin the cryptocurrency tendency into a whole country."
+      click_me: "click me, i'm awesome!"
+    guide:
+      yellow_section:
+        title: "What is Chavezcoin?"
+        text: 
+          text_one: "ChavezCoin is a new and revolutionary cryptocurrency, It will change the way you see the money and will open the door to a brighter future, where the problems of paper-money doesn't exist."
+      blue_section:
+        title: "Obtain and use ChavezCoin is easy!"
+        first_step: "First we have to download the wallet for android or windows, then we register our wallet and start having all this benefits:"
+        benefits:
+          one: "Unique ID"
+          two: "Obtain CC from the bounty system (If you are Venezuelan)"
+          three: "Trade with anyone"
+          four: "Get assets, food or play the lottery"
+          five: "Investment"
+        end_text: "If you are foreign you can get CC from any venezuelan via the exchanges that is willing to sell you, by doing that you are helping someone that will spend that money in goods for his family and therefore all the people in Venezuela."
+      red_section:
+        title: "ChavezCoin is safe and intelligent!"
+        text: 
+          text_one: "The world financial problems are existing because of the paper-money, when we stop using this paper-debt the banks will stop operating like a cartel and start doing what they are meant to be, help the people and not getting profit from everything."
+          text_two: "ChavezCoin is a new cryptocurrency digital, encrypted and fully decentralized; is not being controlled by any government entity or world banks."
+    advantages:
+      title: "Why get ChavezCoin?"
+      text: "There're a lot of advantages you can ejnoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations."
+      features:
+        feature:
+          class: "box-color -yellow -upleft"
+          description: "Chavezcoin it's not controlled by any bank nor financial institution."
+          title: "Decentralized"
+        feature_two:
+          class: "box-color -blue"
+          description: "Transfers of Chavezcoin funds are done directly between the interested parties"
+          title: "No third party"
+        feature_three:
+          class: "box-color -red -upRight"
+          description: "With Chavezcoin you're the only owner of your wallet private and public id; NO ONE can take that away from you."
+          title: "It's yours"
+        feature_four:
+          class: "box-color -yellow -downLeft"
+          description: "Chavezcoin helps you to preserve your privacy when realizing transactions."
+          title: "Anonimous"
+        feature_five:
+          class: "box-color -blue"
+          description: "When you get ChavezCoin you are helping the people of Venezuela to get a better life quality."
+          title: "Beneficent"
+        feature_six:
+          class: "box-color -red -downRight"
+          description: "Transfers of Chavezcoin funds are a lot faster than the traditional ones that use third parties such as banks."
+          title: "Fast"
+    exchange_guide:
+      title: "Expropriate those currencies!"
+      text: "You can change your ChavezCoin to any other currency you want, just go to the markets listed bellow."
+      coin_guide:
+        change: "Change:"
+        last_price: "Last price:"
+        last_update: "Last update:"
+        name: "Coin:"
+        title: "Currency price guide"
+        vol: "Volume:"
+        you_got: "You got"
+      exchange:
+        volume: "24h Volume"
+        graphic: "Graphic"
+        last_update: "ast update:"
+        market_name: "Market name"
+        price: "Price"
+        title: "Exchanges Websites"
+    app:
+      title: "An intergalactic and supreme application"
+      text:
+        text_one: "With our app you can use Chavezcoin in a quickly, economical and secure enviroment."
+        text_two: "Welcome to the future, welcome to Chavezcoin."
+    social_media:
+      title: "Connect with us"
+      text: "Receive our latest updates first by email"
+      placeholder: "EMAIL ADDRESS"
+    blog:
+      title: "Latest News"
+      text: "Fin out what`s new!"
+      posts:
+        post:
+          author: "Lillian Willis"
+          autor_avatar: "https://randomuser.me/api/portraits/women/20.jpg"
+          image_path: "/assets/tablet-content-b92c5d9217d438b4c4657b7265a32dba265eafa417ab0eb471e184471b0e836d.jpg"
+          text_link: "in"
+          category: "cryptocurrencies"
+          title: "bitcoin effect in modern society"
+          date: "July 1"
+          link_facebook: "asdasdsad/facebook"
+          link_google: "asdasdasd/google"
+          link_twitter: "asdasd/twitter"
+          share: "Share with your friends"
+    faq:
+      title: "FAQ"
+      text: "New in the world of cryptocurrency? Don't worry this FAQ have everything you may ask."
+      text_end: '"There is no turning back!". Hugo Chávez'
+      questions:
+        faq_one:
+          id: "1"
+          question: "What is a cryptocurrency?"
+          answer: "Is a digital coin made by an algorithm named blockchain, is completely decentralized and is almost impossible to control this technology after is deployed."
+        faq_two:
+          id: "2"
+          question: "What is a wallet?"
+          answer: "Like his name indicates, is a wallet but digital, where you can control all the coins you have whether you want to send, receive or exchange. Is totally personal and nothing or noone can control it."
+        faq_three:
+          id: "3"
+          question: "What can i do with my Chavezcoins?"
+          answer: "ChavezCoin will be like the paper-money we use this days but without any disvantages. You will be able to buy goods, buy items, pay bills or even play the lottery. You can send to anyone you like and totally anonymous and safe."
+        faq_four:
+          id: "4"
+          question: "Why there're no Chavezcoin available yet?"
+          answer: "ChavezCoin will be release in 12th December of 2017."
+        faq_five:
+          id: "5"
+          question: "How many ChavezCoin will be available?"
+          answer: "The amount of ChavezCoin will be 31 million corresponding to the quantity of people in the country, with an inflation of the 3% per year (The average growth of the people in Venezuela)."
+        faq_six:
+          id: "6"
+          question: "How can i obtain Chavezcoin?"
+          answer: "If you are Venezuelan just follow the bounty system and you can earn CC. If you are not Venezuelan you can get CC from anyone who is selling in our exchange page available."
+        faq_seven:
+          id: "7"
+          question: "What will be the value of ChavezCoin?"
+          answer: "After the release the price will be 1$ per CC, from then the price will be determined by the users."
+        faq_eight:
+          id: "8"
+          question: "How can i make an account?"
+          answer: "Click in register in login page and follow the instructions."
+        faq_nine:
+          id: "9"
+          question: "It's safe?"
+          answer: "Cryptocurrencys are the most secure system of money at the moment, you will be able to do anything you want and be 100% certain that you will be safe."
+        faq_ten:
+          id: "10"
+          question: "What is a referrer?"
+          answer: "Is one of the task you earn in the bounty system to get more CC. The more people you get in the referral system the more CC you get. (Only for Venezuelan)."

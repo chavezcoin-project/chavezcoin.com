@@ -10,8 +10,6 @@ Rails.application.routes.draw do
     end
     root 'visitors#index'
 
-    get ":format", to: "visitors#index"
-
     get 'referrals' => 'referrals#index'
   end
 end

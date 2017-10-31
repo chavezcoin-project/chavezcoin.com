@@ -1,12 +1,12 @@
 %input{:type => "hidden", :value => @coins, :class => 'coins'}
 
 .pure-g.homepage
-  = react_component("HeaderHome", {chcprice: 1, images: @sliderDevice, blueButtonLink: @blueButtonLink, translations: t('home')}, class: "pure-u-1")
-  = react_component("TransactionContainer", {graphicData: @graphicData, type: 'graphic'}, class: "pure-u-1")
-  = react_component("GuideSection", {yellow: @text_yellow, blue: @text_blue, red: @text_red}, class: "pure-u-1")
-  = react_component("AdvantagesList", {advantages: @advantages}, class: "pure-u-1")
-  = react_component("MarketExchange", {markets: @markets}, class: "pure-u-1")
-  = react_component("AppPromo", {images: @slider, imagesDevice: @SliderDeviceTablet}, class: "pure-u-1")
-  = react_component("SocialMedia", {} , class: "pure-u-1")
-  = react_component("BlogList", {posts: @posts}, class: "pure-u-1")
-  = react_component("FaqList", {faqs: @faqs}, class: "pure-u-1")
+  = react_component("HeaderHome", {chcprice: 1, images: @sliderDevice, blueButtonLink: @blueButtonLink, translations: t('home.header'), translationsModal: t('home.modal')}, class: "pure-u-1")
+  = react_component("TransactionContainer", {graphicData: @graphicData, type: 'graphic', translations: t('home.graphic')}, class: "pure-u-1")
+  = react_component("GuideSection", {translations: t('home.guide')}, class: "pure-u-1")
+  = react_component("AdvantagesList", {advantages: t('home.advantages')}, class: "pure-u-1")
+  = react_component("MarketExchange", {markets: @markets, translations: t('home.exchange_guide')}, class: "pure-u-1")
+  = react_component("AppPromo", {images: @slider, imagesDevice: @SliderDeviceTablet, translations: t('home.app')}, class: "pure-u-1")
+  = react_component("SocialMedia", {translations: t('home.social_media')} , class: "pure-u-1")
+  = react_component("BlogList", {posts: @posts, translations: t('home.blog')}, class: "pure-u-1")
+  = react_component("FaqList", {faqs: t('home.faq')}, class: "pure-u-1")

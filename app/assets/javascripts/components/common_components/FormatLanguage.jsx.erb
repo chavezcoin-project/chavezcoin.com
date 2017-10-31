@@ -1,7 +1,21 @@
 window.FormatLanguage = React.createClass({
   getInitialState: function() {
     return({
-      open: false
+      open: false,
+      languages: [
+        {
+          language: '/en'
+        },
+        {
+          language: '/es'
+        },
+        {
+          language: '/kr'
+        },
+        {
+          language: '/ch'
+        }
+      ]
     });
   },
 
@@ -30,17 +44,36 @@ window.FormatLanguage = React.createClass({
   },
 
   setSeleted: function() {
-    if (this.props.selected == "ES")
-      return(<img className="logo" src={"<%= asset_path('flags/ES.png')%>"}/>)
-    else
-      return(<img className="logo" src={"<%= asset_path('flags/EN.png')%>"}/>)
+    var _this = this;
+    var flag_path = '';
+    _this.state.languages.forEach(function(language) {
+      if(window.location.href.indexOf(language.language) > -1) {
+        flag_path = language.language;
+      }
+    });
+    if(flag_path) {
+      return(<img className="logo" src={"<%= asset_path('/assets/flags"+flag_path+".png')%>"}/>)
+    }else {
+      return(<img className="logo" src={"<%= asset_path('/assets/flags/es.png')%>"}/>)
+    }
   },
 
   getOption: function() {
-    if (this.props.selected != "ES")
-      return(<a href="/ES"><img className="logo" src={"<%= asset_path('flags/ES.png')%>"}/></a>)
-    else
-      return(<a href="/EN"><img className="logo" src={"<%= asset_path('flags/EN.png')%>"}/></a>)
+    var _this = this;
+    var flags = [];
+    var selected = '';
+    var pathname = window.location.pathname;
+    _this.state.languages.forEach(function(language) {
+      if(window.location.href.indexOf(language.language) > -1) {
+        pathname = pathname.replace(language.language, "");
+      }
+    });
+    _this.state.languages.forEach(function(language) {
+      if(window.location.href.indexOf(language.language) == -1) {
+        flags.push(<a href={language.language + pathname} key={language.language + pathname} ><img className="logo" src={"<%= asset_path('/assets/flags"+language.language+".png')%>"}/></a>)
+      }
+    });
+    return flags;
   },
 
   render: function() {  

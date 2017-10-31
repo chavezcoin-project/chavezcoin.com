@@ -1,25 +1,28 @@
-[{
-        "text": "Primero descargamos la Wallet (cartera virtual) en android o windows, luego nos registramos y empezamos a tener todos estos beneficios:"
-    },
-    {
-        "benefits": [{
-                "text": "ID única"
-            },
-            {
-                "text": "Obtener Monedas por el sistema de recompensa (Si eres venezolano)"
-            },
-            {
-                "text": "Intercambia con quien quieras"
-            },
-            {
-                "text": "Conseguir activos, comida o jugar la lotería"
-            },
-            {
-                "text": "Poder de inversión"
-            }
-        ]
-    },
-    {
-        "text": "Si eres extranjero, puedes obtener CC de cualquier venezolano que quiera intercambiar mediante los sitios web de intercambio, al hacer eso estarás ayudando a alguien para que compre bienes para su familia y por lo tanto ayudas a toda Venezuela."
-    }
+[
+  {
+    "text": "Primero descargamos la Wallet (cartera virtual) en android o windows, luego nos registramos y empezamos a tener todos estos beneficios:"
+  },
+  {
+    "benefits":
+    [
+      {
+        "text": "ID única"
+      },
+      {
+        "text": "Obtener Monedas por el sistema de recompensa (Si eres venezolano)"
+      },
+      {
+        "text": "Intercambia con quien quieras"
+      },
+      {
+        "text": "Conseguir activos, comida o jugar la loteria"
+      },
+      {
+        "text": "Poder de inversion"
+      }
+    ]
+  },
+  {
+    "text": "Si eres extranjero puedes obtener CC de cualquier venezolano que quiera intercambiar mediante los sitios web de intercambio, al hacer eso estas ayudando a alguien para que compre bienes para su familia y por lo tanto ayudas a toda Venezuela."
+  }
 ]

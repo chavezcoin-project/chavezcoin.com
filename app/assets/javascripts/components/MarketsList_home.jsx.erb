@@ -33,11 +33,11 @@ window.MarketsList = React.createClass({
         <table className=" pure-u-23-24 pure-u-md-4-5 table-list -market">
           <thead className="head">
             <tr className="data-wrapper">
-              <th className=" data -mid">Nombre de Mercado</th>
-              <th className=" data -hide pure-u-1-5">Última Actualización</th>
-              <th className=" data -mid">24h Volumen $USD</th>
-              <th className=" data -small-big">Precio $USD</th>
-              <th className=" data -hide -small">Gráfico</th>
+              <th className=" data -mid">{this.props.translations.market_name}</th>
+              <th className=" data -hide pure-u-1-5">{this.props.translations.last_update}</th>
+              <th className=" data -mid">{this.props.translations.volume+" $USD"}</th>
+              <th className=" data -small-big">{this.props.translations.price+" $USD"}</th>
+              <th className=" data -hide -small">{this.props.translations.graphic}</th>
             </tr>
           </thead>
           <tbody className="body">

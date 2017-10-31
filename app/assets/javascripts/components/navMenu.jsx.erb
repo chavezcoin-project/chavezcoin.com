@@ -1,12 +1,32 @@
 window.LinkDetail = React.createClass({
   render: function() {
+    var languages = [
+      {
+        language: '/en'
+      },
+      {
+        language: '/es'
+      },
+      {
+        language: '/kr'
+      },
+      {
+        language: '/ch'
+      }
+    ];
     var self = this ;
+    var current_language = '';
+    languages.forEach(function(language) {
+      if(window.location.href.indexOf(language.language) > -1) {
+        current_language = language.language;
+      }
+    });
     if (!this.props.name) {
       var session = [];
       if (self.props.session_link[0] == 'login') {
-        session.push(<a key={self.props.session_link[0]} href={self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
+        session.push(<a key={self.props.session_link[0]} href={current_language + self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
       }else {
-        session.push(<a key={self.props.session_link[0]} rel="nofollow" data-method="delete" href={self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
+        session.push(<a key={self.props.session_link[0]} rel="nofollow" data-method="delete" href={current_language + self.props.session_link[1]} className="menu-link link session"><span className="bounceletter">{self.props.first_letter}</span>{self.props.cut_name}</a>);
       }
       return(
         <li className="pure-menu-item menu-item">
@@ -14,36 +34,20 @@ window.LinkDetail = React.createClass({
         </li>
       )
     }else {
-      var link = '#' + this.props.name;
       var pathname = window.location.pathname;
-      if (pathname == this.props.link_root) {
-        return(
-          <li className="pure-menu-item menu-item">
-            <a href={this.props.link_root + link} className="menu-link link">
-              <span className="bounceletter">{this.props.first_letter} </span>
-              {this.props.cut_name}
-            </a>
-          </li>
-        )
-      }else if (pathname == '/ES' || pathname == '/EN'){
-        return(
-          <li className="pure-menu-item menu-item">
-            <a href={ pathname + link} className="menu-link link">
-              <span className="bounceletter">{this.props.first_letter} </span>
-              {this.props.cut_name}
-            </a>
-          </li>
-        )
-      }else {
-        return(
-          <li className="pure-menu-item menu-item">
-            <a href={this.props.link_root + link} className="menu-link link no-animated">
-              <span className="bounceletter">{this.props.first_letter} </span>
-              {this.props.cut_name}
-            </a>
-          </li>
-        )
+      var class_link = '';
+      if (pathname != '/es' && pathname != '/en' && pathname != '/kr' && pathname != '/ch'&& pathname != '/es/' && pathname != '/en/' && pathname != '/kr/' && pathname != '/ch/' && pathname != '/' && pathname != '') {
+        class_link = 'no-animated';
       }
+      var link = '#' + this.props.name;
+      return(
+        <li className="pure-menu-item menu-item">
+          <a href={current_language + link} className={"menu-link link " + class_link}>
+            <span className="bounceletter">{this.props.first_letter} </span>
+            {this.props.cut_name}
+          </a>
+        </li>
+      )
     }
   }
 })
@@ -51,23 +55,27 @@ window.LinkDetail = React.createClass({
 window.MenuLinks = React.createClass({
   render: function() {
     var self = this ;
-    var options = [{"name": "inicio", "first_letter": "I", "cut_name": "nicio"}, {"name": "guide", "first_letter": "G", "cut_name": "uía"}, {"name": "advantages", "first_letter": "V", "cut_name": "entajas"}, {"name": "market", "first_letter": "C", "cut_name": "ompra"}, {"name": "app", "first_letter": "A", "cut_name": "pp"}, {"name": "blog", "first_letter": "B", "cut_name": "log"}, {"name": "faq", "first_letter": "S", "cut_name": "oporte"}]
+    var pathname = window.location.pathname;
+    var path = '';
+    if (pathname == '/es' || pathname == '/en' || pathname == '/kr' || pathname == '/ch') {
+      path = pathname;
+    }
+    var options = this.props.links;
     var links = [];
-    options.forEach(function(option) {
+    var session_link = [];
+    $.each(options.links, function(key, option) {
       links.push(<LinkDetail link_root={self.props.link_root} name={option.name} first_letter={option.first_letter} key={option.name} cut_name={option.cut_name} />);
     });
-    var session_link = [];
     if (this.props.session_link[0] == 'login') {
-      session_link.push(<LinkDetail link_root={self.props.link_root} key={self.props.session_link[0]} first_letter="I" cut_name="ngresar" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
-    }
-    else {
-      session_link.push(<LinkDetail link_root={self.props.link_root} first_letter="S" cut_name="alir" session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+      session_link.push(<LinkDetail link_root={self.props.link_root} key={self.props.session_link[0]} first_letter={self.props.links.session_link_login.first_letter} cut_name={self.props.links.session_link_login.cut_name} session_link={self.props.session_link} key={self.props.session_link[0]}/>);
+    }else {
+      session_link.push(<LinkDetail link_root={self.props.link_root} first_letter={self.props.links.session_link_logout.first_letter} cut_name={self.props.links.session_link_logout.cut_name}  session_link={self.props.session_link} key={self.props.session_link[0]}/>);
     }
     return(
       <ul className="menu-links pure-menu-list">
         {links}
         {session_link}
-        <FormatLanguage selected={"ES"}/>
+        <FormatLanguage selected={path}/>
       </ul>
     )
   }
@@ -86,7 +94,7 @@ window.NavMenu = React.createClass({
           <i className="fa fa-bars slide-button"></i>
           <div className="fade-screen pure-u-1"></div>
           <div className="menu-links-container">
-            <MenuLinks link_root={link_root} session_link={this.props.session_link} />
+            <MenuLinks link_root={link_root} session_link={this.props.session_link} links={this.props.translations} />
           </div>
         </div>
       </nav>

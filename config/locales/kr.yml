@@ -20,6 +20,194 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 kr:
-  header:
-    blue_button: "korean ChavezCoin"
-    red_button: "korean Wallet"
+  nav_menu:
+    links:
+      link_one:
+        name: "inicio"
+        first_letter: "집"
+        cut_name: ""
+      link_two: 
+        name: "guide"
+        first_letter: "안내"
+        cut_name: ""
+      link_three:
+        name: "advantages"
+        first_letter: "장점들"
+        cut_name: ""
+      link_four:
+        name: "market"
+        first_letter: "구매"
+        cut_name: ""
+      link_five:
+        name: "app"
+        first_letter: "앱"
+        cut_name: ""
+      link_six:
+        name: "blog"
+        first_letter: "블로그"
+        cut_name: ""
+      link_seven:
+        name: "faq"
+        first_letter: "지지"
+        cut_name: ""
+    session_link_login:
+      name: "login"
+      first_letter: "들어가다"
+      cut_name: ""
+    session_link_logout:
+      name: "logout"
+      first_letter: "떠날"
+      cut_name: "" 
+  home:
+    modal:
+      text: "chavezcoin에서 최신 뉴스 구독 신청"
+      button_text: "구독하다"
+    header:
+      blue_button: "차베스 코인 승리"
+      red_button: "포트폴리오 다운로드"
+      counter: "남은"
+      coin_counter: "코인 사용 가능"
+      title: "베네수엘라의 베네수엘라용 새로운 암호화 화폐"
+      slogan: "달에 자산을 높이십시오!"
+      click_me: "저를 클릭하세요, 아주 좋아요!"
+    graphic:
+      title: "그래픽은 거짓말하지 않습니다"
+      text: "차베스코인은 승리를 향한 것이며, 이 코인은 절대적인 히트가 되어 전체 국가의 암호화된 화폐 추세를 시작하기 위한 것입니다."
+      click_me: "저를 클릭하세요, 아주 좋아요!"
+    guide:
+      yellow_section:
+        title: "차베스코인이란"
+        text: 
+          text_one: "차베스코인은 돈을 보는 방식을 바꾸는 혁명적이고 새로운 저작권 보호법으로, 기존 통화의 문제가 존재하지 않는 밝은 미래로 가는 길을 열어줄 것입니다."
+      blue_section:
+        title: " 차베스코인을 가지고 사용하는 게 매우 쉽습니다!"
+        first_step: "먼저 안드로이드 또는 윈도우에서 지갑을 다운로드 한 다음 등록하면 모든 이점을 누릴 수 있습니다:"
+        benefits:
+          one: "고유 ID"
+          two: "보상 시스템용 코인을 받습니다 (베네수엘라인 경우)"
+          three: "원하는 사람과 교환합니다"
+          four: "자산 받기, 이팅 또는 추점 플레이"
+          five: "투자의 힘"
+        end_text: "귀하가 외국인인 경우, 교환 웹 사이트를 통해 교환하고 싶은 베네수엘라의 차베스코인을 받을 수 있습니다. 그렇게 하여, 누군가가 가족을 위해 물건을 사도록 도와주며 모든 베네수엘라에 도움이 됩니다."
+      red_section:
+        title: "ChavezCoin is safe and intelligent!"
+        text: 
+          text_one: "해당 시스템의 사용을 중단하면 지폐에 세계 경제 문제가 존재하며 은행은 카르텔 운영을 중단하고 그들이 해야 할 일을 시작하며 사람들을 돕고 전혀 이익을 만들지 않습니다."
+          text_two: "차베스 코인은 암호화되고 완전한 분산형인 디지털 암호화 기술입니다. 이는 정부 기관이나 세계 은행에 의해 통제되지 않습니다."
+          text_three: "등록하세요!"
+    advantages:
+      title: "차베스코인을 받는 이유는?"
+      text: "차베스 코인을 사용하여 즐길 수 있는 많은 장점이 있습니다. 보안, 속도 및 효과는 여러분의 기대를 뛰어넘습니다."
+      features:
+        feature:
+          class: "box-color -yellow -upleft"
+          description: "차베스코인은 모든 은행이나 금융 기관에 의해 통제되지 않습니다."
+          title: "분산형"
+        feature_two:
+          class: "box-color -blue"
+          description: "차베스 코인 송금은 이해 당사자간에 직접 이루어집니다."
+          title: "제 3자 없음"
+        feature_three:
+          class: "box-color -red -upRight"
+          description: "차베스코인을 사용하면 지갑 소유자가 유일하기 때문에 아무도 지갑에서 코인을 꺼낼 수 없습니다."
+          title: "귀하의 것입니다"
+        feature_four:
+          class: "box-color -yellow -downLeft"
+          description: "차베스코인은 거래가 이루어질 때 개인 정보를 보호합니다."
+          title: "익명인"
+        feature_five:
+          class: "box-color -blue"
+          description: "차베스코인은 받을 때 베네수엘라 사람들이 더 나은 삶의 질을 얻을 수 있도록 도움을 줍니다."
+          title: "이점"
+        feature_six:
+          class: "box-color -red -downRight"
+          description: "차베스코인 송금은 은행처럼 제 3자를 이용하는 기존 송금보다 훨씬 빠릅니다."
+          title: "빠릅니다"
+    exchange_guide:
+      title: "해당 통화를 수용합니다!"
+      text: "원하는 코인으로 차베스코인을 변경할 수 있습니다. 여기에서 가격 가이드와 크립토마켓의 목록을 볼 수 있습니다."
+      coin_guide:
+        change: "변경:"
+        last_price: "마지막 가격:"
+        last_update: "마지막 업데이트:"
+        name: "동전:"
+        title: "통화 가격 가이드"
+        vol: "볼륨:"
+        you_got: "얻음"
+      exchange:
+        volume: "24h 볼륨"
+        graphic: "그래픽"
+        last_update: "마지막 업데이트:"
+        market_name: "시장 이름"
+        price: "가격"
+        title: "상품 거래소 웹사이트"
+    app:
+      title: "은하계 최고의 어플리케이션"
+      text:
+        text_one: "앱을 사용하여 신속하고 경쟁적이며 안전한 환경에서 차베스코인을 사용할 수 있습니다."
+        text_two: "미래에 오신 걸 환영합니다, 차베스코인에 오신 걸 환영합니다."
+    social_media:
+      title: "문의하기"
+      text: "이메일로 최신 업데이트 받기"
+      placeholder: "이메일 주소"
+    blog:
+      title: "최신 뉴스"
+      text: "새로운 것을 찾아 내세요!"
+      posts:
+        post:
+          author: "Lillian Willis"
+          autor_avatar: "https://randomuser.me/api/portraits/women/20.jpg"
+          image_path: "/assets/tablet-content-b92c5d9217d438b4c4657b7265a32dba265eafa417ab0eb471e184471b0e836d.jpg"
+          text_link: "...에서"
+          category: "크립토 통화"
+          title: "현대 사회의 비트 코 효과"
+          date: "7 월 1 일"
+          link_facebook: "asdasdsad/facebook"
+          link_google: "asdasdasd/google"
+          link_twitter: "asdasd/twitter"
+          share: "친구와 공유하기"
+    faq:
+      title: "자주하는 질문"
+      text: "크립토마켓 세계에 처음이십니까? 걱정하지 마세요, 해당 FAQ에는 필요한 답변이 있습니다."
+      text_end: '"물러설 게 없다!”-우고 차베스!". Hugo Chávez'
+      questions:
+        faq_one:
+          id: "1"
+          question: "크립토마켓이란?"
+          answer: "블록체인이라는 알고리즘을 기반으로 하는 디지털 통화입니다. 완전한 분산형으로 발행 된 후에는 실제적으로 제어하기가 불가능합니다."
+        faq_two:
+          id: "2"
+          question: "월렛이란?"
+          answer: "이름에서 알 수 있듯이 온라인이지만 지갑입니다. 가지고 있는 모든 코인을 통제하는 역할을 합니다. 전송 또는 받거나 완전히 개인적이며 귀하를 제외하고는 아무도 자신의 월렛을 통제할 수 없습니다."
+        faq_three:
+          id: "3"
+          question: "차베스코인으로 무엇을 할 수 있나요?"
+          answer: "차베스코인은 불편함 없이 우리가 현재 사용하는 지폐처럼 될 것입니다. 상품을 사고 물건을 구매하고 계산서를 지불하거나 추첨을 할 수 있습니다. 좋아하는 누구에게나 완전히 익명으로 안전하게 보낼 수 있습니다."
+        faq_four:
+          id: "4"
+          question: "왜 아직도 차베스코인을 사용할 수 없는 건가요?"
+          answer: "차베스코인은 2017년 12월 12일에 공개됩니다."
+        faq_five:
+          id: "5"
+          question: "차베스코인은 얼만큼 사용할 수 있나요?"
+          answer: "차베스코인 공급은 베네수엘라의 현재 인구 3천 1백만에 달하며 연간 인플레이션은 3%에 이릅니다. (베네수엘라의 평균 인구 증가)."
+        faq_six:
+          id: "6"
+          question: "차베스코인은 어떻게 구매하나요?"
+          answer: "베네수엘라인 경우, 장려금 시스템을 따라 차베스코인(CC)를 받을 수 있습니다. 만일 베네수엘라인이 아닌 경우, 이용 가능한 상품 거래소 페이지에서 판매하는 자에게 차베스코인을 구매할 수 있습니다."
+        faq_seven:
+          id: "7"
+          question: "차베스코인의 가치는 어떻게 되나요?"
+          answer: "출시 후, 가격은 1$/CC가 될 것이며, 그 이후 가격은 사용자에 의해 결정됩니다."
+        faq_eight:
+          id: "8"
+          question: "어떻게 계정을 만드나요?"
+          answer: "로그인 페이지에서 ‘등록’을 클릭하고 지시 사항을 따라주십시오."
+        faq_nine:
+          id: "9"
+          question: "안전한가요?"
+          answer: "크립토마켓는 오늘날 가장 안전한 화폐 시스템이며 원하는 모든 것을 하고 100% 안전하다고 확신하실 수 있습니다."
+        faq_ten:
+          id: "10"
+          question: "레퍼러란?"
+          answer: "보상 시스템이 차베스코인을 더 많이 제공하기 위해 제공하는 작업 중 하나입니다. 시스템을 사용하여 더 많은 사람들을 초대할 수록 더 많은 차베스코인을 받을 수 있습니다. (베네수엘라인만 해당)."

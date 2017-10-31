@@ -11,6 +11,6 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body
-    = react_component("NavMenu", {link_root: root_path, session_link: @link}, class: "pure-u-1")
+    = react_component("NavMenu", {link_root: root_path, session_link: @link, translations: t('nav_menu')}, class: "pure-u-1")
     = yield
     = react_component("Footer")
