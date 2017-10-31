@@ -51,7 +51,7 @@ window.FormatLanguage = React.createClass({
         flag_path = language.language;        
       }
     });
-    if(flag_path == '') {
+    if(flag_path === '') {
       return(<img className="logo" src={"<%= asset_path('/assets/flags/es.png')%>"}/>);
     }else {
       return(<img className="logo" src={"<%= asset_path('/assets/flags"+flag_path+".png')%>"}/>);
