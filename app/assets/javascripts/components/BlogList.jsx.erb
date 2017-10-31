@@ -103,9 +103,8 @@ window.BlogContainer = React.createClass({
 
 window.BlogList = React.createClass({
   render: function() {
-    var posts = $.parseJSON(this.props.posts);
     return(
-      <BlogContainer postsList={posts} translations={this.props.translations} />
+      <BlogContainer translations={this.props.translations} />
     )
   }
 })

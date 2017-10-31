@@ -20,11 +20,6 @@ class VisitorsController < ApplicationController
     @slider = File.read("#{Rails.root}/public/slider.json")
     @SliderDeviceTablet = File.read("#{Rails.root}/public/sliderDeviceTablet.json")
     @sliderDevice = File.read("#{Rails.root}/public/sliderDevice.json")
-    @advantages = File.read("#{Rails.root}/public/advantages.json")
-    @faqs = File.read("#{Rails.root}/public/faqs.json")
-    @text_yellow = File.read("#{Rails.root}/public/text_yellow.json")
-    @text_blue = File.read("#{Rails.root}/public/text_blue.json")
-    @text_red = File.read("#{Rails.root}/public/text_red.json")
-    @posts = File.read("#{Rails.root}/public/blog.json")
+
   end
 end
