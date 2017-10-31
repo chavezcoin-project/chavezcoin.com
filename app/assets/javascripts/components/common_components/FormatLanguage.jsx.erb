@@ -48,13 +48,13 @@ window.FormatLanguage = React.createClass({
     var flag_path = '';
     _this.state.languages.forEach(function(language) {
       if(window.location.href.indexOf(language.language) > -1) {
-        flag_path = language.language;
+        flag_path = language.language;        
       }
     });
-    if(flag_path != '') {
-      return(<img className="logo" src={"<%= asset_path('/assets/flags"+flag_path+".png')%>"}/>)
+    if(flag_path == '') {
+      return(<img className="logo" src={"<%= asset_path('/assets/flags/es.png')%>"}/>);
     }else {
-      return(<img className="logo" src={"<%= asset_path('/assets/flags/es.png')%>"}/>)
+      return(<img className="logo" src={"<%= asset_path('/assets/flags"+flag_path+".png')%>"}/>);
     }
   },
 
