@@ -22,12 +22,5 @@ class ApplicationController < ActionController::Base
       @link = ['login', new_user_session_path]
       @blueButtonLink = new_user_session_path
     end
-    
-    @loginForm = File.read("#{Rails.root}/public/login_text.json")
-    @loginRedPanel = File.read("#{Rails.root}/public/login_panel_rojo.json")
-    @editElements = File.read("#{Rails.root}/public/editElements.json")
-    @editRedPanel = File.read("#{Rails.root}/public/editFormRed.json")
-    @signupElements = File.read("#{Rails.root}/public/signupElements.json")
-    @signupRedPanel = File.read("#{Rails.root}/public/signupRedText.json")
   end
 end
