@@ -17,7 +17,7 @@ window.LinkDetail = React.createClass({
     var self = this ;
     var current_language = '';
     languages.forEach(function(language) {
-      if(window.location.href.indexOf(language.language) > -1) {
+      if(window.location.pathname.indexOf(language.language) > -1) {
         current_language = language.language;
       }
     });
