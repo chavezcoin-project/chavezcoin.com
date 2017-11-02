@@ -1,19 +1,5 @@
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-.h1 overview user
-%br
-%br
-.first-box
-  %p Quieres referir a un amigo? Comparte el link que esta abajo.
-  %p= " #{new_user_registration_url(referral: current_user.referrer_key)}"
-.second-box
-  - if current_user.referral_attribution
-    %p= "you have been referred by #{current_user.referral_attribution.from}"
+- if current_user.referral_attribution
+
+  = react_component("HeroBanner", { className: 'white_background', layout: 'edit_user_dashboard', limited_wrapper_class: '-flex-center', components: [{selector: 'h2', properties: {key: 'welcome', className: 'main-title'}, text: t('dashboard.overview.title')}, {selector: 'h2', properties: {key: 'message', className: 'main-title -midsize -fullwidth -small-dual-margin'}, text: t('dashboard.overview.referal_share')}, {selector: 'h2', properties: {key: 'message_two', className: 'main-title -midsize -fullwidth -small-dual-margin'}, text: t("dashboard.overview.refered", :name => current_user.referral_attribution.from)}, {selector: 'a', properties: {key: 'link', href: new_user_registration_url(referral: current_user.referrer_key), className: 'main-button -blue'}, text: t('dashboard.overview.button', :button => current_user.referrer_key)}]})
+- else
+  = react_component("HeroBanner", {layout: 'edit_user_dashboard', limited_wrapper_class: '-flex-center', components: [{selector: 'h2', properties: {key: 'welcome', className: 'main-title'}, text: t('dashboard.overview.title')}, {selector: 'h2', properties: {key: 'message', className: 'main-title -midsize -fullwidth -small-dual-margin'}, text: t('dashboard.overview.referal_share')}, {selector: 'a', properties: {key: 'link', href: new_user_registration_url(referral: current_user.referrer_key), className: 'main-button -blue'}, text: t("dashboard.overview.button", :button => current_user.referrer_key)}]})

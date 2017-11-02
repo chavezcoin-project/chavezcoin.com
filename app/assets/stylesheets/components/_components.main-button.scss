@@ -12,6 +12,10 @@
   @include sm {
     font-size: 1.25rem;
   }
+  &:hover {
+    background-color: $ripelemon;
+    color: $white;
+  }
   &.-blue,
   &.-red {
     color: $white;
@@ -20,11 +24,19 @@
   &.-blue {
     background-color: darken($danube, 15%);
   }
+  &.-blue:hover {
+    background-color: $ripelemon;
+  }
   &.-red {
     background-color: lighten($persianred, 20%);
   }
-  &:hover {
+  &.-yellow {
     background-color: $ripelemon;
-    color: $white;
+    &:hover {
+      background-color: $green_haze;
+    }
+  }
+  &.-small {
+    font-size: $medium-font-size;
   }
 }

@@ -66,65 +66,65 @@ en:
       blue_button: "Get ChavezCoin"
       red_button: "Download wallet"
       counter: "left"
-      coin_counter: "available"
+      coin_counter: "Coins Avaliable"
       title: "A NEW CRYPTOCURRENCY FOR VENEZUELA BY VENEZUELANS"
       slogan: "Raise your assets to the moon!"
       click_me: "click me, i'm awesome!"
     graphic:
       title: "The Graphic Doesn't Lie"
-      text: "ChavezCoin is destined to triumph, this coin is meant to be an absolute hit and begin the cryptocurrency tendency into a whole country."
+      text: "ChavezCoin is destined to triumph, this coin is meant to be an absolute hit and begin the cryptocurrency trend in an entire country."
       click_me: "click me, i'm awesome!"
     guide:
       yellow_section:
         title: "What is Chavezcoin?"
         text: 
-          text_one: "ChavezCoin is a new and revolutionary cryptocurrency, It will change the way you see the money and will open the door to a brighter future, where the problems of paper-money doesn't exist."
+          text_one: "ChavezCoin is a revolutionary new criptocurrency that will change the way you look at money and open the door to a bright future, where the problems of traditional currencies don’t exist."
       blue_section:
-        title: "Obtain and use ChavezCoin is easy!"
-        first_step: "First we have to download the wallet for android or windows, then we register our wallet and start having all this benefits:"
+        title: " Getting and using ChavezCoin is very easy"
+        first_step: "First we download the wallet on android or windows, then we register and we start having all this benefits:"
         benefits:
           one: "Unique ID"
           two: "Obtain CC from the bounty system (If you are Venezuelan)"
           three: "Trade with anyone"
           four: "Get assets, food or play the lottery"
           five: "Investment"
-        end_text: "If you are foreign you can get CC from any venezuelan via the exchanges that is willing to sell you, by doing that you are helping someone that will spend that money in goods for his family and therefore all the people in Venezuela."
+        end_text: "If you are a foreigner, you can obtain CC from any Venezuelan who wants to exchange through the exchange websites, in doing so you will be helping someone to buy goods for their family, therefore helping all of Venezuela."
       red_section:
         title: "ChavezCoin is safe and intelligent!"
         text: 
-          text_one: "The world financial problems are existing because of the paper-money, when we stop using this paper-debt the banks will stop operating like a cartel and start doing what they are meant to be, help the people and not getting profit from everything."
-          text_two: "ChavezCoin is a new cryptocurrency digital, encrypted and fully decentralized; is not being controlled by any government entity or world banks."
+          text_one: "The world economic problems exist for money-paper, when we stop using this system, banks will stop operating as a cartel and begin to do what they should, help people and not make a profit at all."
+          text_two: "ChavezCoin is a digital cryptocurrency that’s encrypted and totally decentralized; it’s not controlled by any government entity or world bank. Join me comrade!"
     advantages:
       title: "Why get ChavezCoin?"
-      text: "There're a lot of advantages you can ejnoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations."
+      text: "There're a lot of advantages you can enjoy by using Chavezcoin, his security, speed and effectiveness will surpass your expectations."
       features:
         feature:
           class: "box-color -yellow -upleft"
-          description: "Chavezcoin it's not controlled by any bank nor financial institution."
+          description: "ChavezCoin it's not controlled by any bank nor financial institution."
           title: "Decentralized"
         feature_two:
           class: "box-color -blue"
-          description: "Transfers of Chavezcoin funds are done directly between the interested parties"
+          description: "Transfers of ChavezCoin funds are done directly between the interested parties"
           title: "No third party"
         feature_three:
           class: "box-color -red -upRight"
-          description: "With Chavezcoin you're the only owner of your wallet private and public id; NO ONE can take that away from you."
+          description: "With ChavezCoin you're the only owner of your wallet, NO ONE can take that away from you."
           title: "It's yours"
         feature_four:
           class: "box-color -yellow -downLeft"
-          description: "Chavezcoin helps you to preserve your privacy when realizing transactions."
+          description: "ChavezCoin helps you to preserve your privacy when realizing transactions."
           title: "Anonimous"
         feature_five:
           class: "box-color -blue"
-          description: "When you get ChavezCoin you are helping the people of Venezuela to get a better life quality."
+          description: "When you get ChavezCoin you are helpin the people of Venezuela to get a better life quality."
           title: "Beneficent"
         feature_six:
           class: "box-color -red -downRight"
-          description: "Transfers of Chavezcoin funds are a lot faster than the traditional ones that use third parties such as banks."
+          description: "Transfers of ChavezCoin funds are a lot faster than traditional ones that use third parties such as banks."
           title: "Fast"
     exchange_guide:
       title: "Expropriate those currencies!"
-      text: "You can change your ChavezCoin to any other currency you want, just go to the markets listed bellow."
+      text: "You can change your ChavezCoin to any coin you want, here you can see a price guide and a list of cryptomarkets."
       coin_guide:
         change: "Change:"
         last_price: "Last price:"
@@ -143,7 +143,7 @@ en:
     app:
       title: "An intergalactic and supreme application"
       text:
-        text_one: "With our app you can use Chavezcoin in a quickly, economical and secure enviroment."
+        text_one: "With our app you can use ChavezCoin on a quickly, economical and secure enviroment."
         text_two: "Welcome to the future, welcome to Chavezcoin."
     social_media:
       title: "Connect with us"
@@ -173,11 +173,11 @@ en:
         faq_one:
           id: "1"
           question: "What is a cryptocurrency?"
-          answer: "Is a digital coin made by an algorithm named blockchain, is completely decentralized and is almost impossible to control this technology after is deployed."
+          answer: "It’s a digital currency based on an algorithm called blockchain, it’s completely decentralized and it’s practically impossible to control once published."
         faq_two:
           id: "2"
           question: "What is a wallet?"
-          answer: "Like his name indicates, is a wallet but digital, where you can control all the coins you have whether you want to send, receive or exchange. Is totally personal and nothing or noone can control it."
+          answer: "As its name implies, it’s a wallet, but online; it serves to control all the coins that you have, either to send or receive, it’s completely personal, and except for you, nothing and no one can control it."
         faq_three:
           id: "3"
           question: "What can i do with my Chavezcoins?"
@@ -189,24 +189,321 @@ en:
         faq_five:
           id: "5"
           question: "How many ChavezCoin will be available?"
-          answer: "The amount of ChavezCoin will be 31 million corresponding to the quantity of people in the country, with an inflation of the 3% per year (The average growth of the people in Venezuela)."
+          answer: "The ChavezCoin supply will be equal to that of the current Venezuelan population, 31 million, which will have an inflation of 3% per year. (The average population growth in Venezuela)."
         faq_six:
           id: "6"
           question: "How can i obtain Chavezcoin?"
-          answer: "If you are Venezuelan just follow the bounty system and you can earn CC. If you are not Venezuelan you can get CC from anyone who is selling in our exchange page available."
+          answer: "If you are Venezuelan just follow the bounty system and you can earn CC(ChavezCoin). If you are not Venezuelan you can get CC from anyone who is selling in our exchange page available."
         faq_seven:
           id: "7"
           question: "What will be the value of ChavezCoin?"
-          answer: "After the release the price will be 1$ per CC, from then the price will be determined by the users."
+          answer: "After the launch the price will be 1$/CC, from then the price will be determined by the users."
         faq_eight:
           id: "8"
           question: "How can i make an account?"
-          answer: "Click in register in login page and follow the instructions."
+          answer: "Click Register on the login page, and follow the instructions."
         faq_nine:
           id: "9"
           question: "It's safe?"
-          answer: "Cryptocurrencys are the most secure system of money at the moment, you will be able to do anything you want and be 100% certain that you will be safe."
+          answer: "Cryptocurrencies are the safest monetary system today, you can do everything you want with them and you can be 100% sure that you will be safe."
         faq_ten:
           id: "10"
           question: "What is a referrer?"
-          answer: "Is one of the task you earn in the bounty system to get more CC. The more people you get in the referral system the more CC you get. (Only for Venezuelan)."
+          answer: "It’s one of the tasks that the reward system offers to get more CC. The more people you invite using the system, the more CC you will win. (Only for Venezuelans)."
+  login:
+    red_panel:
+      textTop:
+        top: "Its a pleasure"
+        bottom: "to see you again, comrade"
+      textBottom:
+        top: "You dont have an account yet? "
+        middle: "Sign Up"
+        bottom: " and join ChavezCoin!"
+      link: "/users/sign_up"
+    elements:
+      element: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "Login to your account"
+      element_two: 
+        selector: "input"
+        properties: 
+          key: "user[email]"
+          className: "field"
+          autoFocus: "autofocus"
+          placeholder: "Email"
+          type: "email"
+          name: "user[email]"
+          id: "user_email"
+      element_three: 
+        selector: "input"
+        properties: 
+          key: "user[password]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "Password"
+          type: "password"
+          name: "user[password]"
+          id: "user_password"
+      element_four: 
+        selector: "FormFields"
+        properties: 
+          key: "FormFields"
+          option: "-separated"
+          fields:
+            elements: 
+              element_one: 
+                selector: "input"
+                properties: 
+                  key: "hidden1"
+                  type: "hidden"
+                  name: "user[remember_me]"
+                  value: 0
+              element_two: 
+                selector: "input"
+                properties: 
+                  key: "hidden2"
+                  className: "hidden"
+                  type: "checkbox"
+                  name: "user[remember_me]"
+                  value: 1
+                  id: "user_remember_me"
+              element_three: 
+                selector: "label"
+                properties: 
+                  key: "checkboxCustom"
+                  className: "checkbox-custom"
+                  htmlFor: "user_remember_me"
+              element_four:
+                selector: "label"
+                properties: 
+                  key: "remember_me"
+                  className: "tag-text -uppercase -lightblack -bold"
+                text: "Remember me"
+            elements_two: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "forgot_pass"
+                  className: "link"
+                  href: "/users/password/new"
+                text: "Forgot pass?"
+      element_five:
+        selector: "input"
+        properties:
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "login"
+  signup:
+    red_panel:
+      textTop:
+        top: "Welcome"
+        bottom: "comrade"
+      textBottom:
+        top: "Already have an account? "
+        middle: "Login"
+        bottom: " and start using ChavezCoin!"
+      link: "/users/sign_in"
+    elements:
+      element_one: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "Signup"
+      element_two:
+        selector: "input"
+        properties: 
+          key: "user[email]"
+          className: "field"
+          autoFocus: "autofocus"
+          placeholder: "Email"
+          type: "email"
+          name: "user[email]"
+          id: "user_email" 
+      element_three:
+        selector: "span"
+        properties: 
+          key: "message_two"
+          className: "tag-text -lightblack -midsmall _nomargin"
+        text: "(6 characters min)"
+      element_five:
+        selector: "input"
+        properties: 
+          key: "user[password]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "Password"
+          type: "password"
+          name: "user[password]"
+          id: "user_password"
+      element_six:
+        selector: "input"
+        properties: 
+          key: "user[password_confirmation]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "Confirm password"
+          type: "password"
+          name: "user[password_confirmation]"
+          id: "user_password_confirmation"
+      element_seven:
+        selector: "input"
+        properties: 
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "Signup"
+  edit_pass:
+    elements:
+      element: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "Change password"
+      element_two:
+        selector: "span"
+        properties: 
+          key: "message_two"
+          className: "tag-text -lightblack -midsmall _nomargin -center"
+        text: "Enter your email to send you instructions for password change"
+      element_three:
+        selector: "input"
+        properties:
+          key: "user[email]"
+          className: "field"
+          autofocus: "autofocus"
+          type: "email" 
+          name: "user[email]"
+          id: "user_email"
+      element_four: 
+        selector: "FormFields"
+        properties: 
+          key: "FormFields"
+          option: "-separated"
+          fields:
+            elements: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "forgot_pass"
+                  className: "main-button -yellow -small"
+                  href: "/users/sign_in"
+                text: "Log in"
+            elements_two: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "forgot_pass"
+                  className: "main-button -yellow -small"
+                  href: "/users/sign_up"
+                text: "Sign up"
+      element_five:
+        selector: "input"
+        properties: 
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "Send instructions"
+  dashboard:
+    overview:
+      title: Account overview
+      referal_share: "Do you want to invite some friends? share the link below!" 
+      refered: "you have been referred by %{name}"
+      button: "%{button}"
+    user_edit:
+      red_panel:
+        textTop:
+          top: "Always "
+          bottom: "keep your information updated"
+        textBottom:
+          top: ""
+          middle: "Back to dashboard"
+          bottom: " and keep using ChavezCoin"
+        link: "/"
+      elements:
+        element_one: 
+          selector: "h2"
+          properties: 
+            key: "message"
+            className: "main-title -left-center -midsize -black"
+          text: "Edit user"
+        element_two: 
+          selector: "input"
+          properties: 
+            key: "_method"
+            type: "hidden"
+            name: "_method"
+            value: "put"
+        element_three:
+          selector: "input"
+          properties: 
+            key: "user[email]"
+            className: "field"
+            autoFocus: "autofocus"
+            placeholder: "Email"
+            type: "email"
+            name: "user[email]"
+            id: "user_email"
+        element_four: 
+          selector: "span"
+          properties: 
+            key: "message_one"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(Leave blank if you don't want to change it)"
+        element_five: 
+          selector: "span"
+          properties: 
+            key: "message_two"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(6 characters min)"
+        element_six: 
+          selector: "input"
+          properties: 
+            key: "user[password]"
+            className: "field"
+            autoComplete: "off"
+            placeholder: "Password"
+            type: "password"
+            name: "user[password]"
+            id: "user_password"
+        element_seven:
+          selector: "input"
+          properties: 
+            key: "user[password_confirmation]"
+            className: "field"
+            autoComplete: "off"
+            placeholder: "Confirm password"
+            type: "password"
+            name: "user[password_confirmation]"
+            id: "user_password_confirmation"
+        element_eight: 
+          selector: "span"
+          properties: 
+            key: "message_three"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(Put your current password to apply changes)"
+        element_nine:
+          selector: "input"
+          properties: 
+            key: "user[current_password]"
+            className: "field"
+            autoComplete: "off"
+            type: "password"
+            name: "user[current_password]"
+            id: "user_current_password"
+        element_ten:
+          selector: "input"
+          properties: 
+            key: "commit"
+            className: "main-button -blue"
+            type: "submit"
+            name: "commit"
+            value: "Update"

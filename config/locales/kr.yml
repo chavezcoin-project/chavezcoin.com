@@ -211,3 +211,300 @@ kr:
           id: "10"
           question: "레퍼러란?"
           answer: "보상 시스템이 차베스코인을 더 많이 제공하기 위해 제공하는 작업 중 하나입니다. 시스템을 사용하여 더 많은 사람들을 초대할 수록 더 많은 차베스코인을 받을 수 있습니다. (베네수엘라인만 해당)."
+  login:
+    red_panel:
+      textTop:
+        top: "즐거움"
+        bottom: "그를 다시 만난다."
+      textBottom:
+        top: "계정이 없으십니까? "
+        middle: "가입"
+        bottom: " ChavezCoin에 가입하십시오!"
+      link: "/users/sign_up"
+    elements:
+      element: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "계정에 로그인하십시오"
+      element_two: 
+        selector: "input"
+        properties: 
+          key: "user[email]"
+          className: "field"
+          autoFocus: "autofocus"
+          placeholder: "Email"
+          type: "email"
+          name: "user[email]"
+          id: "user_email"
+      element_three: 
+        selector: "input"
+        properties: 
+          key: "user[password]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "Password"
+          type: "password"
+          name: "user[password]"
+          id: "user_password"
+      element_four: 
+        selector: "FormFields"
+        properties: 
+          key: "FormFields"
+          option: "-separated"
+          fields:
+            elements: 
+              element_one: 
+                selector: "input"
+                properties: 
+                  key: "hidden1"
+                  type: "hidden"
+                  name: "user[remember_me]"
+                  value: 0
+              element_two: 
+                selector: "input"
+                properties: 
+                  key: "hidden2"
+                  className: "hidden"
+                  type: "checkbox"
+                  name: "user[remember_me]"
+                  value: 1
+                  id: "user_remember_me"
+              element_three: 
+                selector: "label"
+                properties: 
+                  key: "checkboxCustom"
+                  className: "checkbox-custom"
+                  htmlFor: "user_remember_me"
+              element_four:
+                selector: "label"
+                properties: 
+                  key: "remember_me"
+                  className: "tag-text -uppercase -lightblack -bold"
+                text: "날 기억해"
+            elements_two: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "forgot_pass"
+                  className: "link"
+                  href: "/users/password/new"
+                text: "패스를 잊어 버리셨습니까?"
+      element_five:
+        selector: "input"
+        properties:
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "로그인"
+  signup:
+    red_panel:
+      textTop:
+        top: "환영"
+        bottom: "파트너"
+      textBottom:
+        top: "이미 계정이 있으십니까? "
+        middle: "로그인"
+        bottom: " ChavezCoin 사용을 시작하십시오!"
+      link: "/users/sign_in"
+    elements:
+      element_one: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "가입"
+      element_two:
+        selector: "input"
+        properties: 
+          key: "user[email]"
+          className: "field"
+          autoFocus: "autofocus"
+          placeholder: "이메일"
+          type: "email"
+          name: "user[email]"
+          id: "user_email" 
+      element_three:
+        selector: "span"
+        properties: 
+          key: "message_two"
+          className: "tag-text -lightblack -midsmall _nomargin"
+        text: "(6 자 분)"
+      element_five:
+        selector: "input"
+        properties: 
+          key: "user[password]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "암호"
+          type: "password"
+          name: "user[password]"
+          id: "user_password"
+      element_six:
+        selector: "input"
+        properties: 
+          key: "user[password_confirmation]"
+          className: "field"
+          autoComplete: "off"
+          placeholder: "비밀번호 확인"
+          type: "password"
+          name: "user[password_confirmation]"
+          id: "user_password_confirmation"
+      element_seven:
+        selector: "input"
+        properties: 
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "가입"
+  edit_pass:
+    elements:
+      element: 
+        selector: "h2"
+        properties: 
+          key: "message"
+          className: "main-title -left-center -midsize -black"
+        text: "비밀번호 변경"
+      element_two:
+        selector: "span"
+        properties: 
+          key: "message_two"
+          className: "tag-text -lightblack -midsmall _nomargin -center"
+        text: "전자 메일을 입력하여 암호 변경 지침을 보내십시오."
+      element_three:
+        selector: "input"
+        properties:
+          key: "user[email]"
+          className: "field"
+          autofocus: "autofocus"
+          type: "email" 
+          name: "user[email]"
+          id: "user_email"
+      element_four: 
+        selector: "FormFields"
+        properties: 
+          key: "FormFields"
+          option: "-separated"
+          fields:
+            elements: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "login"
+                  className: "main-button -yellow -small"
+                  href: "/users/sign_in"
+                text: "로그인"
+            elements_two: 
+              element_one:
+                selector: "a"
+                properties: 
+                  key: "signup"
+                  className: "main-button -yellow -small"
+                  href: "/users/sign_up"
+                text: "가입"
+      element_five:
+        selector: "input"
+        properties: 
+          key: "commit"
+          className: "main-button -blue"
+          type: "submit"
+          name: "commit"
+          value: "비밀번호 수정"
+  dashboard:
+    overview:
+      title: 계정 개요
+      referal_share: "친구를 초대 하시겠습니까? 아래 링크를 공유하십시오!" 
+      refered: "너는에 의해 추천 받았다 %{name}"
+      button: "%{button}"
+    user_edit:
+      red_panel:
+        textTop:
+          top: "항상 "
+          bottom: "귀하의 정보를 최신으로 유지하십시오"
+        textBottom:
+          top: ""
+          middle: "대시 보드로 돌아 가기"
+          bottom: " 차베스 코인과 계속 승리하십시오"
+        link: "/"
+      elements:
+        element_one: 
+          selector: "h2"
+          properties: 
+            key: "message"
+            className: "main-title -left-center -midsize -black"
+          text: "사용자 수정"
+        element_two: 
+          selector: "input"
+          properties: 
+            key: "_method"
+            type: "hidden"
+            name: "_method"
+            value: "put"
+        element_three:
+          selector: "input"
+          properties: 
+            key: "user[email]"
+            className: "field"
+            autoFocus: "autofocus"
+            placeholder: "이메일"
+            type: "email"
+            name: "user[email]"
+            id: "user_email"
+        element_four: 
+          selector: "span"
+          properties: 
+            key: "message_one"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(변경하지 않으려면 비워 둡니다)"
+        element_five: 
+          selector: "span"
+          properties: 
+            key: "message_two"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(6 자 분)"
+        element_six: 
+          selector: "input"
+          properties: 
+            key: "user[password]"
+            className: "field"
+            autoComplete: "off"
+            placeholder: "암호"
+            type: "password"
+            name: "user[password]"
+            id: "user_password"
+        element_seven:
+          selector: "input"
+          properties: 
+            key: "user[password_confirmation]"
+            className: "field"
+            autoComplete: "off"
+            placeholder: "비밀번호 확인"
+            type: "password"
+            name: "user[password_confirmation]"
+            id: "user_password_confirmation"
+        element_eight: 
+          selector: "span"
+          properties: 
+            key: "message_three"
+            className: "tag-text -lightblack -midsmall _nomargin"
+          text: "(변경 사항을 적용하려면 현재 비밀번호 입력)"
+        element_nine:
+          selector: "input"
+          properties: 
+            key: "user[current_password]"
+            className: "field"
+            autoComplete: "off"
+            type: "password"
+            name: "user[current_password]"
+            id: "user_current_password"
+        element_ten:
+          selector: "input"
+          properties: 
+            key: "commit"
+            className: "main-button -blue"
+            type: "submit"
+            name: "commit"
+            value: "최신 정보"

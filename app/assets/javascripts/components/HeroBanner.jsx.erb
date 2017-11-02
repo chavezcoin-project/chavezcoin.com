@@ -4,9 +4,15 @@ window.HeroBanner = React.createClass({
   },
   render: function() {
     var self = this;
-    this.props.components.forEach(function(component) {
-      self.state.components.push(React.createElement(window[component.selector], component.properties, component.text));
-    });
+    if (this.props.layout == 'login') {
+      this.props.components.forEach(function(component) {
+        self.state.components.push(React.createElement(window[component.selector], component.properties, component.text));
+      });
+    }else {
+      this.props.components.forEach(function(component) {
+        self.state.components.push(React.createElement(component.selector, component.properties, component.text));
+      });   
+    }
     return (
       React.createElement('section', {
         className: "hero-banner -"+ this.props.layout

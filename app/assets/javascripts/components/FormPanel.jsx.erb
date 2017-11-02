@@ -83,15 +83,15 @@ window.FormPanel = React.createClass({
     var elements = {};
     var self = this;
     if (this.props.elements) {
-      elements = $.parseJSON(this.props.elements);
+      elements = this.props.elements;
     }
     if (this.props.text) {
-      this.state.text = $.parseJSON(this.props.text);
+      this.state.text = this.props.text;
     }
     switch (this.props.option) {
       case 'form':
-        elements.forEach(function(element) {
-          if (/^[A-Z]/.test(element.selector[0]) === true) {
+        $.each(elements, function(key, element) {
+          if (/^[A-Z]/.test(element.selector) === true) {
             self.state.elements.push(React.createElement(window[element.selector], element.properties, element.text));
           }else {
             self.state.elements.push(React.createElement(element.selector, element.properties, element.text));

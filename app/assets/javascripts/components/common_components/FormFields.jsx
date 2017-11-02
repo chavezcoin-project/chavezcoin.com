@@ -5,11 +5,12 @@ window.FormFields = React.createClass({
   render: function() {
     var self = this;
     this.state.option = this.props.option;
-    this.props.fields.forEach(function(field, index) {
-      field.elements.forEach(function(element){
+    $.each(this.props.fields, function(index, field) {
+      $.each(field, function(index, element) {
+        console.log(element);
         self.state.inputs.push(React.createElement(element.selector, element.properties, element.text))
       });
-      self.state.fields.push(React.createElement('div', {key:'field-'+index, className: 'field'}, self.state.inputs));
+      self.state.fields.push(React.createElement('div', {key:'field-'+ index, className: 'field'}, self.state.inputs));
       self.state.inputs = []
     });
     return (
