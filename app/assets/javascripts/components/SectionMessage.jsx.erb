@@ -68,6 +68,18 @@ window.SectionMessageMid = React.createClass({
   }
 })
 
+window.DualSectionMessage = React.createClass({
+  render: function() {
+    return(
+      <div className="menssage-container">
+        <h3 className="main-title -bold -black _marginbottom-md -fullwidth">{this.props.title}</h3>
+        <p className="tag-text -center -black">{this.props.message}</p>
+        <p className="tag-text -center -black _marginbottom-md">{this.props.message_two}</p>
+      </div>
+    )
+  }
+})
+
 window.SectionMessage = React.createClass({
   render: function() {
     return(
@@ -85,6 +97,18 @@ window.SectionMessageWhite = React.createClass({
       <div className="menssage-container">
         <h3 className="main-title -bold _marginbottom-md -fullwidth">{this.props.title}</h3>
         <p className="tag-text -center -white _marginbottom-md">{this.props.message}</p>
+      </div>
+    )
+  }
+})
+
+window.SectionMessageWhiteDual = React.createClass({
+  render: function() {
+    return(
+      <div className="menssage-container">
+        <h3 className="main-title -bold _marginbottom-md -fullwidth">{this.props.title}</h3>
+        <p className="tag-text -center -white">{this.props.message}</p>
+        <p className="tag-text -center -white _marginbottom-md">{this.props.message_two}</p>
       </div>
     )
   }

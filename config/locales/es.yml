@@ -60,8 +60,8 @@ es:
       cut_name: "alir"  
   home:
     modal:
-      text: "Suscríbete y entérate las últimas noticias de ChavezCoin"
-      button_text: "Suscribirse"
+      text: "¡Regístrate y empieza a ganar ChavezCoin!"
+      button_text: "Gana ChavezCoin"
     header:
       blue_button: "Gana ChavezCoin"
       red_button: "Descarga Wallet"
@@ -71,32 +71,32 @@ es:
       slogan: "¡Haz crecer tus bienes hasta la luna!"
       click_me: "Haz click sobre mi!"
     graphic:
-      title: La gráfica no miente
-      text: ChavezCoin esta destinada a triunfar esta moneda sera un exito absoluto y comenzara la tendencia de criptomonedas en todo un pais.
+      title: "La gráfica no miente"
+      text: "ChavezCoin es una moneda destinada a triunfar. Será un éxito absoluto, que impulsará el uso de criptomonedas en todo un país."
       click_me: "Haz click sobre mi!"
     guide:
       yellow_section:
         title: "¿Qué es Chavezcoin?"
         text: 
-          text_one: "ChavezCoin es una nueva y revolucionaria cryptomoneda cambiará tu forma de ver el dinero y te abrirá las puertas a un futuro brillante donde los problemas de las divisas tradicionales no existen"
+          text_one: "ChavezCoin es una nueva y revolucionaria criptomoneda, que cambiará tu forma de ver el dinero y te abrirá las puertas de un futuro brillante, sin los problemas a los que las divisas tradicionales nos tienen acostumbrados."
       blue_section:
         title: "Obtener y usar ChavezCoin es más fácil que ganar las elecciones con Tibisay"
-        first_step: "Primero descargamos la Wallet (cartera virtual) en android o windows luego nos registramos y empezamos a tener todos estos beneficios:"
+        first_step: "Primero, descargamos la Wallet (cartera virtual) para Android o Windows. Luego, nos registramos. Y listo. Empezamos a gozar de todos estos beneficios:"
         benefits:
           one: "ID única"
-          two: "Obtener Monedas por el sistema de recompensa (Si eres venezolano)"
-          three: "Intercambia con quien quieras"
-          four: "Conseguir activos comida o jugar la lotería"
+          two: "Obtención de monedas, por el sistema de recompensa (beneficio exclusivo para venezolanos)"
+          three: "Intercambios con quien quieras, cuando quieras"
+          four: "Posibilidad de adquirir activos, alimentos o jugar a la lotería"
           five: "Poder de inversión"
-        end_text: "Si eres extranjero puedes obtener CC de cualquier venezolano que quiera intercambiar mediante los sitios web de intercambio al hacer eso estarás ayudando a alguien para que compre bienes para su familia y por lo tanto ayudas a toda Venezuela."
+        end_text: "Si eres extranjero, puedes obtener CC de cualquier venezolano que quiera intercambiar, mediante los sitios web destinados a esta actividad. Al hacerlo, ayudas a un venezolano a adquirir bienes para su familia. Ayudas a toda Venezuela."
       red_section:
         title: "ChavezCoin es más seguro que el palacio de Miraflores"
         text: 
-          text_one: "Los problemas económicos alrededor del mundo se inician con el sistema de emisión de dinero en papel. Es un sistema basado en la deuda. Una vez que abandonemos los papeles de deuda los bancos dejarán de operar como un cartel. No les quedará más remedio que hacer lo que siempre debieron hacer: ayudar a las personas en lugar de perseguir el lucro en cada operación."
-          text_two: "ChavezCoin es una criptomoneda digital encriptada y totalmente descentralizada; no está controlada por ninguna entidad gubernamental o banco mundial."
+          text_one: "Los problemas económicos alrededor del mundo se inician con el sistema de emisión de dinero en papel. Es un sistema basado en la deuda. Una vez que abandonemos los papeles de deuda, los bancos dejarán de operar como un cartel. No les quedará más remedio que hacer lo que siempre debieron hacer: ayudar a las personas, en lugar de perseguir el lucro en cada operación."
+          text_two: "ChavezCoin es una criptomoneda digital. Esto significa que está encriptada y totalmente descentralizada. No está ni puede estar sujeta al control de ninguna entidad bancaria o gubernamental, de ningún país u organización internacional."
     advantages:
       title: "¿Por qué obtener ChávezCoin?"
-      text: "Son muchas las ventajas al ahorrar y comprar con Chavezcoin. Seguridad rapidez y eficiencia más allá de tus expectativas."
+      text: "Son muchas las ventajas al ahorrar y comprar con Chavezcoin. Seguridad, rapidez y eficiencia, más allá de tus expectativas."
       features:
         feature:
           class: "box-color -yellow -upleft"
@@ -124,7 +124,7 @@ es:
           title: "Rápida"
     exchange_guide:
       title: "¡Exprópiense esas divisas!"
-      text: "Puedes cambiar tus ChavezCoin a la moneda que quieras. Aquí podrás ver una guía de precios y una lista de criptomercados."
+      text: "Puedes cambiar tus ChavezCoin por la moneda que quieras. Aquí verás una guía de precios y una lista de criptomercados."
       coin_guide:
         change: "Cambio:"
         last_price: "Último precio:"
@@ -143,15 +143,15 @@ es:
     app:
       title: "Una aplicación suprema e intergaláctica"
       text:
-        text_one: "Con nuestra app podrás usar ChavezCoin para realizar compras de manera rápida segura y económica. Bienvenido al futuro bienvenido a ChavezCoin."
-        text_two: "Bienvenido al futuro bienvenido a ChavezCoin."
+        text_one: "Con nuestra app, podrás usar ChavezCoin para realizar compras de manera rápida, segura y económica."
+        text_two: "Bienvenido al futuro. Bienvenido a ChavezCoin."
     social_media:
       title: "Conéctate con nosotros"
       text: "Entérate al instante de cada noticia sobre ChavezCoin"
       placeholder: "DIRECCIÓN DE EMAIL"
     blog:
       title: "Aló Presidente"
-      text: "Mantente al día con todo lo referente a ChavezCoin y el mundo de las criptodivisas."
+      text: "Mantente al día con todo lo referente a ChavezCoin y el mundo de las criptodivisas"
       posts:
         post:
           author: "Lillian Willis"
@@ -167,41 +167,42 @@ es:
           share: "Comparte esto con tus amigos"
     faq:
       title: "Preguntas frecuentes"
-      text: "¿Eres nuevo en el mundo de las criptomonedas? No te preocupes. Misión Robinson tiene las respuestas que buscas."
+      text: "¿Eres nuevo en el mundo de las criptomonedas?"
+      text_two: "No te preocupes. Misión Robinson tiene las respuestas que buscas."
       text_end: '"¡No hay vuelta a atrás!". Hugo Chávez'
       questions:
         faq_one:
           id: "1"
           question: "¿Qué es una criptomoneda?"
-          answer: "Es una moneda digital basada en un algoritmo llamado blockchain. Es completamente descentralizada. Gracias a ello una vez publicada es virtualmente imposible que cualquier ente u organización pueda controlarla."
+          answer: "Es una moneda digital basada en un algoritmo, llamado blockchain. Es completamente descentralizada. Gracias a ello, una vez publicada, es virtualmente imposible que cualquier ente u organización pueda controlarla."
         faq_two:
           id: "2"
           question: "¿Qué es una cartera (wallet)?"
-          answer: "Como su nombre indica es una cartera pero online. Sirve para controlar todas las monedas que tengas. Tu cartera te permite enviar y recibir; es completamente personal y salvo tú nada ni nadie puede controlarla."
+          answer: "Como su nombre indica, es una cartera, pero online. Sirve para controlar todas las monedas que tengas. Tu cartera te permite enviar y recibir; es completamente personal y, salvo tú, nada ni nadie puede controlarla."
         faq_three:
           id: "3"
           question: "¿Qué podré hacer con mis ChavezCoin?"
-          answer: "ChavezCoin (CC) es como el dinero que usas diariamente pero sin sus desventajas. Podrás comprar bienes pagar cuentas y hasta jugar a la lotería. Puedes enviarle CC a cualquier persona que desees de forma totalmente segura y anónima."
+          answer: "ChavezCoin (CC) es como el dinero que usas diariamente, pero sin sus desventajas. Podrás comprar bienes, pagar cuentas y hasta jugar a la lotería. Puedes enviarle CC a cualquier persona que desees, de forma totalmente segura y anónima."
         faq_four:
           id: "4"
-          question: "¿Hay ChavezCoin disponibles actualmente?"
-          answer: "ChavezCoin será publicada el 12 de diciembre del 2017. Es decir que en esa fecha entrará en circulación."
+          question: "¿Hay ChavezCoin disponibles, actualmente?"
+          answer: "ChavezCoin será publicada el 12 de diciembre del 2017. Es decir que, en esa fecha, entrará en circulación."
         faq_five:
           id: "5"
           question: "¿Cuántas ChavezCoin habrá en existencia?"
-          answer: "El suministro (o circulante) de ChavezCoin será equivalente al de la población actual venezolana: 31 millones. En adelante se prevé que esta suma se incremente con una tasa de inflación de 3% anual. (Este es el promedio de crecimiento poblacional en Venezuela)."
+          answer: "El suministro (o circulante) de ChavezCoin será equivalente al de la población actual venezolana: 31 millones. En adelante, se prevé que esta suma se incremente con una tasa de inflación de 3% anual. (Este es el promedio de crecimiento poblacional en Venezuela)."
         faq_six:
           id: "6"
           question: "¿Cómo puedo obtener ChavezCoin (CC)?"
-          answer: "Si eres venezolano puedes ganar CC usando el sistema de recompensa. Si eres extranjero puedes obtener CC de quienquiera que los venda en nuestra página de intercambio."
+          answer: "Si eres venezolano, puedes ganar CC usando el sistema de recompensa. Si eres extranjero, puedes obtener CC de quienquiera que los venda en nuestra página de intercambio."
         faq_seven:
           id: "7"
-          question: "¿Cuál es el valor estimado de ChavezCoin?"
-          answer: "ChavezCoin llegará al mercado monetario el 12 de diciembre de 2017 con un valor inicial de un dólar estadounidense (1 CC = 1 USD). A partir de ahí su valor será determinado por la libre dinámica de oferta y demanda establecida por los usuarios."
+          question: "¿Cuál es el valor estimado de un ChavezCoin?"
+          answer: "ChavezCoin llegará al mercado monetario, el 12 de diciembre de 2017, con un valor inicial de un dólar estadounidense (1 CC = 1 USD). A partir de ahí, su valor será determinado por la libre dinámica de oferta y demanda, establecida por los usuarios."
         faq_eight:
           id: "8"
           question: "¿Cómo puedo crear una cuenta?"
-          answer: "Haz clic en el botón de “Registro” en la página de ingreso al sistema y sigue las instrucciones."
+          answer: "Haz clic en el botón de “Registro”, en la página de ingreso al sistema, y sigue las instrucciones."
         faq_nine:
           id: "9"
           question: "¿Es seguro?"
@@ -209,7 +210,7 @@ es:
         faq_ten:
           id: "10"
           question: "¿Qué es un 'referido'?"
-          answer: "Esta palabra hace referencia a una de las tareas que ofrece el sistema de recompensa exclusivamente para usuarios venezolanos. Mientras más personas invites y usen el sistema (mientras más referidos tengas) más CC vas a ganar."
+          answer: "Esta palabra hace referencia a una de las tareas que ofrece el sistema de recompensa, exclusivamente para usuarios venezolanos. Mientras más personas invites y usen el sistema (mientras más referidos tengas), más CC vas a ganar."
   login:
     red_panel:
       textTop:

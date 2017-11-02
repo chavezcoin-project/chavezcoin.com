@@ -24,7 +24,7 @@ window.FaqList = React.createClass({
     });
     return(
       <div className="-flex-center pure-u-1 faq-container section-container" id="faq">
-        <SectionMessage title={this.props.faqs.title} message={this.props.faqs.text} />
+        <DualSectionMessage title={this.props.faqs.title} message={this.props.faqs.text} message_two={this.props.faqs.text_two} />
         <div className="limited-wrapper faqs-list">{faqs}</div>
         <div className="limited-wrapper -center-around -tablet-bye">
           <div className="device-illustration tablet-horizontal">

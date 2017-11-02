@@ -151,7 +151,7 @@ en:
       placeholder: "EMAIL ADDRESS"
     blog:
       title: "Latest News"
-      text: "Fin out what`s new!"
+      text: "Find out what's new!"
       posts:
         post:
           author: "Lillian Willis"

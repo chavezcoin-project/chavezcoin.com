@@ -1,75 +1,78 @@
 .main-title {
-    color: $white;
-    font-family: $secondary-font-family;
-    font-size: 3.25rem;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
+  color: $white;
+  font-family: $secondary-font-family;
+  font-size: 3.25rem;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: .1rem .15rem .35rem rgba($black, .4);
+  width: 95%;
+  z-index: 1;
+  @include lg {
+      width: 80%;
+  }
+  >.extrablue {
+    color: $persianred;
+  }
+  >.red {
+    color: $persianred;
+  }
+  >.blue {
+    color: $danube;
+  }
+  >.yellow {
+    color: $ripelemon;
+  }
+  >.green {
+    color: $green_haze;
+  }
+  >.number {
+    margin: 0 .5rem;
+  }
+  &.-lgsize {
+    font-size: 2.5rem;
+  }
+  &.-midsize {
+    font-size: 1.75rem;
+  }
+  &.-smallsize {
+    font-size: 1.25rem;
+  }
+  &.-black {
+    color: $scorpion;
+  }
+  &.-lightblack {
+    color: rgba($black, .75);
+  }
+  &.-left {
+    text-align: left;
+  }
+  &.-blue {
+    color: $danube;
+  }
+  &.-red {
+    color: $persianred;
+  }
+  &.-yellow {
+    color: $ripelemon;
+  }
+  &.-bold {
+    font-weight: bold;
+  }
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+  &.-fullwidth {
+    width: 100%;
+  }
+  &.-left-center {
     text-align: center;
-    text-shadow: .1rem .15rem .35rem rgba($black, .4);
-    width: 95%;
-    z-index: 1;
     @include lg {
-        width: 80%;
+      text-align: left;
     }
-    >.extrablue {
-        color: $persianred;
-    }
-    >.red {
-        color: $persianred;
-    }
-    >.blue {
-        color: $danube;
-    }
-    >.yellow {
-        color: $ripelemon;
-    }
-    >.green {
-        color: $green_haze;
-    }
-    &.-lgsize {
-        font-size: 2.5rem;
-    }
-    &.-midsize {
-        font-size: 1.75rem;
-    }
-    &.-smallsize {
-        font-size: 1.25rem;
-    }
-    &.-black {
-        color: $scorpion;
-    }
-    &.-lightblack {
-        color: rgba($black, .75);
-    }
-    &.-left {
-        text-align: left;
-    }
-    &.-blue {
-        color: $danube;
-    }
-    &.-red {
-        color: $persianred;
-    }
-    &.-yellow {
-        color: $ripelemon;
-    }
-    &.-bold {
-        font-weight: bold;
-    }
-    &.-uppercase {
-        text-transform: uppercase;
-    }
-    &.-fullwidth {
-        width: 100%;
-    }
-    &.-left-center {
-        text-align: center;
-        @include lg {
-            text-align: left;
-        }
-    }
-    &.-small-dual-margin {
-        margin: 1rem auto;
-    }
+  }
+  &.-small-dual-margin {
+    margin: 1rem auto;
+  }
 }
