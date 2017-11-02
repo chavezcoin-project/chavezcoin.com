@@ -4,7 +4,7 @@ window.HeroBanner = React.createClass({
   },
   render: function() {
     var self = this;
-    if (this.props.layout == 'login') {
+    if (this.props.layout == 'login' || this.props.layout == 'edit') {
       this.props.components.forEach(function(component) {
         self.state.components.push(React.createElement(window[component.selector], component.properties, component.text));
       });
