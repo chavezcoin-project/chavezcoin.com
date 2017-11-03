@@ -72,3 +72,12 @@
     }
   }
 }
+
+.blog-box .video-container {
+  height: 12rem;
+  margin-bottom: 0;
+  width: 100%;
+  @include lg {
+    max-width: 100%;
+  }
+}
