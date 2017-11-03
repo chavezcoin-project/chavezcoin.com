@@ -33,6 +33,9 @@
   &.kr:after  {
     animation: korean 20s infinite 2s;
   }
+  &.ch:after {
+    animation: chinese 20s infinite 2s;
+  }
 }
 
 
@@ -208,6 +211,92 @@
   }
 }
 
+@keyframes chinese {
+  30% {
+    content: '|';
+    opacity: 0;
+  }
+  32.5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  42.5% {
+    content: '|';
+    opacity: 1;
+  }
+  43.75% {
+    content: '加|';
+  }
+  45% {
+    content: '加入|';
+  }
+  46.25% {
+    content: '加入';
+  }
+  47.5% {
+    content: '저를 |';
+  }
+  48.75% {
+    content: '저를';
+  }
+  50% {
+    content: '加入我|';
+  }
+  51.25% {
+    content: '加入我的|';
+  }
+  52.5% {
+    content: '加入我的同|';
+  }
+  53.75% {
+    content: '加入我的同胞|';
+  }
+  55% {
+    content: '加入我的同胞！|';
+  }
+  56.25% {
+    content: '加入我的同胞！';
+  }
+  57.5% {
+    content: '加入我的同胞！|';
+  }
+  58.75% {
+    content: '加入我的同胞！';
+  }
+  60% {
+    content: '加入我的同胞！|';
+  }
+  61.25% {
+    content: '加入我的同胞！';
+  }
+  62.5% {
+    content: '加入我的同胞！|';
+  }
+  63.75% {
+    content: '加入我的同胞！';
+  }
+  65% {
+    content: '加入我的同胞！|';
+  }
+  66.25% {
+    content: '加入我的同胞！';
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
 @keyframes korean {
   30% {
     content: '|';
@@ -293,8 +382,6 @@
     opacity: 0;
   }
 }
-
-
 
 
 @keyframes hideShow {
