@@ -14,12 +14,12 @@ jQuery(document).ready(function($) {
     HightVol = $('.fa-volume-up');
     icon = $('.fa-volume-off');
     fill = $('.fill');
-    vid.click(function(event) {
-      playPause();
+    vid.click(function() {
+      playPause($(this));
     });
 
-    playbtn.click(function(e) {
-      playPause();
+    playbtn.click(function() {
+      playPause($(this));
     });
 
     $('.seekslider').on("input", function() {
@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
       toggleFullScreen();
     });
 
-    function playPause(){
+    function playPause(vid){
       var pause = $('.fa-pause');
       var play = $('.fa-play');
       if(vid.get(0).paused){

@@ -62,7 +62,7 @@ window.PostHeader = React.createClass({
 
 window.BlogContent = React.createClass({
   render: function() {
-    var image = "<%= asset_path('venezuela.mp4') %>";;
+    var video = "<%= asset_path('venezuela.mp4') %>";;
     var title = this.props.post.title;
     var author = this.props.post.author;
     var id = this.props.id;
@@ -74,7 +74,7 @@ window.BlogContent = React.createClass({
     var avatar = this.props.post.autor_avatar;
     return(
       <article className="pure-u-1 pure-u-md-11-24 pure-u-lg-7-24 blog-box">
-        <VideoContainer video_path={image} />
+        <VideoContainer video_path={video} option={'unstyled'} />
         <PostHeader title={title} />
         <SharePost facebook={facebook} google={google} twitter={twitter} text={this.props.post.share} />
         <PostDetails author={author} date={date} category={category} avatar={avatar} text_link={this.props.post.text_link} />
